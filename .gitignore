@@ -1,0 +1,24 @@
+# Large image dataset binaries
+Amur Tigers/train/*.jpg
+Amur Tigers/train/*.jpeg
+Amur Tigers/train/*.png
+Amur Tigers/test/*.jpg
+Amur Tigers/test/*.jpeg
+Amur Tigers/test/*.png
+
+# Keep empty folder structure in git
+!Amur Tigers/train/.gitkeep
+!Amur Tigers/test/.gitkeep
+
+# Python / Environment
+__pycache__/
+*.py[cod]
+*$py.class
+.venv
+env/
+venv/
+*.log
+
+# System files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,266 @@
+[
+  {
+    "name": "Sillari",
+    "lat": 21.612,
+    "lon": 79.385,
+    "population": 1800
+  },
+  {
+    "name": "Pipariya",
+    "lat": 21.58,
+    "lon": 79.375,
+    "population": 1200
+  },
+  {
+    "name": "Paoni",
+    "lat": 21.51,
+    "lon": 79.22,
+    "population": 2400
+  },
+  {
+    "name": "Khursapar",
+    "lat": 21.555,
+    "lon": 79.11,
+    "population": 900
+  },
+  {
+    "name": "Bodhali",
+    "lat": 21.62,
+    "lon": 79.098,
+    "population": 1100
+  },
+  {
+    "name": "Awarghani",
+    "lat": 21.67,
+    "lon": 79.098,
+    "population": 750
+  },
+  {
+    "name": "Ghadazari",
+    "lat": 21.72,
+    "lon": 79.108,
+    "population": 850
+  },
+  {
+    "name": "Turia",
+    "lat": 21.755,
+    "lon": 79.14,
+    "population": 1300
+  },
+  {
+    "name": "Chikhli",
+    "lat": 21.77,
+    "lon": 79.2,
+    "population": 950
+  },
+  {
+    "name": "Karegaon",
+    "lat": 21.765,
+    "lon": 79.28,
+    "population": 700
+  },
+  {
+    "name": "Navegaon",
+    "lat": 21.505,
+    "lon": 79.31,
+    "population": 1600
+  },
+  {
+    "name": "Chargaon",
+    "lat": 21.498,
+    "lon": 79.26,
+    "population": 1100
+  },
+  {
+    "name": "Surera",
+    "lat": 21.51,
+    "lon": 79.175,
+    "population": 800
+  },
+  {
+    "name": "Dongartal",
+    "lat": 21.53,
+    "lon": 79.145,
+    "population": 600
+  },
+  {
+    "name": "Sawara",
+    "lat": 21.515,
+    "lon": 79.2,
+    "population": 550
+  },
+  {
+    "name": "Ghoti",
+    "lat": 21.525,
+    "lon": 79.165,
+    "population": 470
+  },
+  {
+    "name": "Kolitmara",
+    "lat": 21.695,
+    "lon": 79.385,
+    "population": 680
+  },
+  {
+    "name": "Totladoh",
+    "lat": 21.74,
+    "lon": 79.345,
+    "population": 420
+  },
+  {
+    "name": "Bodalkasa",
+    "lat": 21.74,
+    "lon": 79.16,
+    "population": 530
+  },
+  {
+    "name": "Mogra",
+    "lat": 21.73,
+    "lon": 79.13,
+    "population": 380
+  },
+  {
+    "name": "Ghatpendhari",
+    "lat": 21.76,
+    "lon": 79.235,
+    "population": 610
+  },
+  {
+    "name": "Bandara",
+    "lat": 21.752,
+    "lon": 79.26,
+    "population": 440
+  },
+  {
+    "name": "Fulzari",
+    "lat": 21.545,
+    "lon": 79.13,
+    "population": 350
+  },
+  {
+    "name": "Wadamba",
+    "lat": 21.555,
+    "lon": 79.155,
+    "population": 290
+  },
+  {
+    "name": "Hiwra",
+    "lat": 21.758,
+    "lon": 79.215,
+    "population": 510
+  },
+  {
+    "name": "Dhamni",
+    "lat": 21.66,
+    "lon": 79.4,
+    "population": 720
+  },
+  {
+    "name": "Rawanwadi",
+    "lat": 21.5,
+    "lon": 79.29,
+    "population": 630
+  },
+  {
+    "name": "Ambazari",
+    "lat": 21.495,
+    "lon": 79.24,
+    "population": 890
+  },
+  {
+    "name": "Karmajhiri",
+    "lat": 21.65,
+    "lon": 79.395,
+    "population": 480
+  },
+  {
+    "name": "Teliya",
+    "lat": 21.605,
+    "lon": 79.098,
+    "population": 410
+  },
+  {
+    "name": "Jamun",
+    "lat": 21.585,
+    "lon": 79.105,
+    "population": 360
+  },
+  {
+    "name": "Pangdi",
+    "lat": 21.64,
+    "lon": 79.395,
+    "population": 520
+  },
+  {
+    "name": "Junona",
+    "lat": 21.57,
+    "lon": 79.37,
+    "population": 680
+  },
+  {
+    "name": "Palasgaon",
+    "lat": 21.55,
+    "lon": 79.355,
+    "population": 770
+  },
+  {
+    "name": "Khapa",
+    "lat": 21.53,
+    "lon": 79.33,
+    "population": 590
+  },
+  {
+    "name": "Khandala",
+    "lat": 21.51,
+    "lon": 79.3,
+    "population": 440
+  },
+  {
+    "name": "Bhimgarh",
+    "lat": 21.545,
+    "lon": 79.115,
+    "population": 310
+  },
+  {
+    "name": "Tekadi",
+    "lat": 21.575,
+    "lon": 79.1,
+    "population": 280
+  },
+  {
+    "name": "Gowari",
+    "lat": 21.535,
+    "lon": 79.14,
+    "population": 360
+  },
+  {
+    "name": "Salai",
+    "lat": 21.69,
+    "lon": 79.1,
+    "population": 510
+  },
+  {
+    "name": "Pitesur",
+    "lat": 21.71,
+    "lon": 79.115,
+    "population": 430
+  },
+  {
+    "name": "Ghiregaon",
+    "lat": 21.68,
+    "lon": 79.105,
+    "population": 390
+  },
+  {
+    "name": "Manegaon",
+    "lat": 21.745,
+    "lon": 79.31,
+    "population": 570
+  },
+  {
+    "name": "Devalapar Village",
+    "lat": 21.76,
+    "lon": 79.25,
+    "population": 650
+  }
+]

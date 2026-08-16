@@ -1,0 +1,965 @@
+{
+  "250": {
+    "tiger_id": 250,
+    "sex": "Male",
+    "primary_range": "West Pench",
+    "centroid_lat": 21.686912,
+    "centroid_lon": 79.160567,
+    "territory_radius_km": 10.32,
+    "min_village_dist_km": 5.35
+  },
+  "256": {
+    "tiger_id": 256,
+    "sex": "Male",
+    "primary_range": "Chorbahuli",
+    "centroid_lat": 21.670385,
+    "centroid_lon": 79.231935,
+    "territory_radius_km": 11.49,
+    "min_village_dist_km": 9.51
+  },
+  "171": {
+    "tiger_id": 171,
+    "sex": "Male",
+    "primary_range": "Saleghat",
+    "centroid_lat": 21.594265,
+    "centroid_lon": 79.194737,
+    "territory_radius_km": 10.52,
+    "min_village_dist_km": 5.98
+  },
+  "247": {
+    "tiger_id": 247,
+    "sex": "Female",
+    "primary_range": "Saleghat",
+    "centroid_lat": 21.585682,
+    "centroid_lon": 79.175152,
+    "territory_radius_km": 5.23,
+    "min_village_dist_km": 3.99
+  },
+  "238": {
+    "tiger_id": 238,
+    "sex": "Male",
+    "primary_range": "Chorbahuli",
+    "centroid_lat": 21.63673,
+    "centroid_lon": 79.225412,
+    "territory_radius_km": 10.06,
+    "min_village_dist_km": 11.61
+  },
+  "264": {
+    "tiger_id": 264,
+    "sex": "Female",
+    "primary_range": "West Pench",
+    "centroid_lat": 21.66271,
+    "centroid_lon": 79.167392,
+    "territory_radius_km": 5.58,
+    "min_village_dist_km": 6.71
+  },
+  "54": {
+    "tiger_id": 54,
+    "sex": "Male",
+    "primary_range": "West Pench",
+    "centroid_lat": 21.703567,
+    "centroid_lon": 79.178046,
+    "territory_radius_km": 10.48,
+    "min_village_dist_km": 4.45
+  },
+  "237": {
+    "tiger_id": 237,
+    "sex": "Male",
+    "primary_range": "East Pench",
+    "centroid_lat": 21.642909,
+    "centroid_lon": 79.320695,
+    "territory_radius_km": 9.02,
+    "min_village_dist_km": 7.46
+  },
+  "255": {
+    "tiger_id": 255,
+    "sex": "Male",
+    "primary_range": "East Pench",
+    "centroid_lat": 21.685745,
+    "centroid_lon": 79.327229,
+    "territory_radius_km": 9.0,
+    "min_village_dist_km": 6.04
+  },
+  "96": {
+    "tiger_id": 96,
+    "sex": "Female",
+    "primary_range": "East Pench",
+    "centroid_lat": 21.688177,
+    "centroid_lon": 79.282737,
+    "territory_radius_km": 4.13,
+    "min_village_dist_km": 6.9
+  },
+  "114": {
+    "tiger_id": 114,
+    "sex": "Male",
+    "primary_range": "East Pench",
+    "centroid_lat": 21.665108,
+    "centroid_lon": 79.319267,
+    "territory_radius_km": 9.72,
+    "min_village_dist_km": 7.54
+  },
+  "100": {
+    "tiger_id": 100,
+    "sex": "Male",
+    "primary_range": "East Pench",
+    "centroid_lat": 21.704704,
+    "centroid_lon": 79.305266,
+    "territory_radius_km": 10.84,
+    "min_village_dist_km": 4.5
+  },
+  "201": {
+    "tiger_id": 201,
+    "sex": "Male",
+    "primary_range": "Devalapar",
+    "centroid_lat": 21.718,
+    "centroid_lon": 79.261591,
+    "territory_radius_km": 9.95,
+    "min_village_dist_km": 3.78
+  },
+  "91": {
+    "tiger_id": 91,
+    "sex": "Male",
+    "primary_range": "Chorbahuli",
+    "centroid_lat": 21.611943,
+    "centroid_lon": 79.25093,
+    "territory_radius_km": 11.18,
+    "min_village_dist_km": 11.73
+  },
+  "168": {
+    "tiger_id": 168,
+    "sex": "Female",
+    "primary_range": "East Pench",
+    "centroid_lat": 21.656009,
+    "centroid_lon": 79.341841,
+    "territory_radius_km": 4.92,
+    "min_village_dist_km": 5.52
+  },
+  "153": {
+    "tiger_id": 153,
+    "sex": "Male",
+    "primary_range": "Devalapar",
+    "centroid_lat": 21.69104,
+    "centroid_lon": 79.210958,
+    "territory_radius_km": 10.67,
+    "min_village_dist_km": 7.44
+  },
+  "45": {
+    "tiger_id": 45,
+    "sex": "Male",
+    "primary_range": "East Pench",
+    "centroid_lat": 21.608673,
+    "centroid_lon": 79.287423,
+    "territory_radius_km": 10.41,
+    "min_village_dist_km": 9.53
+  },
+  "67": {
+    "tiger_id": 67,
+    "sex": "Male",
+    "primary_range": "Saleghat",
+    "centroid_lat": 21.626601,
+    "centroid_lon": 79.146403,
+    "territory_radius_km": 8.99,
+    "min_village_dist_km": 5.04
+  },
+  "130": {
+    "tiger_id": 130,
+    "sex": "Male",
+    "primary_range": "West Pench",
+    "centroid_lat": 21.685383,
+    "centroid_lon": 79.189419,
+    "territory_radius_km": 8.93,
+    "min_village_dist_km": 6.78
+  },
+  "22": {
+    "tiger_id": 22,
+    "sex": "Male",
+    "primary_range": "East Pench",
+    "centroid_lat": 21.639878,
+    "centroid_lon": 79.302785,
+    "territory_radius_km": 8.93,
+    "min_village_dist_km": 9.02
+  },
+  "175": {
+    "tiger_id": 175,
+    "sex": "Female",
+    "primary_range": "East Pench",
+    "centroid_lat": 21.649705,
+    "centroid_lon": 79.356168,
+    "territory_radius_km": 5.8,
+    "min_village_dist_km": 4.0
+  },
+  "223": {
+    "tiger_id": 223,
+    "sex": "Male",
+    "primary_range": "Devalapar",
+    "centroid_lat": 21.717706,
+    "centroid_lon": 79.246594,
+    "territory_radius_km": 9.89,
+    "min_village_dist_km": 4.05
+  },
+  "33": {
+    "tiger_id": 33,
+    "sex": "Male",
+    "primary_range": "Devalapar",
+    "centroid_lat": 21.695704,
+    "centroid_lon": 79.239639,
+    "territory_radius_km": 10.36,
+    "min_village_dist_km": 6.59
+  },
+  "139": {
+    "tiger_id": 139,
+    "sex": "Male",
+    "primary_range": "Chorbahuli",
+    "centroid_lat": 21.67184,
+    "centroid_lon": 79.275662,
+    "territory_radius_km": 10.68,
+    "min_village_dist_km": 8.86
+  },
+  "136": {
+    "tiger_id": 136,
+    "sex": "Male",
+    "primary_range": "Chorbahuli",
+    "centroid_lat": 21.633853,
+    "centroid_lon": 79.270445,
+    "territory_radius_km": 11.49,
+    "min_village_dist_km": 12.05
+  },
+  "196": {
+    "tiger_id": 196,
+    "sex": "Male",
+    "primary_range": "Devalapar",
+    "centroid_lat": 21.704778,
+    "centroid_lon": 79.220532,
+    "territory_radius_km": 9.73,
+    "min_village_dist_km": 5.94
+  },
+  "187": {
+    "tiger_id": 187,
+    "sex": "Male",
+    "primary_range": "East Pench",
+    "centroid_lat": 21.601593,
+    "centroid_lon": 79.302221,
+    "territory_radius_km": 8.88,
+    "min_village_dist_km": 7.81
+  },
+  "160": {
+    "tiger_id": 160,
+    "sex": "Female",
+    "primary_range": "Saleghat",
+    "centroid_lat": 21.630319,
+    "centroid_lon": 79.197615,
+    "territory_radius_km": 5.56,
+    "min_village_dist_km": 9.44
+  },
+  "172": {
+    "tiger_id": 172,
+    "sex": "Female",
+    "primary_range": "Saleghat",
+    "centroid_lat": 21.568063,
+    "centroid_lon": 79.202996,
+    "territory_radius_km": 4.61,
+    "min_village_dist_km": 5.15
+  },
+  "151": {
+    "tiger_id": 151,
+    "sex": "Female",
+    "primary_range": "Chorbahuli",
+    "centroid_lat": 21.650788,
+    "centroid_lon": 79.223664,
+    "territory_radius_km": 5.27,
+    "min_village_dist_km": 11.84
+  },
+  "244": {
+    "tiger_id": 244,
+    "sex": "Female",
+    "primary_range": "West Pench",
+    "centroid_lat": 21.661363,
+    "centroid_lon": 79.149541,
+    "territory_radius_km": 3.78,
+    "min_village_dist_km": 5.03
+  },
+  "60": {
+    "tiger_id": 60,
+    "sex": "Female",
+    "primary_range": "East Pench",
+    "centroid_lat": 21.700242,
+    "centroid_lon": 79.320312,
+    "territory_radius_km": 5.37,
+    "min_village_dist_km": 5.08
+  },
+  "154": {
+    "tiger_id": 154,
+    "sex": "Female",
+    "primary_range": "West Pench",
+    "centroid_lat": 21.675713,
+    "centroid_lon": 79.200028,
+    "territory_radius_km": 5.15,
+    "min_village_dist_km": 8.24
+  },
+  "265": {
+    "tiger_id": 265,
+    "sex": "Female",
+    "primary_range": "East Pench",
+    "centroid_lat": 21.693406,
+    "centroid_lon": 79.339653,
+    "territory_radius_km": 4.44,
+    "min_village_dist_km": 4.67
+  },
+  "64": {
+    "tiger_id": 64,
+    "sex": "Female",
+    "primary_range": "Devalapar",
+    "centroid_lat": 21.681536,
+    "centroid_lon": 79.247193,
+    "territory_radius_km": 4.1,
+    "min_village_dist_km": 7.93
+  },
+  "261": {
+    "tiger_id": 261,
+    "sex": "Male",
+    "primary_range": "Chorbahuli",
+    "centroid_lat": 21.653382,
+    "centroid_lon": 79.259096,
+    "territory_radius_km": 11.38,
+    "min_village_dist_km": 10.95
+  },
+  "115": {
+    "tiger_id": 115,
+    "sex": "Female",
+    "primary_range": "Devalapar",
+    "centroid_lat": 21.705687,
+    "centroid_lon": 79.274111,
+    "territory_radius_km": 4.49,
+    "min_village_dist_km": 5.34
+  },
+  "81": {
+    "tiger_id": 81,
+    "sex": "Female",
+    "primary_range": "East Pench",
+    "centroid_lat": 21.690038,
+    "centroid_lon": 79.298435,
+    "territory_radius_km": 4.72,
+    "min_village_dist_km": 6.22
+  },
+  "243": {
+    "tiger_id": 243,
+    "sex": "Male",
+    "primary_range": "East Pench",
+    "centroid_lat": 21.601908,
+    "centroid_lon": 79.319025,
+    "territory_radius_km": 10.4,
+    "min_village_dist_km": 6.26
+  },
+  "229": {
+    "tiger_id": 229,
+    "sex": "Female",
+    "primary_range": "Chorbahuli",
+    "centroid_lat": 21.616091,
+    "centroid_lon": 79.23203,
+    "territory_radius_km": 5.26,
+    "min_village_dist_km": 10.44
+  },
+  "228": {
+    "tiger_id": 228,
+    "sex": "Male",
+    "primary_range": "Saleghat",
+    "centroid_lat": 21.595487,
+    "centroid_lon": 79.163981,
+    "territory_radius_km": 8.1,
+    "min_village_dist_km": 4.59
+  },
+  "57": {
+    "tiger_id": 57,
+    "sex": "Male",
+    "primary_range": "East Pench",
+    "centroid_lat": 21.668108,
+    "centroid_lon": 79.296871,
+    "territory_radius_km": 10.13,
+    "min_village_dist_km": 8.64
+  },
+  "240": {
+    "tiger_id": 240,
+    "sex": "Female",
+    "primary_range": "Chorbahuli",
+    "centroid_lat": 21.602173,
+    "centroid_lon": 79.237076,
+    "territory_radius_km": 4.96,
+    "min_village_dist_km": 9.94
+  },
+  "66": {
+    "tiger_id": 66,
+    "sex": "Male",
+    "primary_range": "East Pench",
+    "centroid_lat": 21.670554,
+    "centroid_lon": 79.337618,
+    "territory_radius_km": 9.04,
+    "min_village_dist_km": 5.58
+  },
+  "82": {
+    "tiger_id": 82,
+    "sex": "Female",
+    "primary_range": "Chorbahuli",
+    "centroid_lat": 21.634193,
+    "centroid_lon": 79.25306,
+    "territory_radius_km": 5.36,
+    "min_village_dist_km": 13.1
+  },
+  "267": {
+    "tiger_id": 267,
+    "sex": "Female",
+    "primary_range": "East Pench",
+    "centroid_lat": 21.614672,
+    "centroid_lon": 79.339442,
+    "territory_radius_km": 4.05,
+    "min_village_dist_km": 4.7
+  },
+  "108": {
+    "tiger_id": 108,
+    "sex": "Male",
+    "primary_range": "Devalapar",
+    "centroid_lat": 21.69316,
+    "centroid_lon": 79.25556,
+    "territory_radius_km": 9.45,
+    "min_village_dist_km": 6.55
+  },
+  "181": {
+    "tiger_id": 181,
+    "sex": "Female",
+    "primary_range": "East Pench",
+    "centroid_lat": 21.629659,
+    "centroid_lon": 79.326534,
+    "territory_radius_km": 4.18,
+    "min_village_dist_km": 6.33
+  },
+  "252": {
+    "tiger_id": 252,
+    "sex": "Male",
+    "primary_range": "East Pench",
+    "centroid_lat": 21.620162,
+    "centroid_lon": 79.315237,
+    "territory_radius_km": 8.43,
+    "min_village_dist_km": 7.24
+  },
+  "6": {
+    "tiger_id": 6,
+    "sex": "Male",
+    "primary_range": "Saleghat",
+    "centroid_lat": 21.603694,
+    "centroid_lon": 79.183983,
+    "territory_radius_km": 9.33,
+    "min_village_dist_km": 6.17
+  },
+  "249": {
+    "tiger_id": 249,
+    "sex": "Female",
+    "primary_range": "Saleghat",
+    "centroid_lat": 21.635139,
+    "centroid_lon": 79.172387,
+    "territory_radius_km": 4.89,
+    "min_village_dist_km": 7.84
+  },
+  "268": {
+    "tiger_id": 268,
+    "sex": "Male",
+    "primary_range": "East Pench",
+    "centroid_lat": 21.63577,
+    "centroid_lon": 79.359302,
+    "territory_radius_km": 10.76,
+    "min_village_dist_km": 3.71
+  },
+  "40": {
+    "tiger_id": 40,
+    "sex": "Female",
+    "primary_range": "Saleghat",
+    "centroid_lat": 21.586597,
+    "centroid_lon": 79.149025,
+    "territory_radius_km": 3.73,
+    "min_village_dist_km": 3.56
+  },
+  "42": {
+    "tiger_id": 42,
+    "sex": "Female",
+    "primary_range": "Chorbahuli",
+    "centroid_lat": 21.647092,
+    "centroid_lon": 79.241531,
+    "territory_radius_km": 4.9,
+    "min_village_dist_km": 11.8
+  },
+  "43": {
+    "tiger_id": 43,
+    "sex": "Female",
+    "primary_range": "West Pench",
+    "centroid_lat": 21.672909,
+    "centroid_lon": 79.1789,
+    "territory_radius_km": 5.79,
+    "min_village_dist_km": 7.65
+  },
+  "106": {
+    "tiger_id": 106,
+    "sex": "Female",
+    "primary_range": "Devalapar",
+    "centroid_lat": 21.730427,
+    "centroid_lon": 79.240869,
+    "territory_radius_km": 3.89,
+    "min_village_dist_km": 3.1
+  },
+  "109": {
+    "tiger_id": 109,
+    "sex": "Male",
+    "primary_range": "Saleghat",
+    "centroid_lat": 21.577288,
+    "centroid_lon": 79.191239,
+    "territory_radius_km": 8.77,
+    "min_village_dist_km": 4.48
+  },
+  "55": {
+    "tiger_id": 55,
+    "sex": "Male",
+    "primary_range": "Devalapar",
+    "centroid_lat": 21.720012,
+    "centroid_lon": 79.2786,
+    "territory_radius_km": 9.1,
+    "min_village_dist_km": 4.03
+  },
+  "217": {
+    "tiger_id": 217,
+    "sex": "Male",
+    "primary_range": "Chorbahuli",
+    "centroid_lat": 21.666865,
+    "centroid_lon": 79.253766,
+    "territory_radius_km": 11.4,
+    "min_village_dist_km": 9.47
+  },
+  "12": {
+    "tiger_id": 12,
+    "sex": "Male",
+    "primary_range": "East Pench",
+    "centroid_lat": 21.642245,
+    "centroid_lon": 79.338035,
+    "territory_radius_km": 8.63,
+    "min_village_dist_km": 5.87
+  },
+  "246": {
+    "tiger_id": 246,
+    "sex": "Female",
+    "primary_range": "Saleghat",
+    "centroid_lat": 21.621502,
+    "centroid_lon": 79.162439,
+    "territory_radius_km": 5.38,
+    "min_village_dist_km": 6.64
+  },
+  "259": {
+    "tiger_id": 259,
+    "sex": "Male",
+    "primary_range": "West Pench",
+    "centroid_lat": 21.656804,
+    "centroid_lon": 79.192387,
+    "territory_radius_km": 9.68,
+    "min_village_dist_km": 9.36
+  },
+  "78": {
+    "tiger_id": 78,
+    "sex": "Female",
+    "primary_range": "Saleghat",
+    "centroid_lat": 21.588835,
+    "centroid_lon": 79.212236,
+    "territory_radius_km": 5.71,
+    "min_village_dist_km": 6.99
+  },
+  "178": {
+    "tiger_id": 178,
+    "sex": "Male",
+    "primary_range": "Chorbahuli",
+    "centroid_lat": 21.622877,
+    "centroid_lon": 79.218299,
+    "territory_radius_km": 8.75,
+    "min_village_dist_km": 9.96
+  },
+  "25": {
+    "tiger_id": 25,
+    "sex": "Female",
+    "primary_range": "East Pench",
+    "centroid_lat": 21.621149,
+    "centroid_lon": 79.298322,
+    "territory_radius_km": 3.76,
+    "min_village_dist_km": 8.99
+  },
+  "222": {
+    "tiger_id": 222,
+    "sex": "Female",
+    "primary_range": "Saleghat",
+    "centroid_lat": 21.601461,
+    "centroid_lon": 79.143757,
+    "territory_radius_km": 5.86,
+    "min_village_dist_km": 4.39
+  },
+  "198": {
+    "tiger_id": 198,
+    "sex": "Female",
+    "primary_range": "Chorbahuli",
+    "centroid_lat": 21.61735,
+    "centroid_lon": 79.274485,
+    "territory_radius_km": 3.62,
+    "min_village_dist_km": 11.15
+  },
+  "274": {
+    "tiger_id": 274,
+    "sex": "Male",
+    "primary_range": "West Pench",
+    "centroid_lat": 21.678421,
+    "centroid_lon": 79.147386,
+    "territory_radius_km": 9.54,
+    "min_village_dist_km": 4.37
+  },
+  "213": {
+    "tiger_id": 213,
+    "sex": "Female",
+    "primary_range": "Devalapar",
+    "centroid_lat": 21.709323,
+    "centroid_lon": 79.234626,
+    "territory_radius_km": 5.37,
+    "min_village_dist_km": 5.41
+  },
+  "90": {
+    "tiger_id": 90,
+    "sex": "Female",
+    "primary_range": "West Pench",
+    "centroid_lat": 21.710383,
+    "centroid_lon": 79.196796,
+    "territory_radius_km": 3.82,
+    "min_village_dist_km": 5.02
+  },
+  "253": {
+    "tiger_id": 253,
+    "sex": "Male",
+    "primary_range": "Saleghat",
+    "centroid_lat": 21.619125,
+    "centroid_lon": 79.177714,
+    "territory_radius_km": 11.09,
+    "min_village_dist_km": 7.49
+  },
+  "145": {
+    "tiger_id": 145,
+    "sex": "Female",
+    "primary_range": "Chorbahuli",
+    "centroid_lat": 21.682579,
+    "centroid_lon": 79.26674,
+    "territory_radius_km": 4.7,
+    "min_village_dist_km": 7.74
+  },
+  "226": {
+    "tiger_id": 226,
+    "sex": "Female",
+    "primary_range": "East Pench",
+    "centroid_lat": 21.641184,
+    "centroid_lon": 79.284904,
+    "territory_radius_km": 4.8,
+    "min_village_dist_km": 10.81
+  },
+  "72": {
+    "tiger_id": 72,
+    "sex": "Male",
+    "primary_range": "West Pench",
+    "centroid_lat": 21.666867,
+    "centroid_lon": 79.212485,
+    "territory_radius_km": 11.31,
+    "min_village_dist_km": 9.75
+  },
+  "28": {
+    "tiger_id": 28,
+    "sex": "Male",
+    "primary_range": "East Pench",
+    "centroid_lat": 21.619382,
+    "centroid_lon": 79.35565,
+    "territory_radius_km": 11.23,
+    "min_village_dist_km": 3.13
+  },
+  "69": {
+    "tiger_id": 69,
+    "sex": "Male",
+    "primary_range": "Chorbahuli",
+    "centroid_lat": 21.651037,
+    "centroid_lon": 79.274718,
+    "territory_radius_km": 10.83,
+    "min_village_dist_km": 11.04
+  },
+  "177": {
+    "tiger_id": 177,
+    "sex": "Female",
+    "primary_range": "West Pench",
+    "centroid_lat": 21.717596,
+    "centroid_lon": 79.178748,
+    "territory_radius_km": 4.62,
+    "min_village_dist_km": 3.15
+  },
+  "13": {
+    "tiger_id": 13,
+    "sex": "Female",
+    "primary_range": "Chorbahuli",
+    "centroid_lat": 21.603335,
+    "centroid_lon": 79.270186,
+    "territory_radius_km": 5.12,
+    "min_village_dist_km": 10.21
+  },
+  "124": {
+    "tiger_id": 124,
+    "sex": "Female",
+    "primary_range": "Devalapar",
+    "centroid_lat": 21.685256,
+    "centroid_lon": 79.225071,
+    "territory_radius_km": 4.89,
+    "min_village_dist_km": 8.14
+  },
+  "34": {
+    "tiger_id": 34,
+    "sex": "Male",
+    "primary_range": "Devalapar",
+    "centroid_lat": 21.710405,
+    "centroid_lon": 79.250967,
+    "territory_radius_km": 11.03,
+    "min_village_dist_km": 4.71
+  },
+  "216": {
+    "tiger_id": 216,
+    "sex": "Female",
+    "primary_range": "Chorbahuli",
+    "centroid_lat": 21.666461,
+    "centroid_lon": 79.233647,
+    "territory_radius_km": 3.79,
+    "min_village_dist_km": 9.88
+  },
+  "0": {
+    "tiger_id": 0,
+    "sex": "Male",
+    "primary_range": "Devalapar",
+    "centroid_lat": 21.69616,
+    "centroid_lon": 79.247197,
+    "territory_radius_km": 11.48,
+    "min_village_dist_km": 6.34
+  },
+  "211": {
+    "tiger_id": 211,
+    "sex": "Male",
+    "primary_range": "Saleghat",
+    "centroid_lat": 21.587727,
+    "centroid_lon": 79.169796,
+    "territory_radius_km": 9.35,
+    "min_village_dist_km": 3.94
+  },
+  "88": {
+    "tiger_id": 88,
+    "sex": "Female",
+    "primary_range": "Devalapar",
+    "centroid_lat": 21.701354,
+    "centroid_lon": 79.238263,
+    "territory_radius_km": 5.31,
+    "min_village_dist_km": 6.05
+  },
+  "195": {
+    "tiger_id": 195,
+    "sex": "Female",
+    "primary_range": "Saleghat",
+    "centroid_lat": 21.622337,
+    "centroid_lon": 79.185975,
+    "territory_radius_km": 5.31,
+    "min_village_dist_km": 8.13
+  },
+  "202": {
+    "tiger_id": 202,
+    "sex": "Male",
+    "primary_range": "Devalapar",
+    "centroid_lat": 21.722864,
+    "centroid_lon": 79.226664,
+    "territory_radius_km": 8.92,
+    "min_village_dist_km": 4.08
+  },
+  "30": {
+    "tiger_id": 30,
+    "sex": "Female",
+    "primary_range": "Saleghat",
+    "centroid_lat": 21.59626,
+    "centroid_lon": 79.152205,
+    "territory_radius_km": 4.25,
+    "min_village_dist_km": 4.59
+  },
+  "76": {
+    "tiger_id": 76,
+    "sex": "Female",
+    "primary_range": "Devalapar",
+    "centroid_lat": 21.69421,
+    "centroid_lon": 79.235725,
+    "territory_radius_km": 5.01,
+    "min_village_dist_km": 6.88
+  },
+  "1": {
+    "tiger_id": 1,
+    "sex": "Female",
+    "primary_range": "Chorbahuli",
+    "centroid_lat": 21.62081,
+    "centroid_lon": 79.271388,
+    "territory_radius_km": 3.82,
+    "min_village_dist_km": 11.59
+  },
+  "273": {
+    "tiger_id": 273,
+    "sex": "Male",
+    "primary_range": "East Pench",
+    "centroid_lat": 21.617906,
+    "centroid_lon": 79.299589,
+    "territory_radius_km": 9.53,
+    "min_village_dist_km": 8.82
+  },
+  "117": {
+    "tiger_id": 117,
+    "sex": "Female",
+    "primary_range": "Chorbahuli",
+    "centroid_lat": 21.634922,
+    "centroid_lon": 79.268585,
+    "territory_radius_km": 4.04,
+    "min_village_dist_km": 12.26
+  },
+  "129": {
+    "tiger_id": 129,
+    "sex": "Female",
+    "primary_range": "West Pench",
+    "centroid_lat": 21.692953,
+    "centroid_lon": 79.176158,
+    "territory_radius_km": 5.3,
+    "min_village_dist_km": 5.48
+  },
+  "51": {
+    "tiger_id": 51,
+    "sex": "Female",
+    "primary_range": "Devalapar",
+    "centroid_lat": 21.725408,
+    "centroid_lon": 79.244213,
+    "territory_radius_km": 4.74,
+    "min_village_dist_km": 3.37
+  },
+  "94": {
+    "tiger_id": 94,
+    "sex": "Male",
+    "primary_range": "Chorbahuli",
+    "centroid_lat": 21.628685,
+    "centroid_lon": 79.239231,
+    "territory_radius_km": 10.34,
+    "min_village_dist_km": 11.92
+  },
+  "85": {
+    "tiger_id": 85,
+    "sex": "Female",
+    "primary_range": "East Pench",
+    "centroid_lat": 21.654605,
+    "centroid_lon": 79.301432,
+    "territory_radius_km": 5.38,
+    "min_village_dist_km": 9.65
+  },
+  "27": {
+    "tiger_id": 27,
+    "sex": "Female",
+    "primary_range": "Devalapar",
+    "centroid_lat": 21.707154,
+    "centroid_lon": 79.237113,
+    "territory_radius_km": 4.99,
+    "min_village_dist_km": 5.51
+  },
+  "208": {
+    "tiger_id": 208,
+    "sex": "Male",
+    "primary_range": "Saleghat",
+    "centroid_lat": 21.585402,
+    "centroid_lon": 79.151481,
+    "territory_radius_km": 10.08,
+    "min_village_dist_km": 3.39
+  },
+  "24": {
+    "tiger_id": 24,
+    "sex": "Female",
+    "primary_range": "East Pench",
+    "centroid_lat": 21.630016,
+    "centroid_lon": 79.35132,
+    "territory_radius_km": 4.9,
+    "min_village_dist_km": 4.0
+  },
+  "148": {
+    "tiger_id": 148,
+    "sex": "Male",
+    "primary_range": "East Pench",
+    "centroid_lat": 21.684431,
+    "centroid_lon": 79.350566,
+    "territory_radius_km": 11.17,
+    "min_village_dist_km": 3.74
+  },
+  "97": {
+    "tiger_id": 97,
+    "sex": "Female",
+    "primary_range": "West Pench",
+    "centroid_lat": 21.711434,
+    "centroid_lon": 79.18698,
+    "territory_radius_km": 4.43,
+    "min_village_dist_km": 4.22
+  },
+  "142": {
+    "tiger_id": 142,
+    "sex": "Female",
+    "primary_range": "West Pench",
+    "centroid_lat": 21.657904,
+    "centroid_lon": 79.170843,
+    "territory_radius_km": 4.23,
+    "min_village_dist_km": 7.21
+  },
+  "220": {
+    "tiger_id": 220,
+    "sex": "Female",
+    "primary_range": "East Pench",
+    "centroid_lat": 21.665967,
+    "centroid_lon": 79.345273,
+    "territory_radius_km": 3.78,
+    "min_village_dist_km": 5.21
+  },
+  "3": {
+    "tiger_id": 3,
+    "sex": "Female",
+    "primary_range": "Saleghat",
+    "centroid_lat": 21.593161,
+    "centroid_lon": 79.139249,
+    "territory_radius_km": 4.6,
+    "min_village_dist_km": 3.64
+  },
+  "271": {
+    "tiger_id": 271,
+    "sex": "Male",
+    "primary_range": "East Pench",
+    "centroid_lat": 21.673742,
+    "centroid_lon": 79.288008,
+    "territory_radius_km": 10.02,
+    "min_village_dist_km": 8.23
+  },
+  "132": {
+    "tiger_id": 132,
+    "sex": "Female",
+    "primary_range": "East Pench",
+    "centroid_lat": 21.659205,
+    "centroid_lon": 79.328242,
+    "territory_radius_km": 3.76,
+    "min_village_dist_km": 6.95
+  },
+  "39": {
+    "tiger_id": 39,
+    "sex": "Female",
+    "primary_range": "Chorbahuli",
+    "centroid_lat": 21.682471,
+    "centroid_lon": 79.253018,
+    "territory_radius_km": 5.71,
+    "min_village_dist_km": 7.75
+  },
+  "126": {
+    "tiger_id": 126,
+    "sex": "Male",
+    "primary_range": "Devalapar",
+    "centroid_lat": 21.681277,
+    "centroid_lon": 79.247442,
+    "territory_radius_km": 8.66,
+    "min_village_dist_km": 7.96
+  }
+}

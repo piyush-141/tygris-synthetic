@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pench Tiger Reserve (Maharashtra) - Tiger Re-ID & Zone Alert Monitoring</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Top App Header -->
+  <header class="app-header">
+    <div class="header-brand">
+      <div class="brand-logo">
+        <i class="fa-solid fa-paw tiger-glow-icon"></i>
+      </div>
+      <div class="brand-text">
+        <h1>PENCH TIGER RESERVE <span>MAHARASHTRA</span></h1>
+        <p class="subtitle"><i class="fa-solid fa-satellite-dish"></i> TIGER RE-ID & ZONE ALERT MONITORING</p>
+      </div>
+    </div>
+
+    <!-- Center Control Bar -->
+    <div class="header-controls">
+      <div class="view-mode-badge" id="view-mode-pill">
+        <span class="pulse-indicator"></span>
+        <span id="view-mode-text">MAP MODE: <strong>TIGERS LAST SEEN (107)</strong></span>
+      </div>
+
+      <!-- Area Camera Network Toggle -->
+      <div class="area-cam-selector">
+        <label for="select-area-cams"><i class="fa-solid fa-video"></i> Area Cameras:</label>
+        <select id="select-area-cams" title="Show camera stations only for selected range">
+          <option value="NONE" selected>Hidden (Tigers Only)</option>
+          <!-- Dynamically populated -->
+        </select>
+      </div>
+
+      <!-- Zone Toggle -->
+      <div class="zone-toggle-group">
+        <label class="zone-toggle-label">
+          <input type="checkbox" id="toggle-zones" checked>
+          <span><i class="fa-solid fa-draw-polygon"></i> Zones</span>
+        </label>
+        <label class="zone-toggle-label">
+          <input type="checkbox" id="toggle-subregions" checked>
+          <span><i class="fa-solid fa-map-location-dot"></i> Regions</span>
+        </label>
+        <label class="zone-toggle-label">
+          <input type="checkbox" id="toggle-villages">
+          <span><i class="fa-solid fa-house-chimney"></i> Villages</span>
+        </label>
+      </div>
+    </div>
+
+    <!-- Header Actions (Basemaps & Reset) -->
+    <div class="header-actions">
+      <div class="basemap-selector">
+        <button class="btn-basemap active" data-map="satellite" title="Satellite Imagery">
+          <i class="fa-solid fa-earth-asia"></i> Satellite
+        </button>
+        <button class="btn-basemap" data-map="hybrid" title="Satellite with Place Names">
+          <i class="fa-solid fa-layer-group"></i> Hybrid
+        </button>
+        <button class="btn-basemap" data-map="dark" title="Dark Canvas">
+          <i class="fa-solid fa-moon"></i> Dark
+        </button>
+      </div>
+      <button class="btn-icon" id="btn-reset-view" title="Reset Map to All Tigers Overview">
+        <i class="fa-solid fa-rotate-left"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Main Workspace -->
+  <main class="app-main">
+    
+    <!-- Floating Left Sidebar -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <div class="sidebar-title">
+          <i class="fa-solid fa-shield-cat"></i>
+          <span>IDENTIFIED TIGERS (<span id="total-tiger-count">107</span>)</span>
+        </div>
+        <button class="sidebar-toggle" id="btn-toggle-sidebar" title="Collapse / Expand Sidebar">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+      </div>
+
+      <div class="sidebar-content">
+        
+        <!-- Search & Quick Filters -->
+        <div class="filter-box">
+          <div class="search-input-wrapper">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" id="tiger-search" placeholder="Search Tiger ID (e.g. 250, 154, 160)..." />
+          </div>
+          
+          <div class="quick-filter-chips">
+            <button class="chip active" data-filter="all">All</button>
+            <button class="chip" data-filter="male"><i class="fa-solid fa-mars"></i> Male</button>
+            <button class="chip" data-filter="female"><i class="fa-solid fa-venus"></i> Female</button>
+            <button class="chip chip-alert" data-filter="alert"><i class="fa-solid fa-triangle-exclamation"></i> Alerts</button>
+          </div>
+        </div>
+
+        <!-- Tiger List Cards -->
+        <div class="tiger-list-container">
+          <div class="section-title">
+            <span>CLICK A TIGER TO VIEW ITS SIGHTING TRAIL</span>
+            <span class="badge" id="visible-tiger-count">107 Tigers</span>
+          </div>
+          <div class="tiger-list" id="tiger-list">
+            <!-- Dynamically populated -->
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Active Tiger Banner -->
+      <div class="active-tiger-card hidden" id="active-tiger-banner">
+        <div class="card-left">
+          <div class="tiger-avatar" id="active-tiger-avatar">250</div>
+          <div>
+            <div class="active-tiger-title" id="active-tiger-name">Tiger #250</div>
+            <div class="active-tiger-sub" id="active-tiger-info">East Pench | 18 Sightings</div>
+          </div>
+        </div>
+        <button class="btn-back-all" id="btn-clear-tiger" title="Back to All Tigers Last Seen">
+          <i class="fa-solid fa-arrow-left"></i> All Tigers
+        </button>
+      </div>
+    </aside>
+
+    <!-- Satellite Map Canvas -->
+    <div id="map" class="map-container"></div>
+
+    <!-- Alert Summary Panel (Top Right) -->
+    <div class="alert-summary-panel" id="alert-panel">
+      <div class="alert-panel-header">
+        <i class="fa-solid fa-shield-halved"></i> ZONE ALERT STATUS
+      </div>
+      <div class="alert-row alert-safe">
+        <span class="alert-dot alert-dot-safe"></span>
+        <span>Safe (Core)</span>
+        <span class="alert-count" id="count-safe">0</span>
+      </div>
+      <div class="alert-row alert-caution">
+        <span class="alert-dot alert-dot-caution"></span>
+        <span>Caution (Buffer)</span>
+        <span class="alert-count" id="count-caution">0</span>
+      </div>
+      <div class="alert-row alert-critical">
+        <span class="alert-dot alert-dot-critical"></span>
+        <span>Critical (Village)</span>
+        <span class="alert-count" id="count-critical">0</span>
+      </div>
+    </div>
+
+    <!-- Map Legend -->
+    <div class="map-legend" id="map-legend">
+      <div class="legend-header">
+        <span id="legend-title"><i class="fa-solid fa-location-dot"></i> Tiger Alert Level</span>
+      </div>
+      <div class="legend-items" id="legend-items">
+        <div class="legend-item"><span class="tiger-dot dot-safe"></span> Safe — Core Forest</div>
+        <div class="legend-item"><span class="tiger-dot dot-caution"></span> Caution — Buffer Zone</div>
+        <div class="legend-item"><span class="tiger-dot dot-critical"></span> Critical — Near Village</div>
+        <div class="legend-item" id="legend-cam-item" style="display:none;"><span class="cam-dot"></span> Camera Station</div>
+      </div>
+    </div>
+
+    <!-- Gallery Dock -->
+    <div class="gallery-dock hidden" id="gallery-dock">
+      <div class="dock-header">
+        <span><i class="fa-solid fa-images"></i> SIGHTING CHRONOLOGY FOR <span id="dock-tiger-title">TIGER #250</span> (<span id="dock-count">0</span>)</span>
+        <button class="btn-dock-toggle" id="btn-dock-toggle"><i class="fa-solid fa-chevron-down"></i></button>
+      </div>
+      <div class="dock-strip" id="dock-strip">
+        <!-- Photo thumbnails populated dynamically -->
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Photo Inspection Modal -->
+  <div class="modal-overlay hidden" id="photo-modal">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="btn-close-modal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      
+      <div class="modal-body">
+        <!-- Left: Image -->
+        <div class="modal-visual">
+          <div class="canvas-container">
+            <img id="modal-tiger-img" src="" alt="Tiger Sighting" crossorigin="anonymous" />
+            <canvas id="modal-keypoint-canvas"></canvas>
+          </div>
+          <div class="visual-toolbar">
+            <button class="btn-tool active" id="btn-toggle-keypoints">
+              <i class="fa-solid fa-bone"></i> 15-Pt Pose Skeleton
+            </button>
+            <span class="keypoint-status-badge" id="modal-keypoints-count">15 Anatomical Joints</span>
+          </div>
+        </div>
+
+        <!-- Right: Metadata -->
+        <div class="modal-details">
+          <div class="modal-header-info">
+            <div class="modal-tiger-tag" id="modal-tiger-badge">TIGER #250</div>
+            <div class="modal-alert-badge" id="modal-alert-badge">SAFE</div>
+            <h2 id="modal-station-title">PTR-CORE-DEV-04</h2>
+            <p class="modal-landmark" id="modal-landmark-name">Devalapar Range</p>
+          </div>
+
+          <div class="meta-grid">
+            <div class="meta-item">
+              <span class="meta-label">Capture Timestamp</span>
+              <span class="meta-value" id="modal-timestamp">2023-11-19 06:01:29</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Zone & Alert Level</span>
+              <span class="meta-value" id="modal-range-zone">Core Forest (SAFE)</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">GPS Coordinates</span>
+              <span class="meta-value" id="modal-coords">21.688190° N, 79.221400° E</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Ambient Temperature</span>
+              <span class="meta-value" id="modal-temp">18.4 °C</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Lighting Condition</span>
+              <span class="meta-value" id="modal-lighting">Dawn / Dusk</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Camera Type</span>
+              <span class="meta-value" id="modal-cam-type">Camera Trap</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Nearest Village</span>
+              <span class="meta-value" id="modal-nearest-village">N/A</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Sighting Order</span>
+              <span class="meta-value" id="modal-sighting-order">Sighting #1 of 18</span>
+            </div>
+          </div>
+
+          <div class="modal-nav">
+            <button class="btn-nav" id="btn-prev-photo"><i class="fa-solid fa-arrow-left"></i> Previous Sighting</button>
+            <button class="btn-nav" id="btn-next-photo">Next Sighting <i class="fa-solid fa-arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
