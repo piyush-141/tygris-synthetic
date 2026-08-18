@@ -1,0 +1,100 @@
+[
+  {
+    "name": "Pench River Main",
+    "lat": 21.64,
+    "lon": 79.27,
+    "type": "river",
+    "seasonal": false
+  },
+  {
+    "name": "Pench River North",
+    "lat": 21.71,
+    "lon": 79.235,
+    "type": "river",
+    "seasonal": false
+  },
+  {
+    "name": "Jamni River",
+    "lat": 21.59,
+    "lon": 79.205,
+    "type": "river",
+    "seasonal": false
+  },
+  {
+    "name": "Kulbehra Stream",
+    "lat": 21.66,
+    "lon": 79.31,
+    "type": "stream",
+    "seasonal": true
+  },
+  {
+    "name": "Totladoh Reservoir",
+    "lat": 21.742,
+    "lon": 79.347,
+    "type": "reservoir",
+    "seasonal": false
+  },
+  {
+    "name": "Bodalkasa Waterhole",
+    "lat": 21.738,
+    "lon": 79.158,
+    "type": "waterhole",
+    "seasonal": true
+  },
+  {
+    "name": "Saleghat Nala",
+    "lat": 21.595,
+    "lon": 79.165,
+    "type": "stream",
+    "seasonal": true
+  },
+  {
+    "name": "Chorbahuli Nala",
+    "lat": 21.645,
+    "lon": 79.25,
+    "type": "stream",
+    "seasonal": true
+  },
+  {
+    "name": "East Pench Nala",
+    "lat": 21.65,
+    "lon": 79.33,
+    "type": "stream",
+    "seasonal": true
+  },
+  {
+    "name": "Devalapar Waterhole",
+    "lat": 21.715,
+    "lon": 79.248,
+    "type": "waterhole",
+    "seasonal": true
+  },
+  {
+    "name": "NH-44 Culvert Pool",
+    "lat": 21.63,
+    "lon": 79.265,
+    "type": "pool",
+    "seasonal": true
+  },
+  {
+    "name": "Paoni Nala",
+    "lat": 21.53,
+    "lon": 79.22,
+    "type": "stream",
+    "seasonal": true
+  },
+  {
+    "name": "West Buffer Stream",
+    "lat": 21.615,
+    "lon": 79.115,
+    "type": "stream",
+    "seasonal": true
+  },
+  {
+    "name": "North Buffer Pond",
+    "lat": 21.758,
+    "lon": 79.185,
+    "type": "waterhole",
+    "seasonal": true
+  }
+]

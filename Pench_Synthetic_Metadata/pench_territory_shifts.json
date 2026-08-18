@@ -1,0 +1,1714 @@
+{
+  "0": {
+    "baseline_center": [
+      21.6018,
+      79.16196
+    ],
+    "recent_center": [
+      21.59635,
+      79.15922
+    ],
+    "centroid_shift_km": 0.67,
+    "baseline_radius_km": 1.58,
+    "recent_radius_km": 1.13,
+    "range_change_km2": 3.8,
+    "territory_shift_detected": false,
+    "shift_type": "stable"
+  },
+  "1": {
+    "baseline_center": [
+      21.66366,
+      79.187
+    ],
+    "recent_center": [
+      21.65965,
+      79.19137
+    ],
+    "centroid_shift_km": 0.63,
+    "baseline_radius_km": 1.84,
+    "recent_radius_km": 1.21,
+    "range_change_km2": 6.0,
+    "territory_shift_detected": false,
+    "shift_type": "range_contraction"
+  },
+  "3": {
+    "baseline_center": [
+      21.73385,
+      79.24828
+    ],
+    "recent_center": [
+      21.74069,
+      79.26519
+    ],
+    "centroid_shift_km": 1.9,
+    "baseline_radius_km": 3.72,
+    "recent_radius_km": 1.82,
+    "range_change_km2": 33.0,
+    "territory_shift_detected": true,
+    "shift_type": "range_contraction"
+  },
+  "6": {
+    "baseline_center": [
+      21.63418,
+      79.12551
+    ],
+    "recent_center": [
+      21.6306,
+      79.12437
+    ],
+    "centroid_shift_km": 0.42,
+    "baseline_radius_km": 1.05,
+    "recent_radius_km": 1.46,
+    "range_change_km2": 3.2,
+    "territory_shift_detected": false,
+    "shift_type": "range_expansion"
+  },
+  "12": {
+    "baseline_center": [
+      21.59418,
+      79.19993
+    ],
+    "recent_center": [
+      21.59422,
+      79.2016
+    ],
+    "centroid_shift_km": 0.17,
+    "baseline_radius_km": 1.54,
+    "recent_radius_km": 1.55,
+    "range_change_km2": 0.1,
+    "territory_shift_detected": false,
+    "shift_type": "stable"
+  },
+  "13": {
+    "baseline_center": [
+      21.65737,
+      79.30602
+    ],
+    "recent_center": [
+      21.65634,
+      79.30794
+    ],
+    "centroid_shift_km": 0.23,
+    "baseline_radius_km": 1.66,
+    "recent_radius_km": 1.68,
+    "range_change_km2": 0.2,
+    "territory_shift_detected": false,
+    "shift_type": "stable"
+  },
+  "22": {
+    "baseline_center": [
+      21.51765,
+      79.24751
+    ],
+    "recent_center": [
+      21.51952,
+      79.24755
+    ],
+    "centroid_shift_km": 0.21,
+    "baseline_radius_km": 1.36,
+    "recent_radius_km": 1.47,
+    "range_change_km2": 1.0,
+    "territory_shift_detected": false,
+    "shift_type": "stable"
+  },
+  "24": {
+    "baseline_center": [
+      21.60435,
+      79.16781
+    ],
+    "recent_center": [
+      21.59853,
+      79.16071
+    ],
+    "centroid_shift_km": 0.98,
+    "baseline_radius_km": 1.47,
+    "recent_radius_km": 2.2,
+    "range_change_km2": 8.4,
+    "territory_shift_detected": false,
+    "shift_type": "range_expansion"
+  },
+  "25": {
+    "baseline_center": [
+      21.6735,
+      79.3213
+    ],
+    "recent_center": [
+      21.67454,
+      79.31905
+    ],
+    "centroid_shift_km": 0.26,
+    "baseline_radius_km": 1.9,
+    "recent_radius_km": 1.36,
+    "range_change_km2": 5.5,
+    "territory_shift_detected": false,
+    "shift_type": "stable"
+  },
+  "27": {
+    "baseline_center": [
+      21.56989,
+      79.19569
+    ],
+    "recent_center": [
+      21.56958,
+      79.19802
+    ],
+    "centroid_shift_km": 0.24,
+    "baseline_radius_km": 1.7,
+    "recent_radius_km": 0.97,
+    "range_change_km2": 6.1,
+    "territory_shift_detected": false,
+    "shift_type": "range_contraction"
+  },
+  "28": {
+    "baseline_center": [
+      21.6652,
+      79.22773
+    ],
+    "recent_center": [
+      21.66784,
+      79.2227
+    ],
+    "centroid_shift_km": 0.6,
+    "baseline_radius_km": 1.72,
+    "recent_radius_km": 1.14,
+    "range_change_km2": 5.1,
+    "territory_shift_detected": false,
+    "shift_type": "range_contraction"
+  },
+  "30": {
+    "baseline_center": [
+      21.51866,
+      79.27477
+    ],
+    "recent_center": [
+      21.52005,
+      79.27942
+    ],
+    "centroid_shift_km": 0.5,
+    "baseline_radius_km": 1.45,
+    "recent_radius_km": 2.04,
+    "range_change_km2": 6.4,
+    "territory_shift_detected": false,
+    "shift_type": "range_expansion"
+  },
+  "33": {
+    "baseline_center": [
+      21.62186,
+      79.33101
+    ],
+    "recent_center": [
+      21.61937,
+      79.32944
+    ],
+    "centroid_shift_km": 0.32,
+    "baseline_radius_km": 2.0,
+    "recent_radius_km": 2.16,
+    "range_change_km2": 2.1,
+    "territory_shift_detected": false,
+    "shift_type": "stable"
+  },
+  "34": {
+    "baseline_center": [
+      21.75372,
+      79.18347
+    ],
+    "recent_center": [
+      21.75346,
+      79.18156
+    ],
+    "centroid_shift_km": 0.2,
+    "baseline_radius_km": 0.13,
+    "recent_radius_km": 1.52,
+    "range_change_km2": 7.2,
+    "territory_shift_detected": false,
+    "shift_type": "range_expansion"
+  },
+  "39": {
+    "baseline_center": [
+      21.6241,
+      79.207
+    ],
+    "recent_center": [
+      21.6221,
+      79.20406
+    ],
+    "centroid_shift_km": 0.38,
+    "baseline_radius_km": 1.72,
+    "recent_radius_km": 2.08,
+    "range_change_km2": 4.2,
+    "territory_shift_detected": false,
+    "shift_type": "stable"
+  },
+  "40": {
+    "baseline_center": [
+      21.54766,
+      79.18222
+    ],
+    "recent_center": [
+      21.54755,
+      79.1822
+    ],
+    "centroid_shift_km": 0.01,
+    "baseline_radius_km": 1.16,
+    "recent_radius_km": 1.15,
+    "range_change_km2": 0.1,
+    "territory_shift_detected": false,
+    "shift_type": "stable"
+  },
+  "42": {
+    "baseline_center": [
+      21.54669,
+      79.31583
+    ],
+    "recent_center": [
+      21.5493,
+      79.31448
+    ],
+    "centroid_shift_km": 0.32,
+    "baseline_radius_km": 2.13,
+    "recent_radius_km": 2.24,
+    "range_change_km2": 1.6,
+    "territory_shift_detected": false,
+    "shift_type": "stable"
+  },
+  "43": {
+    "baseline_center": [
+      21.62644,
+      79.22737
+    ],
+    "recent_center": [
+      21.63305,
+      79.22835
+    ],
+    "centroid_shift_km": 0.74,
+    "baseline_radius_km": 1.14,
+    "recent_radius_km": 1.5,
+    "range_change_km2": 2.9,
+    "territory_shift_detected": false,
+    "shift_type": "range_expansion"
+  },
+  "45": {
+    "baseline_center": [
+      21.6371,
+      79.1264
+    ],
+    "recent_center": [
+      21.63155,
+      79.12459
+    ],
+    "centroid_shift_km": 0.64,
+    "baseline_radius_km": 1.04,
+    "recent_radius_km": 1.35,
+    "range_change_km2": 2.3,
+    "territory_shift_detected": false,
+    "shift_type": "stable"
+  },
+  "51": {
+    "baseline_center": [
+      21.6397,
+      79.35592
+    ],
+    "recent_center": [
+      21.63742,
+      79.35313
+    ],
+    "centroid_shift_km": 0.38,
+    "baseline_radius_km": 1.69,
+    "recent_radius_km": 1.91,
+    "range_change_km2": 2.5,
+    "territory_shift_detected": false,
+    "shift_type": "stable"
+  },
+  "54": {
+    "baseline_center": [
+      21.57239,
+      79.19113
+    ],
+    "recent_center": [
+      21.56945,
+      79.19047
+    ],
+    "centroid_shift_km": 0.33,
+    "baseline_radius_km": 2.41,
+    "recent_radius_km": 1.18,
+    "range_change_km2": 13.8,
+    "territory_shift_detected": false,
+    "shift_type": "range_contraction"
+  },
+  "55": {
+    "baseline_center": [
+      21.65578,
+      79.21131
+    ],
+    "recent_center": [
+      21.65117,
+      79.20334
+    ],
+    "centroid_shift_km": 0.97,
+    "baseline_radius_km": 2.0,
+    "recent_radius_km": 1.14,
+    "range_change_km2": 8.5,
+    "territory_shift_detected": false,
+    "shift_type": "range_contraction"
+  },
+  "57": {
+    "baseline_center": [
+      21.51769,
+      79.24828
+    ],
+    "recent_center": [
+      21.5178,
+      79.25012
+    ],
+    "centroid_shift_km": 0.19,
+    "baseline_radius_km": 1.28,
+    "recent_radius_km": 1.09,
+    "range_change_km2": 1.4,
+    "territory_shift_detected": false,
+    "shift_type": "stable"
+  },
+  "60": {
+    "baseline_center": [
+      21.66454,
+      79.24419
+    ],
+    "recent_center": [
+      21.66327,
+      79.24446
+    ],
+    "centroid_shift_km": 0.14,
+    "baseline_radius_km": 1.83,
+    "recent_radius_km": 2.2,
+    "range_change_km2": 4.7,
+    "territory_shift_detected": false,
+    "shift_type": "stable"
+  },
+  "64": {
+    "baseline_center": [
+      21.58785,
+      79.14529
+    ],
+    "recent_center": [
+      21.59234,
+      79.14854
+    ],
+    "centroid_shift_km": 0.6,
+    "baseline_radius_km": 1.55,
+    "recent_radius_km": 2.07,
+    "range_change_km2": 5.9,
+    "territory_shift_detected": false,
+    "shift_type": "range_expansion"
+  },
+  "66": {
+    "baseline_center": [
+      21.52142,
+      79.26295
+    ],
+    "recent_center": [
+      21.51853,
+      79.26744
+    ],
+    "centroid_shift_km": 0.56,
+    "baseline_radius_km": 2.1,
+    "recent_radius_km": 1.19,
+    "range_change_km2": 9.3,
+    "territory_shift_detected": false,
+    "shift_type": "range_contraction"
+  },
+  "67": {
+    "baseline_center": [
+      21.69835,
+      79.14842
+    ],
+    "recent_center": [
+      21.69386,
+      79.14832
+    ],
+    "centroid_shift_km": 0.5,
+    "baseline_radius_km": 1.85,
+    "recent_radius_km": 1.71,
+    "range_change_km2": 1.5,
+    "territory_shift_detected": false,
+    "shift_type": "stable"
+  },
+  "69": {
+    "baseline_center": [
+      21.68644,
+      79.14451
+    ],
+    "recent_center": [
+      21.68251,
+      79.14256
+    ],
+    "centroid_shift_km": 0.48,
+    "baseline_radius_km": 1.33,
+    "recent_radius_km": 1.94,
+    "range_change_km2": 6.2,
+    "territory_shift_detected": false,
+    "shift_type": "range_expansion"
+  },
+  "72": {
+    "baseline_center": [
+      21.666,
+      79.19354
+    ],
+    "recent_center": [
+      21.66695,
+      79.18928
+    ],
+    "centroid_shift_km": 0.45,
+    "baseline_radius_km": 1.75,
+    "recent_radius_km": 1.54,
+    "range_change_km2": 2.2,
+    "territory_shift_detected": false,
+    "shift_type": "stable"
+  },
+  "76": {
+    "baseline_center": [
+      21.65975,
+      79.32721
+    ],
+    "recent_center": [
+      21.65796,
+      79.32661
+    ],
+    "centroid_shift_km": 0.21,
+    "baseline_radius_km": 1.73,
+    "recent_radius_km": 1.52,
+    "range_change_km2": 2.1,
+    "territory_shift_detected": false,
+    "shift_type": "stable"
+  },
+  "78": {
+    "baseline_center": [
+      21.64667,
+      79.21814
+    ],
+    "recent_center": [
+      21.64976,
+      79.21677
+    ],
+    "centroid_shift_km": 0.37,
+    "baseline_radius_km": 3.32,
+    "recent_radius_km": 2.42,
+    "range_change_km2": 16.1,
+    "territory_shift_detected": false,
+    "shift_type": "stable"
+  },
+  "81": {
+    "baseline_center": [
+      21.60929,
+      79.3585
+    ],
+    "recent_center": [
+      21.6084,
+      79.35871
+    ],
+    "centroid_shift_km": 0.1,
+    "baseline_radius_km": 0.1,
+    "recent_radius_km": 0.0,
+    "range_change_km2": 0.0,
+    "territory_shift_detected": false,
+    "shift_type": "range_contraction"
+  },
+  "82": {
+    "baseline_center": [
+      21.54802,
+      79.23521
+    ],
+    "recent_center": [
+      21.54019,
+      79.24204
+    ],
+    "centroid_shift_km": 1.12,
+    "baseline_radius_km": 1.71,
+    "recent_radius_km": 1.16,
+    "range_change_km2": 4.9,
+    "territory_shift_detected": false,
+    "shift_type": "range_contraction"
+  },
+  "85": {
+    "baseline_center": [
+      21.54497,
+      79.32039
+    ],
+    "recent_center": [
+      21.54369,
+      79.3142
+    ],
+    "centroid_shift_km": 0.65,
+    "baseline_radius_km": 0.91,
+    "recent_radius_km": 1.93,
+    "range_change_km2": 9.1,
+    "territory_shift_detected": false,
+    "shift_type": "range_expansion"
+  },
+  "88": {
+    "baseline_center": [
+      21.62218,
+      79.3009
+    ],
+    "recent_center": [
+      21.62524,
+      79.30091
+    ],
+    "centroid_shift_km": 0.34,
+    "baseline_radius_km": 1.47,
+    "recent_radius_km": 0.86,
+    "range_change_km2": 4.5,
+    "territory_shift_detected": false,
+    "shift_type": "range_contraction"
+  },
+  "90": {
+    "baseline_center": [
+      21.63868,
+      79.33872
+    ],
+    "recent_center": [
+      21.6401,
+      79.33623
+    ],
+    "centroid_shift_km": 0.3,
+    "baseline_radius_km": 1.37,
+    "recent_radius_km": 1.82,
+    "range_change_km2": 4.5,
+    "territory_shift_detected": false,
+    "shift_type": "range_expansion"
+  },
+  "91": {
+    "baseline_center": [
+      21.53462,
+      79.19052
+    ],
+    "recent_center": [
+      21.53036,
+      79.19482
+    ],
+    "centroid_shift_km": 0.65,
+    "baseline_radius_km": 2.31,
+    "recent_radius_km": 2.2,
+    "range_change_km2": 1.5,
+    "territory_shift_detected": false,
+    "shift_type": "stable"
+  },
+  "94": {
+    "baseline_center": [
+      21.73693,
+      79.22991
+    ],
+    "recent_center": [
+      21.73514,
+      79.22556
+    ],
+    "centroid_shift_km": 0.49,
+    "baseline_radius_km": 1.77,
+    "recent_radius_km": 2.2,
+    "range_change_km2": 5.4,
+    "territory_shift_detected": false,
+    "shift_type": "stable"
+  },
+  "96": {
+    "baseline_center": [
+      21.55673,
+      79.1817
+    ],
+    "recent_center": [
+      21.56106,
+      79.18182
+    ],
+    "centroid_shift_km": 0.48,
+    "baseline_radius_km": 1.72,
+    "recent_radius_km": 1.25,
+    "range_change_km2": 4.4,
+    "territory_shift_detected": false,
+    "shift_type": "stable"
+  },
+  "97": {
+    "baseline_center": [
+      21.74618,
+      79.24545
+    ],
+    "recent_center": [
+      21.74801,
+      79.24672
+    ],
+    "centroid_shift_km": 0.24,
+    "baseline_radius_km": 2.07,
+    "recent_radius_km": 2.16,
+    "range_change_km2": 1.2,
+    "territory_shift_detected": false,
+    "shift_type": "stable"
+  },
+  "100": {
+    "baseline_center": [
+      21.75324,
+      79.1889
+    ],
+    "recent_center": [
+      21.75305,
+      79.19014
+    ],
+    "centroid_shift_km": 0.13,
+    "baseline_radius_km": 1.45,
+    "recent_radius_km": 1.32,
+    "range_change_km2": 1.1,
+    "territory_shift_detected": false,
+    "shift_type": "stable"
+  },
+  "106": {
+    "baseline_center": [
+      21.59909,
+      79.26422
+    ],
+    "recent_center": [
+      21.59522,
+      79.26078
+    ],
+    "centroid_shift_km": 0.56,
+    "baseline_radius_km": 2.73,
+    "recent_radius_km": 1.64,
+    "range_change_km2": 14.9,
+    "territory_shift_detected": false,
+    "shift_type": "range_contraction"
+  },
+  "108": {
+    "baseline_center": [
+      21.68904,
+      79.1441
+    ],
+    "recent_center": [
+      21.68475,
+      79.14336
+    ],
+    "centroid_shift_km": 0.48,
+    "baseline_radius_km": 1.05,
+    "recent_radius_km": 0.92,
+    "range_change_km2": 0.8,
+    "territory_shift_detected": false,
+    "shift_type": "stable"
+  },
+  "109": {
+    "baseline_center": [
+      21.56121,
+      79.20254
+    ],
+    "recent_center": [
+      21.56344,
+      79.20217
+    ],
+    "centroid_shift_km": 0.25,
+    "baseline_radius_km": 1.65,
+    "recent_radius_km": 1.45,
+    "range_change_km2": 2.0,
+    "territory_shift_detected": false,
+    "shift_type": "stable"
+  },
+  "114": {
+    "baseline_center": [
+      21.65838,
+      79.24421
+    ],
+    "recent_center": [
+      21.65798,
+      79.24444
+    ],
+    "centroid_shift_km": 0.05,
+    "baseline_radius_km": 1.23,
+    "recent_radius_km": 1.65,
+    "range_change_km2": 3.8,
+    "territory_shift_detected": false,
+    "shift_type": "range_expansion"
+  },
+  "115": {
+    "baseline_center": [
+      21.7035,
+      79.32229
+    ],
+    "recent_center": [
+      21.57343,
+      79.33517
+    ],
+    "centroid_shift_km": 14.5,
+    "baseline_radius_km": 6.49,
+    "recent_radius_km": 5.89,
+    "range_change_km2": 23.1,
+    "territory_shift_detected": true,
+    "shift_type": "territory_shift"
+  },
+  "117": {
+    "baseline_center": [
+      21.62136,
+      79.34342
+    ],
+    "recent_center": [
+      21.62298,
+      79.34643
+    ],
+    "centroid_shift_km": 0.36,
+    "baseline_radius_km": 2.26,
+    "recent_radius_km": 1.36,
+    "range_change_km2": 10.3,
+    "territory_shift_detected": false,
+    "shift_type": "range_contraction"
+  },
+  "124": {
+    "baseline_center": [
+      21.549,
+      79.2334
+    ],
+    "recent_center": [
+      21.55513,
+      79.22672
+    ],
+    "centroid_shift_km": 0.97,
+    "baseline_radius_km": 1.1,
+    "recent_radius_km": 2.1,
+    "range_change_km2": 10.1,
+    "territory_shift_detected": false,
+    "shift_type": "range_expansion"
+  },
+  "126": {
+    "baseline_center": [
+      21.72658,
+      79.23834
+    ],
+    "recent_center": [
+      21.72623,
+      79.23914
+    ],
+    "centroid_shift_km": 0.09,
+    "baseline_radius_km": 1.8,
+    "recent_radius_km": 1.89,
+    "range_change_km2": 1.1,
+    "territory_shift_detected": false,
+    "shift_type": "stable"
+  },
+  "129": {
+    "baseline_center": [
+      21.61699,
+      79.26288
+    ],
+    "recent_center": [
+      21.61719,
+      79.26313
+    ],
+    "centroid_shift_km": 0.03,
+    "baseline_radius_km": 1.54,
+    "recent_radius_km": 1.59,
+    "range_change_km2": 0.5,
+    "territory_shift_detected": false,
+    "shift_type": "stable"
+  },
+  "130": {
+    "baseline_center": [
+      21.70245,
+      79.20679
+    ],
+    "recent_center": [
+      21.70206,
+      79.20469
+    ],
+    "centroid_shift_km": 0.22,
+    "baseline_radius_km": 1.39,
+    "recent_radius_km": 1.47,
+    "range_change_km2": 0.8,
+    "territory_shift_detected": false,
+    "shift_type": "stable"
+  },
+  "132": {
+    "baseline_center": [
+      21.53316,
+      79.22166
+    ],
+    "recent_center": [
+      21.5287,
+      79.22447
+    ],
+    "centroid_shift_km": 0.57,
+    "baseline_radius_km": 2.05,
+    "recent_radius_km": 2.26,
+    "range_change_km2": 2.9,
+    "territory_shift_detected": false,
+    "shift_type": "stable"
+  },
+  "136": {
+    "baseline_center": [
+      21.53286,
+      79.26361
+    ],
+    "recent_center": [
+      21.5358,
+      79.26144
+    ],
+    "centroid_shift_km": 0.4,
+    "baseline_radius_km": 2.29,
+    "recent_radius_km": 2.01,
+    "range_change_km2": 3.8,
+    "territory_shift_detected": false,
+    "shift_type": "stable"
+  },
+  "139": {
+    "baseline_center": [
+      21.70097,
+      79.21872
+    ],
+    "recent_center": [
+      21.70096,
+      79.22205
+    ],
+    "centroid_shift_km": 0.34,
+    "baseline_radius_km": 0.43,
+    "recent_radius_km": 2.32,
+    "range_change_km2": 16.3,
+    "territory_shift_detected": false,
+    "shift_type": "range_expansion"
+  },
+  "142": {
+    "baseline_center": [
+      21.67773,
+      79.14295
+    ],
+    "recent_center": [
+      21.6756,
+      79.14296
+    ],
+    "centroid_shift_km": 0.24,
+    "baseline_radius_km": 1.62,
+    "recent_radius_km": 1.39,
+    "range_change_km2": 2.2,
+    "territory_shift_detected": false,
+    "shift_type": "stable"
+  },
+  "145": {
+    "baseline_center": [
+      21.68055,
+      79.26432
+    ],
+    "recent_center": [
+      21.67973,
+      79.26018
+    ],
+    "centroid_shift_km": 0.44,
+    "baseline_radius_km": 1.93,
+    "recent_radius_km": 2.08,
+    "range_change_km2": 1.9,
+    "territory_shift_detected": false,
+    "shift_type": "stable"
+  },
+  "148": {
+    "baseline_center": [
+      21.61977,
+      79.28008
+    ],
+    "recent_center": [
+      21.62127,
+      79.2839
+    ],
+    "centroid_shift_km": 0.43,
+    "baseline_radius_km": 2.36,
+    "recent_radius_km": 1.77,
+    "range_change_km2": 7.6,
+    "territory_shift_detected": false,
+    "shift_type": "stable"
+  },
+  "151": {
+    "baseline_center": [
+      21.73521,
+      79.23183
+    ],
+    "recent_center": [
+      21.73325,
+      79.22545
+    ],
+    "centroid_shift_km": 0.69,
+    "baseline_radius_km": 1.49,
+    "recent_radius_km": 1.38,
+    "range_change_km2": 1.0,
+    "territory_shift_detected": false,
+    "shift_type": "stable"
+  },
+  "153": {
+    "baseline_center": [
+      21.55385,
+      79.21441
+    ],
+    "recent_center": [
+      21.55044,
+      79.21546
+    ],
+    "centroid_shift_km": 0.39,
+    "baseline_radius_km": 1.93,
+    "recent_radius_km": 1.13,
+    "range_change_km2": 7.7,
+    "territory_shift_detected": false,
+    "shift_type": "range_contraction"
+  },
+  "154": {
+    "baseline_center": [
+      21.65903,
+      79.25346
+    ],
+    "recent_center": [
+      21.65827,
+      79.25565
+    ],
+    "centroid_shift_km": 0.24,
+    "baseline_radius_km": 1.04,
+    "recent_radius_km": 1.5,
+    "range_change_km2": 3.6,
+    "territory_shift_detected": false,
+    "shift_type": "range_expansion"
+  },
+  "160": {
+    "baseline_center": [
+      21.65725,
+      79.1742
+    ],
+    "recent_center": [
+      21.66006,
+      79.18089
+    ],
+    "centroid_shift_km": 0.76,
+    "baseline_radius_km": 1.5,
+    "recent_radius_km": 1.65,
+    "range_change_km2": 1.6,
+    "territory_shift_detected": false,
+    "shift_type": "stable"
+  },
+  "168": {
+    "baseline_center": [
+      21.75015,
+      79.25316
+    ],
+    "recent_center": [
+      21.74709,
+      79.25098
+    ],
+    "centroid_shift_km": 0.41,
+    "baseline_radius_km": 1.44,
+    "recent_radius_km": 1.93,
+    "range_change_km2": 5.1,
+    "territory_shift_detected": false,
+    "shift_type": "range_expansion"
+  },
+  "171": {
+    "baseline_center": [
+      21.71442,
+      79.21488
+    ],
+    "recent_center": [
+      21.71441,
+      79.21055
+    ],
+    "centroid_shift_km": 0.45,
+    "baseline_radius_km": 1.15,
+    "recent_radius_km": 0.85,
+    "range_change_km2": 1.9,
+    "territory_shift_detected": false,
+    "shift_type": "stable"
+  },
+  "172": {
+    "baseline_center": [
+      21.69889,
+      79.22719
+    ],
+    "recent_center": [
+      21.69985,
+      79.22629
+    ],
+    "centroid_shift_km": 0.14,
+    "baseline_radius_km": 1.6,
+    "recent_radius_km": 1.7,
+    "range_change_km2": 1.0,
+    "territory_shift_detected": false,
+    "shift_type": "stable"
+  },
+  "175": {
+    "baseline_center": [
+      21.69044,
+      79.14754
+    ],
+    "recent_center": [
+      21.69293,
+      79.14476
+    ],
+    "centroid_shift_km": 0.4,
+    "baseline_radius_km": 1.2,
+    "recent_radius_km": 1.23,
+    "range_change_km2": 0.2,
+    "territory_shift_detected": false,
+    "shift_type": "stable"
+  },
+  "177": {
+    "baseline_center": [
+      21.68061,
+      79.26408
+    ],
+    "recent_center": [
+      21.67717,
+      79.26228
+    ],
+    "centroid_shift_km": 0.42,
+    "baseline_radius_km": 1.64,
+    "recent_radius_km": 2.09,
+    "range_change_km2": 5.3,
+    "territory_shift_detected": false,
+    "shift_type": "stable"
+  },
+  "178": {
+    "baseline_center": [
+      21.63626,
+      79.30022
+    ],
+    "recent_center": [
+      21.63975,
+      79.29121
+    ],
+    "centroid_shift_km": 1.01,
+    "baseline_radius_km": 1.53,
+    "recent_radius_km": 1.6,
+    "range_change_km2": 0.7,
+    "territory_shift_detected": false,
+    "shift_type": "stable"
+  },
+  "181": {
+    "baseline_center": [
+      21.63632,
+      79.26229
+    ],
+    "recent_center": [
+      21.63726,
+      79.26376
+    ],
+    "centroid_shift_km": 0.18,
+    "baseline_radius_km": 2.93,
+    "recent_radius_km": 2.43,
+    "range_change_km2": 8.4,
+    "territory_shift_detected": false,
+    "shift_type": "stable"
+  },
+  "187": {
+    "baseline_center": [
+      21.71079,
+      79.2577
+    ],
+    "recent_center": [
+      21.70919,
+      79.25927
+    ],
+    "centroid_shift_km": 0.24,
+    "baseline_radius_km": 2.07,
+    "recent_radius_km": 1.33,
+    "range_change_km2": 7.9,
+    "territory_shift_detected": false,
+    "shift_type": "range_contraction"
+  },
+  "195": {
+    "baseline_center": [
+      21.61368,
+      79.20105
+    ],
+    "recent_center": [
+      21.61399,
+      79.20289
+    ],
+    "centroid_shift_km": 0.19,
+    "baseline_radius_km": 0.98,
+    "recent_radius_km": 2.54,
+    "range_change_km2": 17.3,
+    "territory_shift_detected": false,
+    "shift_type": "range_expansion"
+  },
+  "196": {
+    "baseline_center": [
+      21.6603,
+      79.22505
+    ],
+    "recent_center": [
+      21.65868,
+      79.22922
+    ],
+    "centroid_shift_km": 0.47,
+    "baseline_radius_km": 1.94,
+    "recent_radius_km": 1.46,
+    "range_change_km2": 5.2,
+    "territory_shift_detected": false,
+    "shift_type": "stable"
+  },
+  "198": {
+    "baseline_center": [
+      21.70873,
+      79.18964
+    ],
+    "recent_center": [
+      21.70727,
+      79.18649
+    ],
+    "centroid_shift_km": 0.36,
+    "baseline_radius_km": 1.59,
+    "recent_radius_km": 1.74,
+    "range_change_km2": 1.6,
+    "territory_shift_detected": false,
+    "shift_type": "stable"
+  },
+  "201": {
+    "baseline_center": [
+      21.73198,
+      79.23299
+    ],
+    "recent_center": [
+      21.73159,
+      79.23417
+    ],
+    "centroid_shift_km": 0.13,
+    "baseline_radius_km": 1.96,
+    "recent_radius_km": 1.22,
+    "range_change_km2": 7.5,
+    "territory_shift_detected": false,
+    "shift_type": "range_contraction"
+  },
+  "202": {
+    "baseline_center": [
+      21.66289,
+      79.15523
+    ],
+    "recent_center": [
+      21.6604,
+      79.15239
+    ],
+    "centroid_shift_km": 0.4,
+    "baseline_radius_km": 2.11,
+    "recent_radius_km": 1.04,
+    "range_change_km2": 10.6,
+    "territory_shift_detected": false,
+    "shift_type": "range_contraction"
+  },
+  "208": {
+    "baseline_center": [
+      21.58784,
+      79.14655
+    ],
+    "recent_center": [
+      21.59024,
+      79.14178
+    ],
+    "centroid_shift_km": 0.56,
+    "baseline_radius_km": 1.42,
+    "recent_radius_km": 2.18,
+    "range_change_km2": 8.6,
+    "territory_shift_detected": false,
+    "shift_type": "range_expansion"
+  },
+  "211": {
+    "baseline_center": [
+      21.635,
+      79.3391
+    ],
+    "recent_center": [
+      21.63463,
+      79.34003
+    ],
+    "centroid_shift_km": 0.1,
+    "baseline_radius_km": 0.96,
+    "recent_radius_km": 2.42,
+    "range_change_km2": 15.5,
+    "territory_shift_detected": false,
+    "shift_type": "range_expansion"
+  },
+  "213": {
+    "baseline_center": [
+      21.5559,
+      79.19842
+    ],
+    "recent_center": [
+      21.56033,
+      79.19932
+    ],
+    "centroid_shift_km": 0.5,
+    "baseline_radius_km": 1.56,
+    "recent_radius_km": 1.51,
+    "range_change_km2": 0.5,
+    "territory_shift_detected": false,
+    "shift_type": "stable"
+  },
+  "216": {
+    "baseline_center": [
+      21.58275,
+      79.15296
+    ],
+    "recent_center": [
+      21.58996,
+      79.14841
+    ],
+    "centroid_shift_km": 0.93,
+    "baseline_radius_km": 3.13,
+    "recent_radius_km": 2.86,
+    "range_change_km2": 5.1,
+    "territory_shift_detected": false,
+    "shift_type": "stable"
+  },
+  "217": {
+    "baseline_center": [
+      21.6158,
+      79.30266
+    ],
+    "recent_center": [
+      21.61629,
+      79.30427
+    ],
+    "centroid_shift_km": 0.17,
+    "baseline_radius_km": 1.97,
+    "recent_radius_km": 1.8,
+    "range_change_km2": 2.0,
+    "territory_shift_detected": false,
+    "shift_type": "stable"
+  },
+  "220": {
+    "baseline_center": [
+      21.57752,
+      79.25854
+    ],
+    "recent_center": [
+      21.57462,
+      79.25815
+    ],
+    "centroid_shift_km": 0.32,
+    "baseline_radius_km": 1.51,
+    "recent_radius_km": 1.38,
+    "range_change_km2": 1.2,
+    "territory_shift_detected": false,
+    "shift_type": "stable"
+  },
+  "222": {
+    "baseline_center": [
+      21.59726,
+      79.14898
+    ],
+    "recent_center": [
+      21.59633,
+      79.15057
+    ],
+    "centroid_shift_km": 0.19,
+    "baseline_radius_km": 2.17,
+    "recent_radius_km": 1.55,
+    "range_change_km2": 7.2,
+    "territory_shift_detected": false,
+    "shift_type": "stable"
+  },
+  "223": {
+    "baseline_center": [
+      21.74449,
+      79.24234
+    ],
+    "recent_center": [
+      21.75086,
+      79.24535
+    ],
+    "centroid_shift_km": 0.77,
+    "baseline_radius_km": 1.55,
+    "recent_radius_km": 1.74,
+    "range_change_km2": 2.0,
+    "territory_shift_detected": false,
+    "shift_type": "stable"
+  },
+  "226": {
+    "baseline_center": [
+      21.5507,
+      79.28803
+    ],
+    "recent_center": [
+      21.54998,
+      79.2888
+    ],
+    "centroid_shift_km": 0.11,
+    "baseline_radius_km": 1.56,
+    "recent_radius_km": 1.71,
+    "range_change_km2": 1.5,
+    "territory_shift_detected": false,
+    "shift_type": "stable"
+  },
+  "228": {
+    "baseline_center": [
+      21.54191,
+      79.19308
+    ],
+    "recent_center": [
+      21.53575,
+      79.193
+    ],
+    "centroid_shift_km": 0.68,
+    "baseline_radius_km": 1.61,
+    "recent_radius_km": 2.1,
+    "range_change_km2": 5.8,
+    "territory_shift_detected": false,
+    "shift_type": "range_expansion"
+  },
+  "229": {
+    "baseline_center": [
+      21.62354,
+      79.16703
+    ],
+    "recent_center": [
+      21.6207,
+      79.16824
+    ],
+    "centroid_shift_km": 0.34,
+    "baseline_radius_km": 1.87,
+    "recent_radius_km": 1.75,
+    "range_change_km2": 1.3,
+    "territory_shift_detected": false,
+    "shift_type": "stable"
+  },
+  "237": {
+    "baseline_center": [
+      21.7286,
+      79.23458
+    ],
+    "recent_center": [
+      21.71937,
+      79.23416
+    ],
+    "centroid_shift_km": 1.03,
+    "baseline_radius_km": 1.85,
+    "recent_radius_km": 1.97,
+    "range_change_km2": 1.4,
+    "territory_shift_detected": false,
+    "shift_type": "stable"
+  },
+  "238": {
+    "baseline_center": [
+      21.61279,
+      79.17989
+    ],
+    "recent_center": [
+      21.60934,
+      79.17426
+    ],
+    "centroid_shift_km": 0.7,
+    "baseline_radius_km": 2.08,
+    "recent_radius_km": 1.54,
+    "range_change_km2": 6.2,
+    "territory_shift_detected": false,
+    "shift_type": "stable"
+  },
+  "240": {
+    "baseline_center": [
+      21.6817,
+      79.29425
+    ],
+    "recent_center": [
+      21.67899,
+      79.29187
+    ],
+    "centroid_shift_km": 0.39,
+    "baseline_radius_km": 1.48,
+    "recent_radius_km": 1.5,
+    "range_change_km2": 0.2,
+    "territory_shift_detected": false,
+    "shift_type": "stable"
+  },
+  "243": {
+    "baseline_center": [
+      21.6649,
+      79.22245
+    ],
+    "recent_center": [
+      21.6636,
+      79.21712
+    ],
+    "centroid_shift_km": 0.57,
+    "baseline_radius_km": 1.47,
+    "recent_radius_km": 2.01,
+    "range_change_km2": 5.8,
+    "territory_shift_detected": false,
+    "shift_type": "range_expansion"
+  },
+  "244": {
+    "baseline_center": [
+      21.63215,
+      79.23522
+    ],
+    "recent_center": [
+      21.63408,
+      79.23665
+    ],
+    "centroid_shift_km": 0.26,
+    "baseline_radius_km": 1.32,
+    "recent_radius_km": 1.64,
+    "range_change_km2": 3.0,
+    "territory_shift_detected": false,
+    "shift_type": "stable"
+  },
+  "246": {
+    "baseline_center": [
+      21.63279,
+      79.13303
+    ],
+    "recent_center": [
+      21.62683,
+      79.12997
+    ],
+    "centroid_shift_km": 0.73,
+    "baseline_radius_km": 1.79,
+    "recent_radius_km": 1.91,
+    "range_change_km2": 1.4,
+    "territory_shift_detected": false,
+    "shift_type": "stable"
+  },
+  "247": {
+    "baseline_center": [
+      21.55901,
+      79.22381
+    ],
+    "recent_center": [
+      21.55821,
+      79.22242
+    ],
+    "centroid_shift_km": 0.17,
+    "baseline_radius_km": 1.94,
+    "recent_radius_km": 1.56,
+    "range_change_km2": 4.2,
+    "territory_shift_detected": false,
+    "shift_type": "stable"
+  },
+  "249": {
+    "baseline_center": [
+      21.62317,
+      79.17138
+    ],
+    "recent_center": [
+      21.6223,
+      79.16998
+    ],
+    "centroid_shift_km": 0.17,
+    "baseline_radius_km": 1.65,
+    "recent_radius_km": 1.99,
+    "range_change_km2": 3.9,
+    "territory_shift_detected": false,
+    "shift_type": "stable"
+  },
+  "250": {
+    "baseline_center": [
+      21.72953,
+      79.22194
+    ],
+    "recent_center": [
+      21.73182,
+      79.22222
+    ],
+    "centroid_shift_km": 0.26,
+    "baseline_radius_km": 1.83,
+    "recent_radius_km": 0.18,
+    "range_change_km2": 10.4,
+    "territory_shift_detected": false,
+    "shift_type": "range_contraction"
+  },
+  "252": {
+    "baseline_center": [
+      21.73505,
+      79.24329
+    ],
+    "recent_center": [
+      21.73168,
+      79.2453
+    ],
+    "centroid_shift_km": 0.43,
+    "baseline_radius_km": 1.99,
+    "recent_radius_km": 1.79,
+    "range_change_km2": 2.4,
+    "territory_shift_detected": false,
+    "shift_type": "stable"
+  },
+  "253": {
+    "baseline_center": [
+      21.66425,
+      79.18542
+    ],
+    "recent_center": [
+      21.66257,
+      79.18784
+    ],
+    "centroid_shift_km": 0.31,
+    "baseline_radius_km": 1.84,
+    "recent_radius_km": 1.86,
+    "range_change_km2": 0.3,
+    "territory_shift_detected": false,
+    "shift_type": "stable"
+  },
+  "255": {
+    "baseline_center": [
+      21.55327,
+      79.26677
+    ],
+    "recent_center": [
+      21.54624,
+      79.26369
+    ],
+    "centroid_shift_km": 0.84,
+    "baseline_radius_km": 2.26,
+    "recent_radius_km": 1.76,
+    "range_change_km2": 6.2,
+    "territory_shift_detected": false,
+    "shift_type": "stable"
+  },
+  "256": {
+    "baseline_center": [
+      21.61631,
+      79.30346
+    ],
+    "recent_center": [
+      21.61379,
+      79.30393
+    ],
+    "centroid_shift_km": 0.28,
+    "baseline_radius_km": 1.57,
+    "recent_radius_km": 1.41,
+    "range_change_km2": 1.5,
+    "territory_shift_detected": false,
+    "shift_type": "stable"
+  },
+  "259": {
+    "baseline_center": [
+      21.71351,
+      79.25853
+    ],
+    "recent_center": [
+      21.71352,
+      79.25686
+    ],
+    "centroid_shift_km": 0.17,
+    "baseline_radius_km": 1.81,
+    "recent_radius_km": 2.31,
+    "range_change_km2": 6.5,
+    "territory_shift_detected": false,
+    "shift_type": "stable"
+  },
+  "261": {
+    "baseline_center": [
+      21.6576,
+      79.16879
+    ],
+    "recent_center": [
+      21.65331,
+      79.1693
+    ],
+    "centroid_shift_km": 0.48,
+    "baseline_radius_km": 1.52,
+    "recent_radius_km": 1.45,
+    "range_change_km2": 0.6,
+    "territory_shift_detected": false,
+    "shift_type": "stable"
+  },
+  "264": {
+    "baseline_center": [
+      21.65742,
+      79.30429
+    ],
+    "recent_center": [
+      21.66064,
+      79.29676
+    ],
+    "centroid_shift_km": 0.85,
+    "baseline_radius_km": 1.96,
+    "recent_radius_km": 1.81,
+    "range_change_km2": 1.7,
+    "territory_shift_detected": false,
+    "shift_type": "stable"
+  },
+  "265": {
+    "baseline_center": [
+      21.61524,
+      79.26886
+    ],
+    "recent_center": [
+      21.62042,
+      79.27181
+    ],
+    "centroid_shift_km": 0.65,
+    "baseline_radius_km": 1.19,
+    "recent_radius_km": 1.46,
+    "range_change_km2": 2.2,
+    "territory_shift_detected": false,
+    "shift_type": "stable"
+  },
+  "267": {
+    "baseline_center": [
+      21.5725,
+      79.15911
+    ],
+    "recent_center": [
+      21.57221,
+      79.1619
+    ],
+    "centroid_shift_km": 0.29,
+    "baseline_radius_km": 1.69,
+    "recent_radius_km": 1.77,
+    "range_change_km2": 0.9,
+    "territory_shift_detected": false,
+    "shift_type": "stable"
+  },
+  "268": {
+    "baseline_center": [
+      21.62622,
+      79.3503
+    ],
+    "recent_center": [
+      21.62298,
+      79.35209
+    ],
+    "centroid_shift_km": 0.4,
+    "baseline_radius_km": 1.52,
+    "recent_radius_km": 1.76,
+    "range_change_km2": 2.5,
+    "territory_shift_detected": false,
+    "shift_type": "stable"
+  },
+  "271": {
+    "baseline_center": [
+      21.64572,
+      79.26069
+    ],
+    "recent_center": [
+      21.65027,
+      79.26293
+    ],
+    "centroid_shift_km": 0.56,
+    "baseline_radius_km": 1.41,
+    "recent_radius_km": 1.26,
+    "range_change_km2": 1.3,
+    "territory_shift_detected": false,
+    "shift_type": "stable"
+  },
+  "273": {
+    "baseline_center": [
+      21.59532,
+      79.12521
+    ],
+    "recent_center": [
+      21.5968,
+      79.12637
+    ],
+    "centroid_shift_km": 0.2,
+    "baseline_radius_km": 1.06,
+    "recent_radius_km": 1.23,
+    "range_change_km2": 1.2,
+    "territory_shift_detected": false,
+    "shift_type": "stable"
+  },
+  "274": {
+    "baseline_center": [
+      21.72902,
+      79.2205
+    ],
+    "recent_center": [
+      21.72962,
+      79.22027
+    ],
+    "centroid_shift_km": 0.07,
+    "baseline_radius_km": 1.66,
+    "recent_radius_km": 1.79,
+    "range_change_km2": 1.4,
+    "territory_shift_detected": false,
+    "shift_type": "stable"
+  }
+}

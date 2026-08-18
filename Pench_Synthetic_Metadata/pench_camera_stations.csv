@@ -1,248 +1,124 @@
-station_id,range,zone_type,latitude,longitude,camera_type,nearest_village,nearest_village_dist_km
-PTR-CORE-EP-01,East Pench,core_forest,21.663943,79.291751,Camera Trap (Wildlife),,9.19
-PTR-CORE-EP-02,East Pench,core_forest,21.627503,79.305625,Camera Trap (Wildlife),,8.35
-PTR-CORE-EP-03,East Pench,core_forest,21.673647,79.337369,Camera Trap (Wildlife),,5.45
-PTR-CORE-EP-04,East Pench,core_forest,21.689218,79.296086,Camera Trap (Wildlife),,6.36
-PTR-CORE-EP-05,East Pench,core_forest,21.642192,79.292086,Camera Trap (Wildlife),,10.14
-PTR-CORE-EP-06,East Pench,core_forest,21.621864,79.325375,Camera Trap (Wildlife),,6.24
-PTR-CORE-EP-07,East Pench,core_forest,21.602654,79.303919,Camera Trap (Wildlife),,7.71
-PTR-CORE-EP-08,East Pench,core_forest,21.664988,79.328146,Camera Trap (Wildlife),,6.74
-PTR-CORE-EP-09,East Pench,core_forest,21.622044,79.331249,Camera Trap (Wildlife),,5.65
-PTR-CORE-EP-10,East Pench,core_forest,21.680943,79.290455,Camera Trap (Wildlife),,7.39
-PTR-CORE-EP-11,East Pench,core_forest,21.680582,79.33887,Camera Trap (Wildlife),,5.01
-PTR-CORE-EP-12,East Pench,core_forest,21.634025,79.300884,Camera Trap (Wildlife),,9.0
-PTR-CORE-EP-13,East Pench,core_forest,21.695721,79.313562,Camera Trap (Wildlife),,5.48
-PTR-CORE-EP-14,East Pench,core_forest,21.609275,79.29677,Camera Trap (Wildlife),,8.69
-PTR-CORE-EP-15,East Pench,core_forest,21.684749,79.332261,Camera Trap (Wildlife),,5.55
-PTR-CORE-EP-16,East Pench,core_forest,21.680713,79.341081,Camera Trap (Wildlife),,4.79
-PTR-CORE-EP-17,East Pench,core_forest,21.653623,79.358118,Camera Trap (Wildlife),,3.82
-PTR-CORE-EP-18,East Pench,core_forest,21.637853,79.328643,Camera Trap (Wildlife),,6.48
-PTR-CORE-EP-19,East Pench,core_forest,21.68294,79.333296,Camera Trap (Wildlife),,5.49
-PTR-CORE-EP-20,East Pench,core_forest,21.686171,79.330415,Camera Trap (Wildlife),,5.71
-PTR-CORE-EP-21,East Pench,core_forest,21.670457,79.293208,Camera Trap (Wildlife),,8.45
-PTR-CORE-EP-22,East Pench,core_forest,21.62279,79.310257,Camera Trap (Wildlife),,7.79
-PTR-CORE-EP-23,East Pench,core_forest,21.607979,79.306295,Camera Trap (Wildlife),,7.73
-PTR-CORE-EP-24,East Pench,core_forest,21.6101,79.309458,Camera Trap (Wildlife),,7.53
-PTR-CORE-EP-25,East Pench,core_forest,21.663568,79.315538,Camera Trap (Wildlife),,7.96
-PTR-CORE-EP-26,East Pench,core_forest,21.637018,79.304665,Camera Trap (Wildlife),,8.73
-PTR-CORE-EP-27,East Pench,core_forest,21.626698,79.355566,Camera Trap (Wildlife),,3.44
-PTR-CORE-EP-28,East Pench,core_forest,21.664804,79.332639,Camera Trap (Wildlife),,6.35
-PTR-CORE-DEV-01,Devalapar,core_forest,21.694413,79.258748,Camera Trap (Wildlife),,6.39
-PTR-CORE-DEV-02,Devalapar,core_forest,21.693987,79.237767,Camera Trap (Wildlife),,6.83
-PTR-CORE-DEV-03,Devalapar,core_forest,21.739424,79.2534,Camera Trap (Wildlife),,1.55
-PTR-CORE-DEV-04,Devalapar,core_forest,21.715632,79.256077,Camera Trap (Wildlife),,4.06
-PTR-CORE-DEV-05,Devalapar,core_forest,21.731357,79.26156,Camera Trap (Wildlife),,2.3
-PTR-CORE-DEV-06,Devalapar,core_forest,21.697598,79.216926,Camera Trap (Wildlife),,6.71
-PTR-CORE-DEV-07,Devalapar,core_forest,21.70235,79.231064,Camera Trap (Wildlife),,6.27
-PTR-CORE-DEV-08,Devalapar,core_forest,21.696604,79.271575,Camera Trap (Wildlife),,6.26
-PTR-CORE-DEV-09,Devalapar,core_forest,21.7332,79.233881,Camera Trap (Wildlife),,2.98
-PTR-CORE-DEV-10,Devalapar,core_forest,21.721049,79.238738,Camera Trap (Wildlife),,4.07
-PTR-CORE-DEV-11,Devalapar,core_forest,21.7353,79.242531,Camera Trap (Wildlife),,2.58
-PTR-CORE-DEV-12,Devalapar,core_forest,21.699568,79.229798,Camera Trap (Wildlife),,6.6
-PTR-CORE-DEV-13,Devalapar,core_forest,21.715875,79.230764,Camera Trap (Wildlife),,4.92
-PTR-CORE-DEV-14,Devalapar,core_forest,21.717152,79.268869,Camera Trap (Wildlife),,3.97
-PTR-CORE-DEV-15,Devalapar,core_forest,21.706967,79.228159,Camera Trap (Wildlife),,5.82
-PTR-CORE-DEV-16,Devalapar,core_forest,21.739865,79.245572,Camera Trap (Wildlife),,2.01
-PTR-CORE-DEV-17,Devalapar,core_forest,21.69,79.217827,Camera Trap (Wildlife),,7.55
-PTR-CORE-DEV-18,Devalapar,core_forest,21.691031,79.252647,Camera Trap (Wildlife),,6.81
-PTR-CORE-DEV-19,Devalapar,core_forest,21.728564,79.24033,Camera Trap (Wildlife),,3.3
-PTR-CORE-DEV-20,Devalapar,core_forest,21.688494,79.237897,Camera Trap (Wildlife),,7.41
-PTR-CORE-DEV-21,Devalapar,core_forest,21.739787,79.246747,Camera Trap (Wildlife),,1.92
-PTR-CORE-DEV-22,Devalapar,core_forest,21.738409,79.266647,Camera Trap (Wildlife),,1.66
-PTR-CORE-DEV-23,Devalapar,core_forest,21.685631,79.258243,Camera Trap (Wildlife),,7.37
-PTR-CORE-DEV-24,Devalapar,core_forest,21.722494,79.247218,Camera Trap (Wildlife),,3.53
-PTR-CORE-CHB-01,Chorbahuli,core_forest,21.628678,79.258458,Camera Trap (Wildlife),,13.16
-PTR-CORE-CHB-02,Chorbahuli,core_forest,21.617809,79.246086,Camera Trap (Wildlife),,11.69
-PTR-CORE-CHB-03,Chorbahuli,core_forest,21.641761,79.277229,Camera Trap (Wildlife),,11.58
-PTR-CORE-CHB-04,Chorbahuli,core_forest,21.67131,79.235803,Camera Trap (Wildlife),,9.3
-PTR-CORE-CHB-05,Chorbahuli,core_forest,21.645041,79.230719,Camera Trap (Wildlife),,12.25
-PTR-CORE-CHB-06,Chorbahuli,core_forest,21.673884,79.272231,Camera Trap (Wildlife),,8.76
-PTR-CORE-CHB-07,Chorbahuli,core_forest,21.630891,79.258337,Camera Trap (Wildlife),,13.21
-PTR-CORE-CHB-08,Chorbahuli,core_forest,21.652628,79.22917,Camera Trap (Wildlife),,11.48
-PTR-CORE-CHB-09,Chorbahuli,core_forest,21.663376,79.252363,Camera Trap (Wildlife),,9.87
-PTR-CORE-CHB-10,Chorbahuli,core_forest,21.664504,79.251821,Camera Trap (Wildlife),,9.75
-PTR-CORE-CHB-11,Chorbahuli,core_forest,21.61004,79.239449,Camera Trap (Wildlife),,10.63
-PTR-CORE-CHB-12,Chorbahuli,core_forest,21.611363,79.275746,Camera Trap (Wildlife),,10.62
-PTR-CORE-CHB-13,Chorbahuli,core_forest,21.671511,79.2699,Camera Trap (Wildlife),,8.99
-PTR-CORE-CHB-14,Chorbahuli,core_forest,21.631526,79.223476,Camera Trap (Wildlife),,11.04
-PTR-CORE-CHB-15,Chorbahuli,core_forest,21.671461,79.276817,Camera Trap (Wildlife),,8.85
-PTR-CORE-CHB-16,Chorbahuli,core_forest,21.615996,79.249159,Camera Trap (Wildlife),,11.83
-PTR-CORE-CHB-17,Chorbahuli,core_forest,21.614845,79.265636,Camera Trap (Wildlife),,11.52
-PTR-CORE-CHB-18,Chorbahuli,core_forest,21.663608,79.227703,Camera Trap (Wildlife),,10.36
-PTR-CORE-CHB-19,Chorbahuli,core_forest,21.64327,79.252988,Camera Trap (Wildlife),,12.09
-PTR-CORE-CHB-20,Chorbahuli,core_forest,21.628554,79.272346,Camera Trap (Wildlife),,11.75
-PTR-CORE-CHB-21,Chorbahuli,core_forest,21.63962,79.232708,Camera Trap (Wildlife),,12.34
-PTR-CORE-CHB-22,Chorbahuli,core_forest,21.647751,79.263796,Camera Trap (Wildlife),,11.58
-PTR-CORE-CHB-23,Chorbahuli,core_forest,21.624081,79.238703,Camera Trap (Wildlife),,11.54
-PTR-CORE-CHB-24,Chorbahuli,core_forest,21.67966,79.258993,Camera Trap (Wildlife),,8.03
-PTR-CORE-WP-01,West Pench,core_forest,21.690667,79.17623,Camera Trap (Wildlife),,5.73
-PTR-CORE-WP-02,West Pench,core_forest,21.66847,79.155729,Camera Trap (Wildlife),,5.38
-PTR-CORE-WP-03,West Pench,core_forest,21.683666,79.181182,Camera Trap (Wildlife),,6.62
-PTR-CORE-WP-04,West Pench,core_forest,21.676108,79.155415,Camera Trap (Wildlife),,5.21
-PTR-CORE-WP-05,West Pench,core_forest,21.66497,79.184177,Camera Trap (Wildlife),,8.32
-PTR-CORE-WP-06,West Pench,core_forest,21.676026,79.203379,Camera Trap (Wildlife),,8.39
-PTR-CORE-WP-07,West Pench,core_forest,21.720174,79.14496,Camera Trap (Wildlife),,1.89
-PTR-CORE-WP-08,West Pench,core_forest,21.67666,79.186828,Camera Trap (Wildlife),,7.55
-PTR-CORE-WP-09,West Pench,core_forest,21.674997,79.149262,Camera Trap (Wildlife),,4.59
-PTR-CORE-WP-10,West Pench,core_forest,21.725486,79.179973,Camera Trap (Wildlife),,2.61
-PTR-CORE-WP-11,West Pench,core_forest,21.693087,79.194923,Camera Trap (Wildlife),,6.33
-PTR-CORE-WP-12,West Pench,core_forest,21.716525,79.153329,Camera Trap (Wildlife),,2.69
-PTR-CORE-WP-13,West Pench,core_forest,21.666785,79.170174,Camera Trap (Wildlife),,6.87
-PTR-CORE-WP-14,West Pench,core_forest,21.689651,79.172692,Camera Trap (Wildlife),,5.74
-PTR-CORE-WP-15,West Pench,core_forest,21.711035,79.187136,Camera Trap (Wildlife),,4.26
-PTR-CORE-WP-16,West Pench,core_forest,21.728892,79.146889,Camera Trap (Wildlife),,1.74
-PTR-CORE-WP-17,West Pench,core_forest,21.688183,79.163751,Camera Trap (Wildlife),,5.57
-PTR-CORE-WP-18,West Pench,core_forest,21.720317,79.157406,Camera Trap (Wildlife),,2.2
-PTR-CORE-WP-19,West Pench,core_forest,21.673315,79.171403,Camera Trap (Wildlife),,6.88
-PTR-CORE-WP-20,West Pench,core_forest,21.689532,79.159498,Camera Trap (Wildlife),,5.12
-PTR-CORE-SAL-01,Saleghat,core_forest,21.577486,79.200396,Camera Trap (Wildlife),,5.3
-PTR-CORE-SAL-02,Saleghat,core_forest,21.591019,79.196681,Camera Trap (Wildlife),,5.87
-PTR-CORE-SAL-03,Saleghat,core_forest,21.598523,79.148035,Camera Trap (Wildlife),,4.68
-PTR-CORE-SAL-04,Saleghat,core_forest,21.62995,79.195162,Camera Trap (Wildlife),,9.29
-PTR-CORE-SAL-05,Saleghat,core_forest,21.62783,79.200582,Camera Trap (Wildlife),,9.35
-PTR-CORE-SAL-06,Saleghat,core_forest,21.619409,79.154979,Camera Trap (Wildlife),,5.87
-PTR-CORE-SAL-07,Saleghat,core_forest,21.593995,79.157825,Camera Trap (Wildlife),,4.34
-PTR-CORE-SAL-08,Saleghat,core_forest,21.588073,79.148518,Camera Trap (Wildlife),,3.73
-PTR-CORE-SAL-09,Saleghat,core_forest,21.586528,79.204119,Camera Trap (Wildlife),,6.15
-PTR-CORE-SAL-10,Saleghat,core_forest,21.578564,79.192044,Camera Trap (Wildlife),,4.63
-PTR-CORE-SAL-11,Saleghat,core_forest,21.591851,79.17038,Camera Trap (Wildlife),,4.39
-PTR-CORE-SAL-12,Saleghat,core_forest,21.627012,79.204725,Camera Trap (Wildlife),,9.49
-PTR-CORE-SAL-13,Saleghat,core_forest,21.598904,79.188104,Camera Trap (Wildlife),,5.95
-PTR-CORE-SAL-14,Saleghat,core_forest,21.570836,79.162802,Camera Trap (Wildlife),,1.93
-PTR-CORE-SAL-15,Saleghat,core_forest,21.62781,79.179751,Camera Trap (Wildlife),,8.46
-PTR-CORE-SAL-16,Saleghat,core_forest,21.597954,79.189879,Camera Trap (Wildlife),,5.97
-PTR-CORE-SAL-17,Saleghat,core_forest,21.564002,79.180051,Camera Trap (Wildlife),,2.77
-PTR-CORE-SAL-18,Saleghat,core_forest,21.5952,79.196163,Camera Trap (Wildlife),,6.16
-PTR-BUF-PAO-01,Paoni Buffer,buffer,21.518659,79.251862,Camera Trap (Wildlife),,2.44
-PTR-BUF-PAO-02,Paoni Buffer,buffer,21.556824,79.180482,Camera Trap (Wildlife),,2.63
-PTR-BUF-PAO-03,Paoni Buffer,buffer,21.547137,79.193816,Camera Trap (Wildlife),,3.62
-PTR-BUF-PAO-04,Paoni Buffer,buffer,21.561788,79.220574,Camera Trap (Wildlife),,5.61
-PTR-BUF-PAO-05,Paoni Buffer,buffer,21.544066,79.208538,CCTV / Solar Camera,,3.34
-PTR-BUF-PAO-06,Paoni Buffer,buffer,21.561409,79.191341,CCTV / Solar Camera,,3.81
-PTR-BUF-PAO-07,Paoni Buffer,buffer,21.523128,79.206663,CCTV / Solar Camera,,1.13
-PTR-BUF-PAO-08,Paoni Buffer,buffer,21.535147,79.249321,Camera Trap (Wildlife),,4.11
-PTR-BUF-PAO-09,Paoni Buffer,buffer,21.510512,79.224693,Camera Trap (Wildlife),,0.49
-PTR-BUF-PAO-10,Paoni Buffer,buffer,21.514029,79.192052,CCTV / Solar Camera,,0.83
-PTR-BUF-PAO-11,Paoni Buffer,buffer,21.517285,79.202921,Camera Trap (Wildlife),,0.39
-PTR-BUF-PAO-12,Paoni Buffer,buffer,21.55836,79.204562,Camera Trap (Wildlife),,4.84
-PTR-BUF-PAO-13,Paoni Buffer,buffer,21.5341,79.218457,CCTV / Solar Camera,,2.68
-PTR-BUF-PAO-14,Paoni Buffer,buffer,21.543642,79.253979,Camera Trap (Wildlife),,5.1
-PTR-BUF-PAO-15,Paoni Buffer,buffer,21.546732,79.219368,Camera Trap (Wildlife),,4.05
-PTR-BUF-PAO-16,Paoni Buffer,buffer,21.561641,79.185743,Camera Trap (Wildlife),,3.25
-PTR-BUF-PAO-17,Paoni Buffer,buffer,21.558934,79.234393,Camera Trap (Wildlife),,5.63
-PTR-BUF-PAO-18,Paoni Buffer,buffer,21.524979,79.223386,CCTV / Solar Camera,,1.7
-PTR-BUF-PAO-19,Paoni Buffer,buffer,21.521198,79.225739,CCTV / Solar Camera,,1.38
-PTR-BUF-PAO-20,Paoni Buffer,buffer,21.537797,79.19509,Camera Trap (Wildlife),,2.58
-PTR-BUF-PAO-21,Paoni Buffer,buffer,21.515076,79.208886,CCTV / Solar Camera,,0.92
-PTR-BUF-PAO-22,Paoni Buffer,buffer,21.512425,79.201685,Camera Trap (Wildlife),,0.33
-PTR-BUF-PAO-23,Paoni Buffer,buffer,21.545041,79.195956,CCTV / Solar Camera,,3.36
-PTR-BUF-PAO-24,Paoni Buffer,buffer,21.540342,79.209215,Camera Trap (Wildlife),,2.97
-PTR-BUF-PAO-25,Paoni Buffer,buffer,21.516153,79.250604,Camera Trap (Wildlife),,2.24
-PTR-BUF-PAO-26,Paoni Buffer,buffer,21.540007,79.241768,Camera Trap (Wildlife),,4.02
-PTR-BUF-PAO-27,Paoni Buffer,buffer,21.533638,79.178346,CCTV / Solar Camera,,1.68
-PTR-BUF-PAO-28,Paoni Buffer,buffer,21.559444,79.23869,Camera Trap (Wildlife),,5.82
-PTR-BUF-PAO-29,Paoni Buffer,buffer,21.559441,79.191806,Camera Trap (Wildlife),,3.82
-PTR-BUF-PAO-30,Paoni Buffer,buffer,21.546681,79.203294,CCTV / Solar Camera,,3.53
-PTR-BUF-NAG-01,Nagalwadi Buffer,buffer,21.558561,79.309958,Camera Trap (Wildlife),,3.78
-PTR-BUF-NAG-02,Nagalwadi Buffer,buffer,21.552553,79.328096,Camera Trap (Wildlife),,2.51
-PTR-BUF-NAG-03,Nagalwadi Buffer,buffer,21.553478,79.251983,CCTV / Solar Camera,,5.84
-PTR-BUF-NAG-04,Nagalwadi Buffer,buffer,21.548031,79.282937,Camera Trap (Wildlife),,4.57
-PTR-BUF-NAG-05,Nagalwadi Buffer,buffer,21.519674,79.31299,Camera Trap (Wildlife),,1.66
-PTR-BUF-NAG-06,Nagalwadi Buffer,buffer,21.52604,79.253098,CCTV / Solar Camera,,3.19
-PTR-BUF-NAG-07,Nagalwadi Buffer,buffer,21.517234,79.315327,CCTV / Solar Camera,,1.46
-PTR-BUF-NAG-08,Nagalwadi Buffer,buffer,21.524231,79.315643,Camera Trap (Wildlife),,1.61
-PTR-BUF-NAG-09,Nagalwadi Buffer,buffer,21.517261,79.302803,CCTV / Solar Camera,,0.86
-PTR-BUF-NAG-10,Nagalwadi Buffer,buffer,21.523054,79.319148,CCTV / Solar Camera,,1.36
-PTR-BUF-NAG-11,Nagalwadi Buffer,buffer,21.524313,79.290752,CCTV / Solar Camera,,1.85
-PTR-BUF-NAG-12,Nagalwadi Buffer,buffer,21.556658,79.259227,CCTV / Solar Camera,,6.51
-PTR-BUF-NAG-13,Nagalwadi Buffer,buffer,21.514821,79.327003,CCTV / Solar Camera,,1.71
-PTR-BUF-NAG-14,Nagalwadi Buffer,buffer,21.507104,79.297726,CCTV / Solar Camera,,0.4
-PTR-BUF-NAG-15,Nagalwadi Buffer,buffer,21.54507,79.275094,Camera Trap (Wildlife),,4.66
-PTR-BUF-NAG-16,Nagalwadi Buffer,buffer,21.526186,79.296127,CCTV / Solar Camera,,1.84
-PTR-BUF-NAG-17,Nagalwadi Buffer,buffer,21.507441,79.284885,Camera Trap (Wildlife),,0.98
-PTR-BUF-NAG-18,Nagalwadi Buffer,buffer,21.525032,79.255598,CCTV / Solar Camera,,3.03
-PTR-BUF-NAG-19,Nagalwadi Buffer,buffer,21.539274,79.303071,Camera Trap (Wildlife),,2.96
-PTR-BUF-NAG-20,Nagalwadi Buffer,buffer,21.544586,79.274026,CCTV / Solar Camera,,4.68
-PTR-BUF-NAG-21,Nagalwadi Buffer,buffer,21.541679,79.276095,CCTV / Solar Camera,,4.29
-PTR-BUF-NAG-22,Nagalwadi Buffer,buffer,21.535493,79.265347,CCTV / Solar Camera,,4.2
-PTR-BUF-NAG-23,Nagalwadi Buffer,buffer,21.542252,79.322224,CCTV / Solar Camera,,1.58
-PTR-BUF-NAG-24,Nagalwadi Buffer,buffer,21.527334,79.316698,CCTV / Solar Camera,,1.4
-PTR-BUF-NAG-25,Nagalwadi Buffer,buffer,21.52078,79.284391,CCTV / Solar Camera,,2.0
-PTR-COR-NH44-01,NH-44 Corridor,buffer,21.623698,79.26419,Camera Trap (Wildlife),,12.4
-PTR-COR-NH44-02,NH-44 Corridor,buffer,21.632011,79.269112,Camera Trap (Wildlife),,12.14
-PTR-COR-NH44-03,NH-44 Corridor,buffer,21.658593,79.261973,CCTV / Solar Camera,,10.37
-PTR-COR-NH44-04,NH-44 Corridor,buffer,21.55681,79.271328,Camera Trap (Wildlife),,5.98
-PTR-COR-NH44-05,NH-44 Corridor,buffer,21.661103,79.261145,Camera Trap (Wildlife),,10.09
-PTR-COR-NH44-06,NH-44 Corridor,buffer,21.566524,79.258647,CCTV / Solar Camera,,7.43
-PTR-COR-NH44-07,NH-44 Corridor,buffer,21.650029,79.268759,CCTV / Solar Camera,,11.35
-PTR-COR-NH44-08,NH-44 Corridor,buffer,21.614599,79.266817,Camera Trap (Wildlife),,11.43
-PTR-COR-NH44-09,NH-44 Corridor,buffer,21.669302,79.263376,CCTV / Solar Camera,,9.19
-PTR-COR-NH44-10,NH-44 Corridor,buffer,21.583917,79.267185,Camera Trap (Wildlife),,8.81
-PTR-COR-NH44-11,NH-44 Corridor,buffer,21.700679,79.270046,Camera Trap (Wildlife),,5.79
-PTR-COR-NH44-12,NH-44 Corridor,buffer,21.680116,79.261064,CCTV / Solar Camera,,7.98
-PTR-COR-NH44-13,NH-44 Corridor,buffer,21.549039,79.261489,Camera Trap (Wildlife),,5.67
-PTR-COR-NH44-14,NH-44 Corridor,buffer,21.622163,79.26922,CCTV / Solar Camera,,11.86
-PTR-BUF-W-01,West Buffer,buffer,21.645504,79.140657,CCTV / Solar Camera,,5.17
-PTR-BUF-W-02,West Buffer,buffer,21.634751,79.126915,Camera Trap (Wildlife),,3.4
-PTR-BUF-W-03,West Buffer,buffer,21.626929,79.123987,CCTV / Solar Camera,,2.78
-PTR-BUF-W-04,West Buffer,buffer,21.62766,79.138595,CCTV / Solar Camera,,4.27
-PTR-BUF-W-05,West Buffer,buffer,21.628923,79.125852,Camera Trap (Wildlife),,3.03
-PTR-BUF-W-06,West Buffer,buffer,21.584714,79.108099,CCTV / Solar Camera,,0.32
-PTR-BUF-W-07,West Buffer,buffer,21.581104,79.118434,Camera Trap (Wildlife),,1.45
-PTR-BUF-W-08,West Buffer,buffer,21.572454,79.11425,Camera Trap (Wildlife),,1.49
-PTR-BUF-W-09,West Buffer,buffer,21.623578,79.107569,CCTV / Solar Camera,,1.06
-PTR-BUF-W-10,West Buffer,buffer,21.589779,79.123637,Camera Trap (Wildlife),,1.99
-PTR-BUF-W-11,West Buffer,buffer,21.578615,79.121806,Camera Trap (Wildlife),,1.87
-PTR-BUF-W-12,West Buffer,buffer,21.637106,79.135624,CCTV / Solar Camera,,4.32
-PTR-BUF-W-13,West Buffer,buffer,21.602928,79.14271,CCTV / Solar Camera,,4.36
-PTR-BUF-W-14,West Buffer,buffer,21.627813,79.139138,CCTV / Solar Camera,,4.33
-PTR-BUF-W-15,West Buffer,buffer,21.60844,79.134385,Camera Trap (Wildlife),,3.77
-PTR-BUF-N-01,North Buffer,buffer,21.749647,79.191846,CCTV / Solar Camera,,2.41
-PTR-BUF-N-02,North Buffer,buffer,21.735871,79.200377,CCTV / Solar Camera,,2.88
-PTR-BUF-N-03,North Buffer,buffer,21.756725,79.268468,Camera Trap (Wildlife),,1.02
-PTR-BUF-N-04,North Buffer,buffer,21.764422,79.227107,CCTV / Solar Camera,,0.95
-PTR-BUF-N-05,North Buffer,buffer,21.752757,79.244505,Camera Trap (Wildlife),,0.98
-PTR-BUF-N-06,North Buffer,buffer,21.754282,79.173319,CCTV / Solar Camera,,2.1
-PTR-BUF-N-07,North Buffer,buffer,21.740452,79.190121,CCTV / Solar Camera,,3.1
-PTR-BUF-N-08,North Buffer,buffer,21.74135,79.199124,CCTV / Solar Camera,,2.47
-PTR-BUF-N-09,North Buffer,buffer,21.743348,79.283413,CCTV / Solar Camera,,2.43
-PTR-BUF-N-10,North Buffer,buffer,21.742568,79.166057,Camera Trap (Wildlife),,0.69
-PTR-BUF-N-11,North Buffer,buffer,21.757471,79.162032,CCTV / Solar Camera,,1.95
-PTR-BUF-N-12,North Buffer,buffer,21.741727,79.164263,Camera Trap (Wildlife),,0.48
-PTR-BUF-N-13,North Buffer,buffer,21.757627,79.283198,Camera Trap (Wildlife),,0.88
-PTR-BUF-N-14,North Buffer,buffer,21.760177,79.23888,Camera Trap (Wildlife),,0.4
-PTR-BUF-N-15,North Buffer,buffer,21.738787,79.245377,Camera Trap (Wildlife),,2.1
-PTR-BUF-E-01,East Buffer,buffer,21.631154,79.368969,CCTV / Solar Camera,,2.69
-PTR-BUF-E-02,East Buffer,buffer,21.598457,79.381254,Camera Trap (Wildlife),,1.55
-PTR-BUF-E-03,East Buffer,buffer,21.665557,79.365732,CCTV / Solar Camera,,3.47
-PTR-BUF-E-04,East Buffer,buffer,21.591891,79.360899,CCTV / Solar Camera,,1.96
-PTR-BUF-E-05,East Buffer,buffer,21.643338,79.391781,CCTV / Solar Camera,,0.5
-PTR-BUF-E-06,East Buffer,buffer,21.623632,79.385026,Camera Trap (Wildlife),,1.29
-PTR-BUF-E-07,East Buffer,buffer,21.645131,79.38907,Camera Trap (Wildlife),,0.82
-PTR-BUF-E-08,East Buffer,buffer,21.591209,79.387037,Camera Trap (Wildlife),,1.76
-PTR-BUF-E-09,East Buffer,buffer,21.667585,79.379808,Camera Trap (Wildlife),,2.24
-PTR-BUF-E-10,East Buffer,buffer,21.618192,79.374993,CCTV / Solar Camera,,1.24
-PTR-BUF-E-11,East Buffer,buffer,21.587585,79.382664,Camera Trap (Wildlife),,1.15
-PTR-BUF-E-12,East Buffer,buffer,21.673453,79.388782,Camera Trap (Wildlife),,1.89
-PTR-VIL-SIL-01,Sillari Edge,village_edge,21.609335,79.378622,PTZ / AI Camera,Sillari,0.36
-PTR-VIL-SIL-02,Sillari Edge,village_edge,21.613916,79.379597,PTZ / AI Camera,Sillari,0.64
-PTR-VIL-SIL-03,Sillari Edge,village_edge,21.60653,79.376761,PTZ / AI Camera,Sillari,0.71
-PTR-VIL-PIP-01,Pipariya Edge,village_edge,21.578217,79.371505,PTZ / AI Camera,Pipariya,0.36
-PTR-VIL-PIP-02,Pipariya Edge,village_edge,21.579159,79.374196,PTZ / AI Camera,Pipariya,0.65
-PTR-VIL-PAO-01,Paoni Edge,village_edge,21.517746,79.224649,PTZ / AI Camera,Paoni,0.51
-PTR-VIL-PAO-02,Paoni Edge,village_edge,21.518257,79.225925,PTZ / AI Camera,Paoni,0.57
-PTR-VIL-PAO-03,Paoni Edge,village_edge,21.513223,79.222455,PTZ / AI Camera,Paoni,0.53
-PTR-VIL-KHU-01,Khursapar Edge,village_edge,21.562346,79.112789,PTZ / AI Camera,Khursapar,0.73
-PTR-VIL-KHU-02,Khursapar Edge,village_edge,21.557508,79.117505,PTZ / AI Camera,Khursapar,0.46
-PTR-VIL-BOD-01,Bodhali Edge,village_edge,21.622698,79.104682,PTZ / AI Camera,Bodhali,0.39
-PTR-VIL-BOD-02,Bodhali Edge,village_edge,21.620364,79.102943,PTZ / AI Camera,Bodhali,0.38
-PTR-VIL-AWA-01,Awarghani Edge,village_edge,21.66625,79.102875,PTZ / AI Camera,Awarghani,0.39
-PTR-VIL-AWA-02,Awarghani Edge,village_edge,21.666548,79.100584,PTZ / AI Camera,Awarghani,0.5
-PTR-VIL-TUR-01,Turia Edge,village_edge,21.749797,79.142962,PTZ / AI Camera,Turia,0.46
-PTR-VIL-TUR-02,Turia Edge,village_edge,21.755801,79.142558,PTZ / AI Camera,Turia,0.63
-PTR-VIL-NAV-01,Navegaon Edge,village_edge,21.510166,79.301911,PTZ / AI Camera,Navegaon,0.52
-PTR-VIL-NAV-02,Navegaon Edge,village_edge,21.507414,79.304064,PTZ / AI Camera,Navegaon,0.5
-PTR-VIL-KAR-01,Karegaon Edge,village_edge,21.760552,79.275403,PTZ / AI Camera,Karegaon,0.47
-PTR-VIL-KAR-02,Karegaon Edge,village_edge,21.759761,79.280118,PTZ / AI Camera,Karegaon,0.42
-PTR-VIL-JUN-01,Junona Edge,village_edge,21.571482,79.360172,PTZ / AI Camera,Junona,0.7
-PTR-VIL-JUN-02,Junona Edge,village_edge,21.569942,79.364044,PTZ / AI Camera,Junona,0.45
+station_id,camera_id,range,zone_type,latitude,longitude,habitat,trail_type,camera_type,nearest_village,nearest_village_km,nearest_water_km,nearest_road_km,trap_nights,total_detections,n_failures
+CAM-0001,CAM-0001,East Pench,core_forest,21.645854,79.319692,teak_forest,streambed,Camera Trap (Wildlife),Sillari,7.71,1.16,5.63,11.0,22,1
+CAM-0002,CAM-0002,East Pench,core_forest,21.622489,79.301077,mixed_forest,streambed,Camera Trap (Wildlife),Sillari,8.72,3.75,3.72,41.0,82,2
+CAM-0003,CAM-0003,East Pench,core_forest,21.609939,79.300875,bamboo,animal_trail,Camera Trap (Wildlife),Pipariya,8.33,4.31,3.7,34.0,68,2
+CAM-0004,CAM-0004,East Pench,core_forest,21.66184,79.334762,riparian_forest,animal_trail,Camera Trap (Wildlife),Karmajhiri,6.34,1.4,7.19,16.0,32,2
+CAM-0005,CAM-0005,East Pench,core_forest,21.64043,79.340563,riparian_forest,animal_trail,Camera Trap (Wildlife),Sillari,5.56,1.52,7.78,35.5,71,5
+CAM-0006,CAM-0006,East Pench,core_forest,21.625225,79.318854,bamboo,animal_trail,Camera Trap (Wildlife),Sillari,6.97,2.98,5.55,18.5,37,2
+CAM-0007,CAM-0007,East Pench,core_forest,21.69906,79.355968,mixed_forest,animal_trail,Camera Trap (Wildlife),Kolitmara,3.02,4.86,9.37,5.5,11,4
+CAM-0008,CAM-0008,East Pench,core_forest,21.609576,79.316853,mixed_forest,streambed,Camera Trap (Wildlife),Pipariya,6.83,4.69,5.34,16.5,33,6
+CAM-0009,CAM-0009,East Pench,core_forest,21.66145,79.296989,teak_forest,waterhole_approach,Camera Trap (Wildlife),Manegaon,9.37,1.35,3.29,36.0,72,4
+CAM-0010,CAM-0010,East Pench,core_forest,21.699579,79.338307,teak_forest,waterhole_approach,Camera Trap (Wildlife),Totladoh,4.54,4.79,7.55,5.5,11,2
+CAM-0011,CAM-0011,East Pench,core_forest,21.680818,79.296324,mixed_forest,forest_road,Camera Trap (Wildlife),Manegaon,7.26,2.71,3.23,25.0,50,4
+CAM-0012,CAM-0012,East Pench,core_forest,21.69795,79.297865,teak_forest,animal_trail,Camera Trap (Wildlife),Manegaon,5.37,4.39,3.39,3.0,6,1
+CAM-0013,CAM-0013,East Pench,core_forest,21.644528,79.299705,teak_forest,crossing,Camera Trap (Wildlife),Sillari,9.5,2.02,3.57,22.5,45,1
+CAM-0014,CAM-0014,East Pench,core_forest,21.608399,79.358705,teak_forest,streambed,Camera Trap (Wildlife),Sillari,2.74,5.48,9.65,34.0,68,1
+CAM-0015,CAM-0015,East Pench,core_forest,21.64353,79.358313,teak_forest,animal_trail,Camera Trap (Wildlife),Pangdi,3.8,3.0,9.61,19.0,38,3
+CAM-0016,CAM-0016,East Pench,core_forest,21.662339,79.320583,riparian_forest,streambed,Camera Trap (Wildlife),Kolitmara,7.56,1.12,5.73,31.5,63,4
+CAM-0017,CAM-0017,East Pench,core_forest,21.696118,79.31596,mixed_forest,animal_trail,Camera Trap (Wildlife),Manegaon,5.46,4.06,5.25,3.0,6,2
+CAM-0018,CAM-0018,East Pench,core_forest,21.623605,79.35515,teak_forest,animal_trail,Camera Trap (Wildlife),Sillari,3.33,3.91,9.29,28.0,56,3
+CAM-0019,CAM-0019,East Pench,core_forest,21.626318,79.338994,mixed_forest,animal_trail,Camera Trap (Wildlife),Sillari,5.0,2.79,7.62,48.0,96,1
+CAM-0020,CAM-0020,East Pench,core_forest,21.661356,79.356827,grassland,streambed,Camera Trap (Wildlife),Karmajhiri,4.13,3.04,9.46,1.0,2,4
+CAM-0021,CAM-0021,West Pench,core_forest,21.660388,79.161413,mixed_forest,ridge,Camera Trap (Wildlife),Ghiregaon,6.21,6.95,10.67,23.5,47,2
+CAM-0022,CAM-0022,West Pench,core_forest,21.714623,79.203699,teak_forest,ridge,Camera Trap (Wildlife),Hiwra,4.95,3.27,6.31,20.0,40,2
+CAM-0023,CAM-0023,West Pench,core_forest,21.698385,79.14569,mixed_forest,forest_road,Camera Trap (Wildlife),Pitesur,3.41,4.58,12.29,44.0,88,3
+CAM-0024,CAM-0024,West Pench,core_forest,21.699067,79.200892,bamboo,animal_trail,Camera Trap (Wildlife),Bodalkasa,6.2,3.72,6.6,31.0,62,2
+CAM-0025,CAM-0025,West Pench,core_forest,21.679297,79.184406,mixed_forest,streambed,Camera Trap (Wildlife),Bodalkasa,7.19,6.23,8.3,16.5,33,4
+CAM-0026,CAM-0026,West Pench,core_forest,21.661419,79.202975,mixed_forest,animal_trail,Camera Trap (Wildlife),Bodalkasa,9.78,5.17,6.39,36.5,73,4
+CAM-0027,CAM-0027,West Pench,core_forest,21.713362,79.181053,teak_forest,ridge,Camera Trap (Wildlife),Bodalkasa,3.67,3.62,8.65,10.0,20,2
+CAM-0028,CAM-0028,West Pench,core_forest,21.714657,79.165287,teak_forest,crossing,Camera Trap (Wildlife),Bodalkasa,2.87,2.7,10.27,0.5,1,2
+CAM-0029,CAM-0029,West Pench,core_forest,21.716244,79.144024,mixed_forest,forest_road,Camera Trap (Wildlife),Mogra,2.1,2.81,12.46,1.0,2,3
+CAM-0030,CAM-0030,West Pench,core_forest,21.658278,79.182343,teak_forest,animal_trail,Camera Trap (Wildlife),Ghiregaon,8.32,7.12,8.51,65.5,131,3
+CAM-0031,CAM-0031,West Pench,core_forest,21.682028,79.142899,teak_forest,crossing,Camera Trap (Wildlife),Ghiregaon,3.91,6.41,12.58,70.0,140,2
+CAM-0032,CAM-0032,West Pench,core_forest,21.70015,79.180221,mixed_forest,forest_road,Camera Trap (Wildlife),Bodalkasa,4.89,4.78,8.73,4.0,8,3
+CAM-0033,CAM-0033,West Pench,core_forest,21.679446,79.200519,mixed_forest,streambed,Camera Trap (Wildlife),Bodalkasa,7.91,4.91,6.64,7.5,15,4
+CAM-0034,CAM-0034,West Pench,core_forest,21.663106,79.142701,bamboo,animal_trail,Camera Trap (Wildlife),Ghiregaon,4.31,6.05,12.6,24.0,48,3
+CAM-0035,CAM-0035,West Pench,core_forest,21.698035,79.164317,mixed_forest,waterhole_approach,Camera Trap (Wildlife),Bodalkasa,4.68,4.48,10.37,4.0,8,5
+CAM-0036,CAM-0036,West Pench,core_forest,21.680961,79.161585,teak_forest,forest_road,Camera Trap (Wildlife),Pitesur,5.78,6.34,10.65,4.0,8,4
+CAM-0037,CAM-0037,Chorbahuli,core_forest,21.627916,79.223226,grassland,streambed,Camera Trap (Wildlife),Wadamba,10.72,3.35,4.3,25.5,51,5
+CAM-0038,CAM-0038,Chorbahuli,core_forest,21.623079,79.258551,teak_forest,streambed,Camera Trap (Wildlife),Khapa,12.69,1.02,0.66,19.5,39,2
+CAM-0039,CAM-0039,Chorbahuli,core_forest,21.65985,79.243359,teak_forest,ridge,Camera Trap (Wildlife),Bandara,10.37,1.78,2.23,63.0,126,2
+CAM-0040,CAM-0040,Chorbahuli,core_forest,21.658456,79.260446,mixed_forest,animal_trail,Camera Trap (Wildlife),Bandara,10.38,1.84,0.47,31.0,62,5
+CAM-0041,CAM-0041,Chorbahuli,core_forest,21.640701,79.238195,teak_forest,forest_road,Camera Trap (Wildlife),Bandara,12.56,1.31,2.76,21.0,42,2
+CAM-0042,CAM-0042,Chorbahuli,core_forest,21.640737,79.27942,teak_forest,forest_road,Camera Trap (Wildlife),Sillari,11.33,0.97,1.49,7.0,14,2
+CAM-0043,CAM-0043,Chorbahuli,core_forest,21.642541,79.260745,teak_forest,streambed,Camera Trap (Wildlife),Bandara,12.15,0.99,0.44,14.0,28,3
+CAM-0044,CAM-0044,Chorbahuli,core_forest,21.680142,79.238608,mixed_forest,animal_trail,Camera Trap (Wildlife),Bandara,8.28,3.33,2.72,7.5,15,3
+CAM-0045,CAM-0045,Chorbahuli,core_forest,21.660499,79.22207,teak_forest,forest_road,Camera Trap (Wildlife),Hiwra,10.85,3.35,4.42,43.0,86,3
+CAM-0046,CAM-0046,Chorbahuli,core_forest,21.678507,79.262817,teak_forest,crossing,Camera Trap (Wildlife),Bandara,8.16,3.95,0.22,51.5,103,3
+CAM-0047,CAM-0047,Chorbahuli,core_forest,21.622745,79.237739,bamboo,animal_trail,Camera Trap (Wildlife),Wadamba,11.37,2.77,2.81,17.5,35,5
+CAM-0048,CAM-0048,Chorbahuli,core_forest,21.641215,79.222714,teak_forest,ridge,Camera Trap (Wildlife),Wadamba,11.84,2.84,4.36,10.5,21,4
+CAM-0049,CAM-0049,Chorbahuli,core_forest,21.67811,79.223583,mixed_forest,forest_road,Camera Trap (Wildlife),Hiwra,8.91,3.73,4.27,16.0,32,2
+CAM-0050,CAM-0050,Chorbahuli,core_forest,21.681894,79.279911,bamboo,streambed,Camera Trap (Wildlife),Manegaon,7.66,3.94,1.54,16.5,33,1
+CAM-0051,CAM-0051,Chorbahuli,core_forest,21.662919,79.281208,teak_forest,animal_trail,Camera Trap (Wildlife),Manegaon,9.58,2.79,1.67,4.0,8,4
+CAM-0052,CAM-0052,Chorbahuli,core_forest,21.622385,79.277484,mixed_forest,animal_trail,Camera Trap (Wildlife),Pipariya,11.09,1.54,1.29,31.5,63,8
+CAM-0053,CAM-0053,Devalapar,core_forest,21.715437,79.239766,teak_forest,crossing,Camera Trap (Wildlife),Bandara,4.56,0.78,2.6,32.0,64,3
+CAM-0054,CAM-0054,Devalapar,core_forest,21.714159,79.218764,teak_forest,forest_road,Camera Trap (Wildlife),Hiwra,4.88,1.74,4.76,25.5,51,1
+CAM-0055,CAM-0055,Devalapar,core_forest,21.69942,79.218717,bamboo,streambed,Camera Trap (Wildlife),Hiwra,6.51,2.05,4.77,48.0,96,2
+CAM-0056,CAM-0056,Devalapar,core_forest,21.733428,79.222533,mixed_forest,animal_trail,Camera Trap (Wildlife),Hiwra,2.84,2.9,4.37,93.5,187,4
+CAM-0057,CAM-0057,Devalapar,core_forest,21.698333,79.242697,teak_forest,ridge,Camera Trap (Wildlife),Bandara,6.22,1.52,2.3,19.5,39,6
+CAM-0058,CAM-0058,Devalapar,core_forest,21.732365,79.240013,teak_forest,animal_trail,Camera Trap (Wildlife),Bandara,3.0,2.1,2.57,63.0,126,3
+CAM-0059,CAM-0059,Devalapar,core_forest,21.715107,79.260555,riparian_forest,ridge,Camera Trap (Wildlife),Bandara,4.09,1.29,0.46,37.5,75,1
+CAM-0060,CAM-0060,Devalapar,core_forest,21.697199,79.259032,bamboo,waterhole_approach,Camera Trap (Wildlife),Bandara,6.08,2.28,0.61,17.5,35,3
+CAM-0061,CAM-0061,Devalapar,core_forest,21.733696,79.262554,teak_forest,animal_trail,Camera Trap (Wildlife),Bandara,2.05,2.56,0.25,26.0,52,5
+CAM-0062,CAM-0062,Saleghat,core_forest,21.587664,79.160376,riparian_forest,waterhole_approach,Camera Trap (Wildlife),Wadamba,3.67,0.94,10.78,25.5,51,6
+CAM-0063,CAM-0063,Saleghat,core_forest,21.624073,79.180131,mixed_forest,forest_road,Camera Trap (Wildlife),Wadamba,8.09,3.58,8.74,12.5,25,2
+CAM-0064,CAM-0064,Saleghat,core_forest,21.591622,79.201925,riparian_forest,streambed,Camera Trap (Wildlife),Wadamba,6.32,0.36,6.5,35.5,71,3
+CAM-0065,CAM-0065,Saleghat,core_forest,21.568745,79.163551,teak_forest,animal_trail,Camera Trap (Wildlife),Wadamba,1.76,2.92,10.45,27.0,54,1
+CAM-0066,CAM-0066,Saleghat,core_forest,21.606452,79.160942,teak_forest,animal_trail,Camera Trap (Wildlife),Wadamba,5.74,1.34,10.72,47.5,95,3
+CAM-0067,CAM-0067,Saleghat,core_forest,21.607096,79.179456,teak_forest,waterhole_approach,Camera Trap (Wildlife),Wadamba,6.31,2.0,8.81,14.0,28,5
+CAM-0068,CAM-0068,Saleghat,core_forest,21.627219,79.165474,mixed_forest,animal_trail,Camera Trap (Wildlife),Bodhali,7.0,3.58,10.25,23.5,47,1
+CAM-0069,CAM-0069,Saleghat,core_forest,21.608057,79.199865,teak_forest,streambed,Camera Trap (Wildlife),Wadamba,7.49,2.07,6.71,23.0,46,6
+CAM-0070,CAM-0070,Saleghat,core_forest,21.622399,79.199789,teak_forest,animal_trail,Camera Trap (Wildlife),Wadamba,8.79,3.64,6.72,26.0,52,5
+CAM-0071,CAM-0071,Saleghat,core_forest,21.5909,79.180604,teak_forest,streambed,Camera Trap (Wildlife),Wadamba,4.78,1.67,8.69,1.5,3,2
+CAM-0072,CAM-0072,Saleghat,core_forest,21.572058,79.179391,teak_forest,animal_trail,Camera Trap (Wildlife),Wadamba,3.15,2.95,8.82,28.0,56,3
+CAM-0073,CAM-0073,Saleghat,core_forest,21.569168,79.201126,teak_forest,forest_road,Camera Trap (Wildlife),Wadamba,5.0,2.35,6.58,43.0,86,1
+CAM-0074,CAM-0074,Paoni Buffer,buffer,21.517148,79.218654,mixed_forest,streambed,Camera Trap (Wildlife),Paoni,0.81,1.43,4.77,5.0,10,2
+CAM-0075,CAM-0075,Paoni Buffer,buffer,21.553358,79.183519,mixed_forest,animal_trail,Camera Trap (Wildlife),Wadamba,2.94,4.57,8.39,45.5,91,6
+CAM-0076,CAM-0076,Paoni Buffer,core_forest,21.55047,79.240212,bamboo,streambed,Camera Trap (Wildlife),Paoni,4.95,3.08,2.55,22.5,45,3
+CAM-0077,CAM-0077,Paoni Buffer,buffer,21.51735,79.20265,scrub,ridge,Camera Trap (Wildlife),Sawara,0.38,2.27,6.42,1.0,2,7
+CAM-0078,CAM-0078,Paoni Buffer,buffer,21.536082,79.221711,scrub,streambed,Camera Trap (Wildlife),Paoni,2.9,0.7,4.46,19.0,38,1
+CAM-0079,CAM-0079,Paoni Buffer,buffer,21.533329,79.243264,scrub,animal_trail,CCTV / Solar Camera,Paoni,3.53,2.42,2.24,12.0,24,5
+CAM-0080,CAM-0080,Paoni Buffer,buffer,21.532353,79.202565,teak_forest,forest_road,CCTV / Solar Camera,Sawara,1.94,1.81,6.43,18.5,37,4
+CAM-0081,CAM-0081,Paoni Buffer,buffer,21.53739,79.179886,mixed_forest,ridge,CCTV / Solar Camera,Ghoti,2.06,4.21,8.77,25.5,51,2
+CAM-0082,CAM-0082,Paoni Buffer,buffer,21.517311,79.241654,teak_forest,ridge,Camera Trap (Wildlife),Paoni,2.37,2.64,2.4,36.0,72,4
+CAM-0083,CAM-0083,Paoni Buffer,core_forest,21.55036,79.223679,mixed_forest,animal_trail,Camera Trap (Wildlife),Paoni,4.5,2.29,4.26,35.0,70,1
+CAM-0084,CAM-0084,Paoni Buffer,buffer,21.514493,79.184847,teak_forest,forest_road,Camera Trap (Wildlife),Surera,1.13,4.01,8.26,3.0,6,2
+CAM-0085,CAM-0085,Paoni Buffer,core_forest,21.550547,79.204509,mixed_forest,crossing,Camera Trap (Wildlife),Sawara,3.97,2.78,6.23,30.5,61,5
+CAM-0086,CAM-0086,Nagalwadi Buffer,buffer,21.53375,79.300601,mixed_forest,forest_road,Camera Trap (Wildlife),Khandala,2.64,8.31,3.67,10.5,21,5
+CAM-0087,CAM-0087,Nagalwadi Buffer,buffer,21.551809,79.319924,teak_forest,forest_road,Camera Trap (Wildlife),Khapa,2.63,10.36,5.66,39.0,78,1
+CAM-0088,CAM-0088,Nagalwadi Buffer,buffer,21.537241,79.262542,teak_forest,crossing,Camera Trap (Wildlife),Chargaon,4.36,4.46,0.25,29.5,59,4
+CAM-0089,CAM-0089,Nagalwadi Buffer,buffer,21.537292,79.280298,mixed_forest,crossing,Camera Trap (Wildlife),Khandala,3.65,6.26,1.58,5.5,11,7
+CAM-0090,CAM-0090,Nagalwadi Buffer,buffer,21.518734,79.278986,mixed_forest,forest_road,CCTV / Solar Camera,Rawanwadi,2.37,6.2,1.44,24.0,48,2
+CAM-0091,CAM-0091,Nagalwadi Buffer,buffer,21.517571,79.298326,teak_forest,forest_road,Camera Trap (Wildlife),Khandala,0.86,8.19,3.43,0.5,1,6
+CAM-0092,CAM-0092,Nagalwadi Buffer,buffer,21.536769,79.320955,scrub,ridge,CCTV / Solar Camera,Khapa,1.2,10.43,5.76,23.5,47,2
+CAM-0093,CAM-0093,Nagalwadi Buffer,buffer,21.555029,79.297176,scrub,ridge,CCTV / Solar Camera,Khapa,4.38,8.42,3.31,12.0,24,3
+CAM-0094,CAM-0094,Nagalwadi Buffer,buffer,21.552153,79.2796,teak_forest,ridge,CCTV / Solar Camera,Khandala,5.13,6.61,1.5,16.5,33,4
+CAM-0095,CAM-0095,Nagalwadi Buffer,core_forest,21.553553,79.25776,mixed_forest,animal_trail,Camera Trap (Wildlife),Chargaon,6.17,4.69,0.75,21.0,42,0
+CAM-0096,CAM-0096,Nagalwadi Buffer,buffer,21.518405,79.2607,mixed_forest,ridge,Camera Trap (Wildlife),Chargaon,2.27,4.38,0.44,59.5,119,5
+CAM-0097,CAM-0097,Sillari Buffer Sector,buffer,21.608185,79.378101,mixed_forest,animal_trail,Camera Trap (Wildlife),Sillari,0.83,6.79,11.65,1.5,3,3
+CAM-0098,CAM-0098,Sillari Buffer Sector,buffer,21.71548,79.35869,grassland,forest_road,Camera Trap (Wildlife),Totladoh,3.06,3.18,9.65,2.5,5,4
+CAM-0099,CAM-0099,Sillari Buffer Sector,core_forest,21.645901,79.143127,mixed_forest,streambed,Camera Trap (Wildlife),Awarghani,5.36,4.49,12.55,5.5,11,3
+CAM-0100,CAM-0100,Sillari Buffer Sector,buffer,21.645106,79.395749,teak_forest,animal_trail,Camera Trap (Wildlife),Karmajhiri,0.55,6.79,13.47,5.0,10,4
+CAM-0101,CAM-0101,Sillari Buffer Sector,core_forest,21.64605,79.20352,teak_forest,ridge,Camera Trap (Wildlife),Ghiregaon,10.82,4.79,6.33,17.0,34,3
+CAM-0102,CAM-0102,Sillari Buffer Sector,core_forest,21.569383,79.220994,teak_forest,animal_trail,Camera Trap (Wildlife),Sawara,6.41,2.82,4.53,19.0,38,2
+CAM-0103,CAM-0103,Sillari Buffer Sector,core_forest,21.609887,79.2624,bamboo,crossing,Camera Trap (Wildlife),Khapa,11.27,2.25,0.27,22.5,45,1
+CAM-0104,CAM-0104,Sillari Buffer Sector,core_forest,21.677021,79.318773,bamboo,streambed,Camera Trap (Wildlife),Kolitmara,7.11,2.09,5.54,21.5,43,3
+CAM-0105,CAM-0105,Sillari Buffer Sector,buffer,21.751284,79.165655,teak_forest,crossing,Camera Trap (Wildlife),Bodalkasa,1.38,1.67,10.23,2.0,4,3
+CAM-0106,CAM-0106,Sillari Buffer Sector,buffer,21.535528,79.162677,mixed_forest,waterhole_approach,Camera Trap (Wildlife),Ghoti,1.19,5.94,10.54,1.5,3,3
+CAM-0107,CAM-0107,Sillari Buffer Sector,core_forest,21.644264,79.165421,bamboo,streambed,Camera Trap (Wildlife),Ghiregaon,7.38,5.47,10.26,8.5,17,3
+CAM-0108,CAM-0108,West Buffer,buffer,21.643657,79.126133,grassland,streambed,Camera Trap (Wildlife),Bodhali,3.91,3.38,14.3,28.5,57,5
+CAM-0109,CAM-0109,West Buffer,buffer,21.571644,79.144756,teak_forest,animal_trail,Camera Trap (Wildlife),Wadamba,2.13,3.33,12.39,10.0,20,5
+CAM-0110,CAM-0110,West Buffer,buffer,21.591278,79.126447,teak_forest,animal_trail,CCTV / Solar Camera,Jamun,2.32,2.88,14.27,20.5,41,6
+CAM-0111,CAM-0111,West Buffer,buffer,21.62798,79.12392,scrub,crossing,Camera Trap (Wildlife),Bodhali,2.81,1.71,14.53,51.5,103,6
+CAM-0112,CAM-0112,West Buffer,buffer,21.604546,79.122395,mixed_forest,animal_trail,Camera Trap (Wildlife),Teliya,2.51,1.39,14.69,16.0,32,1
+CAM-0113,CAM-0113,West Buffer,buffer,21.587896,79.141935,grassland,animal_trail,Camera Trap (Wildlife),Jamun,3.82,2.5,12.68,39.5,79,3
+CAM-0114,CAM-0114,West Buffer,core_forest,21.623022,79.142596,teak_forest,crossing,Camera Trap (Wildlife),Bodhali,4.61,2.98,12.61,14.0,28,1
+CAM-0115,CAM-0115,West Buffer,buffer,21.569125,79.126382,grassland,forest_road,CCTV / Solar Camera,Khursapar,2.3,4.91,14.28,1.5,3,4
+CAM-0116,CAM-0116,North Buffer,buffer,21.749952,79.239813,teak_forest,animal_trail,Camera Trap (Wildlife),Ghatpendhari,1.22,3.97,2.59,44.0,88,2
+CAM-0117,CAM-0117,North Buffer,buffer,21.752245,79.277665,scrub,animal_trail,Camera Trap (Wildlife),Karegaon,1.44,5.14,1.3,2.0,4,2
+CAM-0118,CAM-0118,North Buffer,buffer,21.751085,79.202736,mixed_forest,streambed,Camera Trap (Wildlife),Hiwra,1.48,1.98,6.41,6.5,13,4
+CAM-0119,CAM-0119,North Buffer,buffer,21.753599,79.261957,teak_forest,forest_road,CCTV / Solar Camera,Bandara,0.27,4.52,0.31,17.5,35,4
+CAM-0120,CAM-0120,North Buffer,buffer,21.753893,79.184744,teak_forest,forest_road,CCTV / Solar Camera,Chikhli,2.38,0.46,8.27,35.0,70,1
+CAM-0121,CAM-0121,North Buffer,buffer,21.753724,79.221269,grassland,forest_road,Camera Trap (Wildlife),Hiwra,0.8,3.77,4.5,2.0,4,4
+CAM-0122,CAM-0122,NH-44 Corridor,core_forest,21.571889,79.257793,grassland,animal_trail,Camera Trap (Wildlife),Paoni,7.9,5.8,0.74,21.5,43,7
+CAM-0123,CAM-0123,NH-44 Corridor,core_forest,21.591028,79.260318,teak_forest,animal_trail,Camera Trap (Wildlife),Khapa,9.87,4.35,0.48,18.0,36,6

@@ -42,15 +42,20 @@
 
       <!-- Area Camera Network Toggle -->
       <div class="area-cam-selector">
-        <label for="select-area-cams"><i class="fa-solid fa-video"></i> Area Cameras:</label>
-        <select id="select-area-cams" title="Show camera stations only for selected range">
-          <option value="NONE" selected>Hidden (Tigers Only)</option>
+        <label for="select-area-cams"><i class="fa-solid fa-video"></i> Cameras:</label>
+        <select id="select-area-cams" title="Filter camera stations by range">
+          <option value="NONE" selected>Hidden</option>
+          <option value="ALL">All Stations (123)</option>
           <!-- Dynamically populated -->
         </select>
       </div>
 
       <!-- Zone Toggle -->
       <div class="zone-toggle-group">
+        <label class="zone-toggle-label cam-toggle-btn" title="Toggle visibility of all installed camera stations">
+          <input type="checkbox" id="toggle-all-cameras">
+          <span><i class="fa-solid fa-video"></i> All Cameras</span>
+        </label>
         <label class="zone-toggle-label">
           <input type="checkbox" id="toggle-zones" checked>
           <span><i class="fa-solid fa-draw-polygon"></i> Zones</span>
@@ -91,9 +96,14 @@
     <!-- Floating Left Sidebar -->
     <aside class="sidebar" id="sidebar">
       <div class="sidebar-header">
-        <div class="sidebar-title">
-          <i class="fa-solid fa-shield-cat"></i>
-          <span>IDENTIFIED TIGERS (<span id="total-tiger-count">107</span>)</span>
+        <!-- Dual Tabs: Tigers vs Cameras -->
+        <div class="sidebar-tabs">
+          <button class="sidebar-tab active" id="tab-btn-tigers" data-tab="tigers">
+            <i class="fa-solid fa-shield-cat"></i> Tigers (<span id="total-tiger-count">107</span>)
+          </button>
+          <button class="sidebar-tab" id="tab-btn-cameras" data-tab="cameras">
+            <i class="fa-solid fa-video"></i> Camera Network (<span id="total-cam-count">123</span>)
+          </button>
         </div>
         <button class="sidebar-toggle" id="btn-toggle-sidebar" title="Collapse / Expand Sidebar">
           <i class="fa-solid fa-chevron-left"></i>
@@ -102,29 +112,70 @@
 
       <div class="sidebar-content">
         
-        <!-- Search & Quick Filters -->
-        <div class="filter-box">
-          <div class="search-input-wrapper">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <input type="text" id="tiger-search" placeholder="Search Tiger ID (e.g. 250, 154, 160)..." />
+        <!-- PANE 1: TIGER DIRECTORY -->
+        <div class="tab-pane active" id="pane-tigers">
+          <!-- Search & Quick Filters -->
+          <div class="filter-box">
+            <div class="search-input-wrapper">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input type="text" id="tiger-search" placeholder="Search Tiger ID (e.g. 250, 154, 160)..." />
+            </div>
+            
+            <div class="quick-filter-chips">
+              <button class="chip active" data-filter="all">All</button>
+              <button class="chip" data-filter="male"><i class="fa-solid fa-mars"></i> Male</button>
+              <button class="chip" data-filter="female"><i class="fa-solid fa-venus"></i> Female</button>
+              <button class="chip chip-alert" data-filter="alert"><i class="fa-solid fa-triangle-exclamation"></i> Alerts</button>
+            </div>
           </div>
-          
-          <div class="quick-filter-chips">
-            <button class="chip active" data-filter="all">All</button>
-            <button class="chip" data-filter="male"><i class="fa-solid fa-mars"></i> Male</button>
-            <button class="chip" data-filter="female"><i class="fa-solid fa-venus"></i> Female</button>
-            <button class="chip chip-alert" data-filter="alert"><i class="fa-solid fa-triangle-exclamation"></i> Alerts</button>
+
+          <!-- Tiger List Cards -->
+          <div class="tiger-list-container">
+            <div class="section-title">
+              <span>CLICK A TIGER TO VIEW ITS SIGHTING TRAIL</span>
+              <span class="badge" id="visible-tiger-count">107 Tigers</span>
+            </div>
+            <div class="tiger-list" id="tiger-list">
+              <!-- Dynamically populated -->
+            </div>
           </div>
         </div>
 
-        <!-- Tiger List Cards -->
-        <div class="tiger-list-container">
-          <div class="section-title">
-            <span>CLICK A TIGER TO VIEW ITS SIGHTING TRAIL</span>
-            <span class="badge" id="visible-tiger-count">107 Tigers</span>
+        <!-- PANE 2: CAMERA STATIONS DIRECTORY -->
+        <div class="tab-pane" id="pane-cameras">
+          <!-- Search & Quick Filters -->
+          <div class="filter-box">
+            <div class="search-input-wrapper">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input type="text" id="camera-search" placeholder="Search Station (e.g. CAM-0004, Saleghat, Wadamba)..." />
+            </div>
+            
+            <div class="quick-filter-chips" id="camera-filter-chips">
+              <button class="chip active" data-cam-filter="all">All (123)</button>
+              <button class="chip" data-cam-filter="core"><i class="fa-solid fa-tree"></i> Core</button>
+              <button class="chip" data-cam-filter="buffer"><i class="fa-solid fa-shield"></i> Buffer</button>
+              <button class="chip" data-cam-filter="active"><i class="fa-solid fa-paw"></i> Active Detections</button>
+              <button class="chip" data-cam-filter="cctv"><i class="fa-solid fa-tower-broadcast"></i> CCTV / Solar</button>
+            </div>
+
+            <div class="cam-range-filter-wrap">
+              <label for="cam-sidebar-range-select"><i class="fa-solid fa-filter"></i> Range:</label>
+              <select id="cam-sidebar-range-select">
+                <option value="ALL">All Ranges</option>
+                <!-- Populated dynamically -->
+              </select>
+            </div>
           </div>
-          <div class="tiger-list" id="tiger-list">
-            <!-- Dynamically populated -->
+
+          <!-- Camera List Cards -->
+          <div class="camera-list-container">
+            <div class="section-title">
+              <span>CLICK A CAMERA TO FOCUS ON MAP</span>
+              <span class="badge" id="visible-cam-count">123 Cameras</span>
+            </div>
+            <div class="camera-list" id="camera-list">
+              <!-- Dynamically populated -->
+            </div>
           </div>
         </div>
 
@@ -141,6 +192,20 @@
         </div>
         <button class="btn-back-all" id="btn-clear-tiger" title="Back to All Tigers Last Seen">
           <i class="fa-solid fa-arrow-left"></i> All Tigers
+        </button>
+      </div>
+
+      <!-- Active Camera Station Banner -->
+      <div class="active-tiger-card active-camera-banner hidden" id="active-camera-banner">
+        <div class="card-left">
+          <div class="cam-avatar" id="active-cam-avatar"><i class="fa-solid fa-video"></i></div>
+          <div>
+            <div class="active-tiger-title" id="active-cam-name">CAM-0001</div>
+            <div class="active-tiger-sub" id="active-cam-info">Saleghat | Core Forest | 114 Detections</div>
+          </div>
+        </div>
+        <button class="btn-back-all" id="btn-clear-cam-focus" title="Clear camera focus">
+          <i class="fa-solid fa-xmark"></i> Clear
         </button>
       </div>
     </aside>
@@ -173,13 +238,57 @@
     <!-- Map Legend -->
     <div class="map-legend" id="map-legend">
       <div class="legend-header">
-        <span id="legend-title"><i class="fa-solid fa-location-dot"></i> Tiger Alert Level</span>
+        <span id="legend-title"><i class="fa-solid fa-layer-group"></i> Map Legend</span>
       </div>
       <div class="legend-items" id="legend-items">
         <div class="legend-item"><span class="tiger-dot dot-safe"></span> Safe — Core Forest</div>
         <div class="legend-item"><span class="tiger-dot dot-caution"></span> Caution — Buffer Zone</div>
         <div class="legend-item"><span class="tiger-dot dot-critical"></span> Critical — Near Village</div>
-        <div class="legend-item" id="legend-cam-item" style="display:none;"><span class="cam-dot"></span> Camera Station</div>
+        <div class="legend-item" id="legend-cam-item" style="display:none;"><span class="cam-dot"></span> Camera Stations (<span id="legend-cam-count">0</span>)</div>
+      </div>
+    </div>
+
+    <!-- Timeline Slider Widget -->
+    <div class="timeline-widget hidden" id="timeline-widget">
+      <div class="timeline-header">
+        <div class="timeline-title">
+          <i class="fa-solid fa-timeline"></i>
+          <span>SIGHTING WINDOW</span>
+        </div>
+        <div class="timeline-stats">
+          <span class="timeline-window-label" id="timeline-window-label">Last 15 sightings</span>
+          <span class="timeline-count-badge" id="timeline-count-badge">15 / 15</span>
+        </div>
+      </div>
+
+      <div class="timeline-body">
+        <div class="timeline-date-labels">
+          <span class="timeline-date-from" id="timeline-date-from">—</span>
+          <span class="timeline-date-to" id="timeline-date-to">—</span>
+        </div>
+
+        <div class="timeline-slider-track">
+          <!-- Dual-handle range: start & end sighting index -->
+          <div class="timeline-range-wrapper">
+            <input type="range" id="timeline-start" class="timeline-range tl-start" min="0" max="100" value="0" step="1">
+            <input type="range" id="timeline-end"   class="timeline-range tl-end"   min="0" max="100" value="100" step="1">
+            <div class="timeline-fill" id="timeline-fill"></div>
+          </div>
+        </div>
+
+        <div class="timeline-controls">
+          <button class="btn-tl-preset" data-n="5"  title="Last 5 sightings">5</button>
+          <button class="btn-tl-preset" data-n="10" title="Last 10 sightings">10</button>
+          <button class="btn-tl-preset active" data-n="15" title="Last 15 sightings">15</button>
+          <button class="btn-tl-preset" data-n="25" title="Last 25 sightings">25</button>
+          <button class="btn-tl-preset btn-tl-all" data-n="all" title="Show all sightings">All</button>
+          <div class="tl-territory-toggle">
+            <label class="tl-checkbox-label">
+              <input type="checkbox" id="tl-show-territory" checked>
+              <span><i class="fa-solid fa-circle-dot"></i> Territory</span>
+            </label>
+          </div>
+        </div>
       </div>
     </div>
 

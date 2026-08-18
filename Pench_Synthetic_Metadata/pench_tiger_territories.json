@@ -1,965 +1,3961 @@
 {
-  "250": {
-    "tiger_id": 250,
+  "0": {
+    "tiger_id": 0,
     "sex": "Male",
-    "primary_range": "West Pench",
-    "centroid_lat": 21.686912,
-    "centroid_lon": 79.160567,
-    "territory_radius_km": 10.32,
-    "min_village_dist_km": 5.35
-  },
-  "256": {
-    "tiger_id": 256,
-    "sex": "Male",
-    "primary_range": "Chorbahuli",
-    "centroid_lat": 21.670385,
-    "centroid_lon": 79.231935,
-    "territory_radius_km": 11.49,
-    "min_village_dist_km": 9.51
-  },
-  "171": {
-    "tiger_id": 171,
-    "sex": "Male",
+    "age_years": 7.0,
+    "life_stage": "adult",
+    "body_condition": "excellent",
+    "territorial_status": "transient",
+    "dispersal_status": "resident",
     "primary_range": "Saleghat",
-    "centroid_lat": 21.594265,
-    "centroid_lon": 79.194737,
-    "territory_radius_km": 10.52,
-    "min_village_dist_km": 5.98
+    "centroid_lat": 21.601922,
+    "centroid_lon": 79.161264,
+    "home_range_km2": 15.2,
+    "territory_radius_km": 2.2,
+    "core_area_fraction": 0.41,
+    "core_radius_km": 1.41,
+    "min_village_dist_km": 5.25,
+    "habitat_preference": "teak_forest",
+    "water_preference": 0.8,
+    "camera_detectability": 0.84,
+    "human_avoidance": 0.96,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.6018,
+        79.16196
+      ],
+      "recent_center": [
+        21.59635,
+        79.15922
+      ],
+      "centroid_shift_km": 0.67,
+      "baseline_radius_km": 1.58,
+      "recent_radius_km": 1.13,
+      "range_change_km2": 3.8,
+      "territory_shift_detected": false,
+      "shift_type": "stable"
+    }
   },
-  "247": {
-    "tiger_id": 247,
-    "sex": "Female",
-    "primary_range": "Saleghat",
-    "centroid_lat": 21.585682,
-    "centroid_lon": 79.175152,
-    "territory_radius_km": 5.23,
-    "min_village_dist_km": 3.99
-  },
-  "238": {
-    "tiger_id": 238,
+  "1": {
+    "tiger_id": 1,
     "sex": "Male",
-    "primary_range": "Chorbahuli",
-    "centroid_lat": 21.63673,
-    "centroid_lon": 79.225412,
-    "territory_radius_km": 10.06,
-    "min_village_dist_km": 11.61
-  },
-  "264": {
-    "tiger_id": 264,
-    "sex": "Female",
+    "age_years": 7.0,
+    "life_stage": "adult",
+    "body_condition": "good",
+    "territorial_status": "transient",
+    "dispersal_status": "resident",
     "primary_range": "West Pench",
-    "centroid_lat": 21.66271,
-    "centroid_lon": 79.167392,
-    "territory_radius_km": 5.58,
-    "min_village_dist_km": 6.71
+    "centroid_lat": 21.661044,
+    "centroid_lon": 79.189319,
+    "home_range_km2": 18.1,
+    "territory_radius_km": 2.4,
+    "core_area_fraction": 0.45,
+    "core_radius_km": 1.61,
+    "min_village_dist_km": 8.94,
+    "habitat_preference": "teak_forest",
+    "water_preference": 0.37,
+    "camera_detectability": 0.79,
+    "human_avoidance": 0.9,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.66366,
+        79.187
+      ],
+      "recent_center": [
+        21.65965,
+        79.19137
+      ],
+      "centroid_shift_km": 0.63,
+      "baseline_radius_km": 1.84,
+      "recent_radius_km": 1.21,
+      "range_change_km2": 6.0,
+      "territory_shift_detected": false,
+      "shift_type": "range_contraction"
+    }
   },
-  "54": {
-    "tiger_id": 54,
+  "3": {
+    "tiger_id": 3,
     "sex": "Male",
-    "primary_range": "West Pench",
-    "centroid_lat": 21.703567,
-    "centroid_lon": 79.178046,
-    "territory_radius_km": 10.48,
-    "min_village_dist_km": 4.45
-  },
-  "237": {
-    "tiger_id": 237,
-    "sex": "Male",
-    "primary_range": "East Pench",
-    "centroid_lat": 21.642909,
-    "centroid_lon": 79.320695,
-    "territory_radius_km": 9.02,
-    "min_village_dist_km": 7.46
-  },
-  "255": {
-    "tiger_id": 255,
-    "sex": "Male",
-    "primary_range": "East Pench",
-    "centroid_lat": 21.685745,
-    "centroid_lon": 79.327229,
-    "territory_radius_km": 9.0,
-    "min_village_dist_km": 6.04
-  },
-  "96": {
-    "tiger_id": 96,
-    "sex": "Female",
-    "primary_range": "East Pench",
-    "centroid_lat": 21.688177,
-    "centroid_lon": 79.282737,
-    "territory_radius_km": 4.13,
-    "min_village_dist_km": 6.9
-  },
-  "114": {
-    "tiger_id": 114,
-    "sex": "Male",
-    "primary_range": "East Pench",
-    "centroid_lat": 21.665108,
-    "centroid_lon": 79.319267,
-    "territory_radius_km": 9.72,
-    "min_village_dist_km": 7.54
-  },
-  "100": {
-    "tiger_id": 100,
-    "sex": "Male",
-    "primary_range": "East Pench",
-    "centroid_lat": 21.704704,
-    "centroid_lon": 79.305266,
-    "territory_radius_km": 10.84,
-    "min_village_dist_km": 4.5
-  },
-  "201": {
-    "tiger_id": 201,
-    "sex": "Male",
+    "age_years": 2.5,
+    "life_stage": "subadult",
+    "body_condition": "excellent",
+    "territorial_status": "non_territorial",
+    "dispersal_status": "resident",
     "primary_range": "Devalapar",
-    "centroid_lat": 21.718,
-    "centroid_lon": 79.261591,
-    "territory_radius_km": 9.95,
-    "min_village_dist_km": 3.78
-  },
-  "91": {
-    "tiger_id": 91,
-    "sex": "Male",
-    "primary_range": "Chorbahuli",
-    "centroid_lat": 21.611943,
-    "centroid_lon": 79.25093,
-    "territory_radius_km": 11.18,
-    "min_village_dist_km": 11.73
-  },
-  "168": {
-    "tiger_id": 168,
-    "sex": "Female",
-    "primary_range": "East Pench",
-    "centroid_lat": 21.656009,
-    "centroid_lon": 79.341841,
-    "territory_radius_km": 4.92,
-    "min_village_dist_km": 5.52
-  },
-  "153": {
-    "tiger_id": 153,
-    "sex": "Male",
-    "primary_range": "Devalapar",
-    "centroid_lat": 21.69104,
-    "centroid_lon": 79.210958,
-    "territory_radius_km": 10.67,
-    "min_village_dist_km": 7.44
-  },
-  "45": {
-    "tiger_id": 45,
-    "sex": "Male",
-    "primary_range": "East Pench",
-    "centroid_lat": 21.608673,
-    "centroid_lon": 79.287423,
-    "territory_radius_km": 10.41,
-    "min_village_dist_km": 9.53
-  },
-  "67": {
-    "tiger_id": 67,
-    "sex": "Male",
-    "primary_range": "Saleghat",
-    "centroid_lat": 21.626601,
-    "centroid_lon": 79.146403,
-    "territory_radius_km": 8.99,
-    "min_village_dist_km": 5.04
-  },
-  "130": {
-    "tiger_id": 130,
-    "sex": "Male",
-    "primary_range": "West Pench",
-    "centroid_lat": 21.685383,
-    "centroid_lon": 79.189419,
-    "territory_radius_km": 8.93,
-    "min_village_dist_km": 6.78
-  },
-  "22": {
-    "tiger_id": 22,
-    "sex": "Male",
-    "primary_range": "East Pench",
-    "centroid_lat": 21.639878,
-    "centroid_lon": 79.302785,
-    "territory_radius_km": 8.93,
-    "min_village_dist_km": 9.02
-  },
-  "175": {
-    "tiger_id": 175,
-    "sex": "Female",
-    "primary_range": "East Pench",
-    "centroid_lat": 21.649705,
-    "centroid_lon": 79.356168,
-    "territory_radius_km": 5.8,
-    "min_village_dist_km": 4.0
-  },
-  "223": {
-    "tiger_id": 223,
-    "sex": "Male",
-    "primary_range": "Devalapar",
-    "centroid_lat": 21.717706,
-    "centroid_lon": 79.246594,
-    "territory_radius_km": 9.89,
-    "min_village_dist_km": 4.05
-  },
-  "33": {
-    "tiger_id": 33,
-    "sex": "Male",
-    "primary_range": "Devalapar",
-    "centroid_lat": 21.695704,
-    "centroid_lon": 79.239639,
-    "territory_radius_km": 10.36,
-    "min_village_dist_km": 6.59
-  },
-  "139": {
-    "tiger_id": 139,
-    "sex": "Male",
-    "primary_range": "Chorbahuli",
-    "centroid_lat": 21.67184,
-    "centroid_lon": 79.275662,
-    "territory_radius_km": 10.68,
-    "min_village_dist_km": 8.86
-  },
-  "136": {
-    "tiger_id": 136,
-    "sex": "Male",
-    "primary_range": "Chorbahuli",
-    "centroid_lat": 21.633853,
-    "centroid_lon": 79.270445,
-    "territory_radius_km": 11.49,
-    "min_village_dist_km": 12.05
-  },
-  "196": {
-    "tiger_id": 196,
-    "sex": "Male",
-    "primary_range": "Devalapar",
-    "centroid_lat": 21.704778,
-    "centroid_lon": 79.220532,
-    "territory_radius_km": 9.73,
-    "min_village_dist_km": 5.94
-  },
-  "187": {
-    "tiger_id": 187,
-    "sex": "Male",
-    "primary_range": "East Pench",
-    "centroid_lat": 21.601593,
-    "centroid_lon": 79.302221,
-    "territory_radius_km": 8.88,
-    "min_village_dist_km": 7.81
-  },
-  "160": {
-    "tiger_id": 160,
-    "sex": "Female",
-    "primary_range": "Saleghat",
-    "centroid_lat": 21.630319,
-    "centroid_lon": 79.197615,
-    "territory_radius_km": 5.56,
-    "min_village_dist_km": 9.44
-  },
-  "172": {
-    "tiger_id": 172,
-    "sex": "Female",
-    "primary_range": "Saleghat",
-    "centroid_lat": 21.568063,
-    "centroid_lon": 79.202996,
-    "territory_radius_km": 4.61,
-    "min_village_dist_km": 5.15
-  },
-  "151": {
-    "tiger_id": 151,
-    "sex": "Female",
-    "primary_range": "Chorbahuli",
-    "centroid_lat": 21.650788,
-    "centroid_lon": 79.223664,
-    "territory_radius_km": 5.27,
-    "min_village_dist_km": 11.84
-  },
-  "244": {
-    "tiger_id": 244,
-    "sex": "Female",
-    "primary_range": "West Pench",
-    "centroid_lat": 21.661363,
-    "centroid_lon": 79.149541,
-    "territory_radius_km": 3.78,
-    "min_village_dist_km": 5.03
-  },
-  "60": {
-    "tiger_id": 60,
-    "sex": "Female",
-    "primary_range": "East Pench",
-    "centroid_lat": 21.700242,
-    "centroid_lon": 79.320312,
-    "territory_radius_km": 5.37,
-    "min_village_dist_km": 5.08
-  },
-  "154": {
-    "tiger_id": 154,
-    "sex": "Female",
-    "primary_range": "West Pench",
-    "centroid_lat": 21.675713,
-    "centroid_lon": 79.200028,
-    "territory_radius_km": 5.15,
-    "min_village_dist_km": 8.24
-  },
-  "265": {
-    "tiger_id": 265,
-    "sex": "Female",
-    "primary_range": "East Pench",
-    "centroid_lat": 21.693406,
-    "centroid_lon": 79.339653,
-    "territory_radius_km": 4.44,
-    "min_village_dist_km": 4.67
-  },
-  "64": {
-    "tiger_id": 64,
-    "sex": "Female",
-    "primary_range": "Devalapar",
-    "centroid_lat": 21.681536,
-    "centroid_lon": 79.247193,
-    "territory_radius_km": 4.1,
-    "min_village_dist_km": 7.93
-  },
-  "261": {
-    "tiger_id": 261,
-    "sex": "Male",
-    "primary_range": "Chorbahuli",
-    "centroid_lat": 21.653382,
-    "centroid_lon": 79.259096,
-    "territory_radius_km": 11.38,
-    "min_village_dist_km": 10.95
-  },
-  "115": {
-    "tiger_id": 115,
-    "sex": "Female",
-    "primary_range": "Devalapar",
-    "centroid_lat": 21.705687,
-    "centroid_lon": 79.274111,
-    "territory_radius_km": 4.49,
-    "min_village_dist_km": 5.34
-  },
-  "81": {
-    "tiger_id": 81,
-    "sex": "Female",
-    "primary_range": "East Pench",
-    "centroid_lat": 21.690038,
-    "centroid_lon": 79.298435,
-    "territory_radius_km": 4.72,
-    "min_village_dist_km": 6.22
-  },
-  "243": {
-    "tiger_id": 243,
-    "sex": "Male",
-    "primary_range": "East Pench",
-    "centroid_lat": 21.601908,
-    "centroid_lon": 79.319025,
-    "territory_radius_km": 10.4,
-    "min_village_dist_km": 6.26
-  },
-  "229": {
-    "tiger_id": 229,
-    "sex": "Female",
-    "primary_range": "Chorbahuli",
-    "centroid_lat": 21.616091,
-    "centroid_lon": 79.23203,
-    "territory_radius_km": 5.26,
-    "min_village_dist_km": 10.44
-  },
-  "228": {
-    "tiger_id": 228,
-    "sex": "Male",
-    "primary_range": "Saleghat",
-    "centroid_lat": 21.595487,
-    "centroid_lon": 79.163981,
-    "territory_radius_km": 8.1,
-    "min_village_dist_km": 4.59
-  },
-  "57": {
-    "tiger_id": 57,
-    "sex": "Male",
-    "primary_range": "East Pench",
-    "centroid_lat": 21.668108,
-    "centroid_lon": 79.296871,
-    "territory_radius_km": 10.13,
-    "min_village_dist_km": 8.64
-  },
-  "240": {
-    "tiger_id": 240,
-    "sex": "Female",
-    "primary_range": "Chorbahuli",
-    "centroid_lat": 21.602173,
-    "centroid_lon": 79.237076,
-    "territory_radius_km": 4.96,
-    "min_village_dist_km": 9.94
-  },
-  "66": {
-    "tiger_id": 66,
-    "sex": "Male",
-    "primary_range": "East Pench",
-    "centroid_lat": 21.670554,
-    "centroid_lon": 79.337618,
-    "territory_radius_km": 9.04,
-    "min_village_dist_km": 5.58
-  },
-  "82": {
-    "tiger_id": 82,
-    "sex": "Female",
-    "primary_range": "Chorbahuli",
-    "centroid_lat": 21.634193,
-    "centroid_lon": 79.25306,
-    "territory_radius_km": 5.36,
-    "min_village_dist_km": 13.1
-  },
-  "267": {
-    "tiger_id": 267,
-    "sex": "Female",
-    "primary_range": "East Pench",
-    "centroid_lat": 21.614672,
-    "centroid_lon": 79.339442,
-    "territory_radius_km": 4.05,
-    "min_village_dist_km": 4.7
-  },
-  "108": {
-    "tiger_id": 108,
-    "sex": "Male",
-    "primary_range": "Devalapar",
-    "centroid_lat": 21.69316,
-    "centroid_lon": 79.25556,
-    "territory_radius_km": 9.45,
-    "min_village_dist_km": 6.55
-  },
-  "181": {
-    "tiger_id": 181,
-    "sex": "Female",
-    "primary_range": "East Pench",
-    "centroid_lat": 21.629659,
-    "centroid_lon": 79.326534,
-    "territory_radius_km": 4.18,
-    "min_village_dist_km": 6.33
-  },
-  "252": {
-    "tiger_id": 252,
-    "sex": "Male",
-    "primary_range": "East Pench",
-    "centroid_lat": 21.620162,
-    "centroid_lon": 79.315237,
-    "territory_radius_km": 8.43,
-    "min_village_dist_km": 7.24
+    "centroid_lat": 21.737682,
+    "centroid_lon": 79.255045,
+    "home_range_km2": 47.5,
+    "territory_radius_km": 3.89,
+    "core_area_fraction": 0.37,
+    "core_radius_km": 2.38,
+    "min_village_dist_km": 1.67,
+    "habitat_preference": "riparian_forest",
+    "water_preference": 0.93,
+    "camera_detectability": 0.82,
+    "human_avoidance": 0.99,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.73385,
+        79.24828
+      ],
+      "recent_center": [
+        21.74069,
+        79.26519
+      ],
+      "centroid_shift_km": 1.9,
+      "baseline_radius_km": 3.72,
+      "recent_radius_km": 1.82,
+      "range_change_km2": 33.0,
+      "territory_shift_detected": true,
+      "shift_type": "range_contraction"
+    }
   },
   "6": {
     "tiger_id": 6,
     "sex": "Male",
-    "primary_range": "Saleghat",
-    "centroid_lat": 21.603694,
-    "centroid_lon": 79.183983,
-    "territory_radius_km": 9.33,
-    "min_village_dist_km": 6.17
-  },
-  "249": {
-    "tiger_id": 249,
-    "sex": "Female",
-    "primary_range": "Saleghat",
-    "centroid_lat": 21.635139,
-    "centroid_lon": 79.172387,
-    "territory_radius_km": 4.89,
-    "min_village_dist_km": 7.84
-  },
-  "268": {
-    "tiger_id": 268,
-    "sex": "Male",
-    "primary_range": "East Pench",
-    "centroid_lat": 21.63577,
-    "centroid_lon": 79.359302,
-    "territory_radius_km": 10.76,
-    "min_village_dist_km": 3.71
-  },
-  "40": {
-    "tiger_id": 40,
-    "sex": "Female",
-    "primary_range": "Saleghat",
-    "centroid_lat": 21.586597,
-    "centroid_lon": 79.149025,
-    "territory_radius_km": 3.73,
-    "min_village_dist_km": 3.56
-  },
-  "42": {
-    "tiger_id": 42,
-    "sex": "Female",
-    "primary_range": "Chorbahuli",
-    "centroid_lat": 21.647092,
-    "centroid_lon": 79.241531,
-    "territory_radius_km": 4.9,
-    "min_village_dist_km": 11.8
-  },
-  "43": {
-    "tiger_id": 43,
-    "sex": "Female",
-    "primary_range": "West Pench",
-    "centroid_lat": 21.672909,
-    "centroid_lon": 79.1789,
-    "territory_radius_km": 5.79,
-    "min_village_dist_km": 7.65
-  },
-  "106": {
-    "tiger_id": 106,
-    "sex": "Female",
-    "primary_range": "Devalapar",
-    "centroid_lat": 21.730427,
-    "centroid_lon": 79.240869,
-    "territory_radius_km": 3.89,
-    "min_village_dist_km": 3.1
-  },
-  "109": {
-    "tiger_id": 109,
-    "sex": "Male",
-    "primary_range": "Saleghat",
-    "centroid_lat": 21.577288,
-    "centroid_lon": 79.191239,
-    "territory_radius_km": 8.77,
-    "min_village_dist_km": 4.48
-  },
-  "55": {
-    "tiger_id": 55,
-    "sex": "Male",
-    "primary_range": "Devalapar",
-    "centroid_lat": 21.720012,
-    "centroid_lon": 79.2786,
-    "territory_radius_km": 9.1,
-    "min_village_dist_km": 4.03
-  },
-  "217": {
-    "tiger_id": 217,
-    "sex": "Male",
-    "primary_range": "Chorbahuli",
-    "centroid_lat": 21.666865,
-    "centroid_lon": 79.253766,
-    "territory_radius_km": 11.4,
-    "min_village_dist_km": 9.47
+    "age_years": 9.0,
+    "life_stage": "adult",
+    "body_condition": "good",
+    "territorial_status": "resident_territorial",
+    "dispersal_status": "resident",
+    "primary_range": "West Buffer",
+    "centroid_lat": 21.632506,
+    "centroid_lon": 79.125744,
+    "home_range_km2": 15.2,
+    "territory_radius_km": 2.2,
+    "core_area_fraction": 0.41,
+    "core_radius_km": 1.41,
+    "min_village_dist_km": 3.18,
+    "habitat_preference": "teak_forest",
+    "water_preference": 0.56,
+    "camera_detectability": 0.96,
+    "human_avoidance": 0.76,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.63418,
+        79.12551
+      ],
+      "recent_center": [
+        21.6306,
+        79.12437
+      ],
+      "centroid_shift_km": 0.42,
+      "baseline_radius_km": 1.05,
+      "recent_radius_km": 1.46,
+      "range_change_km2": 3.2,
+      "territory_shift_detected": false,
+      "shift_type": "range_expansion"
+    }
   },
   "12": {
     "tiger_id": 12,
     "sex": "Male",
-    "primary_range": "East Pench",
-    "centroid_lat": 21.642245,
-    "centroid_lon": 79.338035,
-    "territory_radius_km": 8.63,
-    "min_village_dist_km": 5.87
-  },
-  "246": {
-    "tiger_id": 246,
-    "sex": "Female",
+    "age_years": 7.0,
+    "life_stage": "adult",
+    "body_condition": "fair",
+    "territorial_status": "transient",
+    "dispersal_status": "resident",
     "primary_range": "Saleghat",
-    "centroid_lat": 21.621502,
-    "centroid_lon": 79.162439,
-    "territory_radius_km": 5.38,
-    "min_village_dist_km": 6.64
-  },
-  "259": {
-    "tiger_id": 259,
-    "sex": "Male",
-    "primary_range": "West Pench",
-    "centroid_lat": 21.656804,
-    "centroid_lon": 79.192387,
-    "territory_radius_km": 9.68,
-    "min_village_dist_km": 9.36
-  },
-  "78": {
-    "tiger_id": 78,
-    "sex": "Female",
-    "primary_range": "Saleghat",
-    "centroid_lat": 21.588835,
-    "centroid_lon": 79.212236,
-    "territory_radius_km": 5.71,
-    "min_village_dist_km": 6.99
-  },
-  "178": {
-    "tiger_id": 178,
-    "sex": "Male",
-    "primary_range": "Chorbahuli",
-    "centroid_lat": 21.622877,
-    "centroid_lon": 79.218299,
-    "territory_radius_km": 8.75,
-    "min_village_dist_km": 9.96
-  },
-  "25": {
-    "tiger_id": 25,
-    "sex": "Female",
-    "primary_range": "East Pench",
-    "centroid_lat": 21.621149,
-    "centroid_lon": 79.298322,
-    "territory_radius_km": 3.76,
-    "min_village_dist_km": 8.99
-  },
-  "222": {
-    "tiger_id": 222,
-    "sex": "Female",
-    "primary_range": "Saleghat",
-    "centroid_lat": 21.601461,
-    "centroid_lon": 79.143757,
-    "territory_radius_km": 5.86,
-    "min_village_dist_km": 4.39
-  },
-  "198": {
-    "tiger_id": 198,
-    "sex": "Female",
-    "primary_range": "Chorbahuli",
-    "centroid_lat": 21.61735,
-    "centroid_lon": 79.274485,
-    "territory_radius_km": 3.62,
-    "min_village_dist_km": 11.15
-  },
-  "274": {
-    "tiger_id": 274,
-    "sex": "Male",
-    "primary_range": "West Pench",
-    "centroid_lat": 21.678421,
-    "centroid_lon": 79.147386,
-    "territory_radius_km": 9.54,
-    "min_village_dist_km": 4.37
-  },
-  "213": {
-    "tiger_id": 213,
-    "sex": "Female",
-    "primary_range": "Devalapar",
-    "centroid_lat": 21.709323,
-    "centroid_lon": 79.234626,
-    "territory_radius_km": 5.37,
-    "min_village_dist_km": 5.41
-  },
-  "90": {
-    "tiger_id": 90,
-    "sex": "Female",
-    "primary_range": "West Pench",
-    "centroid_lat": 21.710383,
-    "centroid_lon": 79.196796,
-    "territory_radius_km": 3.82,
-    "min_village_dist_km": 5.02
-  },
-  "253": {
-    "tiger_id": 253,
-    "sex": "Male",
-    "primary_range": "Saleghat",
-    "centroid_lat": 21.619125,
-    "centroid_lon": 79.177714,
-    "territory_radius_km": 11.09,
-    "min_village_dist_km": 7.49
-  },
-  "145": {
-    "tiger_id": 145,
-    "sex": "Female",
-    "primary_range": "Chorbahuli",
-    "centroid_lat": 21.682579,
-    "centroid_lon": 79.26674,
-    "territory_radius_km": 4.7,
-    "min_village_dist_km": 7.74
-  },
-  "226": {
-    "tiger_id": 226,
-    "sex": "Female",
-    "primary_range": "East Pench",
-    "centroid_lat": 21.641184,
-    "centroid_lon": 79.284904,
-    "territory_radius_km": 4.8,
-    "min_village_dist_km": 10.81
-  },
-  "72": {
-    "tiger_id": 72,
-    "sex": "Male",
-    "primary_range": "West Pench",
-    "centroid_lat": 21.666867,
-    "centroid_lon": 79.212485,
-    "territory_radius_km": 11.31,
-    "min_village_dist_km": 9.75
-  },
-  "28": {
-    "tiger_id": 28,
-    "sex": "Male",
-    "primary_range": "East Pench",
-    "centroid_lat": 21.619382,
-    "centroid_lon": 79.35565,
-    "territory_radius_km": 11.23,
-    "min_village_dist_km": 3.13
-  },
-  "69": {
-    "tiger_id": 69,
-    "sex": "Male",
-    "primary_range": "Chorbahuli",
-    "centroid_lat": 21.651037,
-    "centroid_lon": 79.274718,
-    "territory_radius_km": 10.83,
-    "min_village_dist_km": 11.04
-  },
-  "177": {
-    "tiger_id": 177,
-    "sex": "Female",
-    "primary_range": "West Pench",
-    "centroid_lat": 21.717596,
-    "centroid_lon": 79.178748,
-    "territory_radius_km": 4.62,
-    "min_village_dist_km": 3.15
+    "centroid_lat": 21.592355,
+    "centroid_lon": 79.200787,
+    "home_range_km2": 18.7,
+    "territory_radius_km": 2.44,
+    "core_area_fraction": 0.37,
+    "core_radius_km": 1.48,
+    "min_village_dist_km": 6.28,
+    "habitat_preference": "teak_forest",
+    "water_preference": 0.67,
+    "camera_detectability": 0.81,
+    "human_avoidance": 0.7,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.59418,
+        79.19993
+      ],
+      "recent_center": [
+        21.59422,
+        79.2016
+      ],
+      "centroid_shift_km": 0.17,
+      "baseline_radius_km": 1.54,
+      "recent_radius_km": 1.55,
+      "range_change_km2": 0.1,
+      "territory_shift_detected": false,
+      "shift_type": "stable"
+    }
   },
   "13": {
     "tiger_id": 13,
     "sex": "Female",
-    "primary_range": "Chorbahuli",
-    "centroid_lat": 21.603335,
-    "centroid_lon": 79.270186,
-    "territory_radius_km": 5.12,
-    "min_village_dist_km": 10.21
-  },
-  "124": {
-    "tiger_id": 124,
-    "sex": "Female",
-    "primary_range": "Devalapar",
-    "centroid_lat": 21.685256,
-    "centroid_lon": 79.225071,
-    "territory_radius_km": 4.89,
-    "min_village_dist_km": 8.14
-  },
-  "34": {
-    "tiger_id": 34,
-    "sex": "Male",
-    "primary_range": "Devalapar",
-    "centroid_lat": 21.710405,
-    "centroid_lon": 79.250967,
-    "territory_radius_km": 11.03,
-    "min_village_dist_km": 4.71
-  },
-  "216": {
-    "tiger_id": 216,
-    "sex": "Female",
-    "primary_range": "Chorbahuli",
-    "centroid_lat": 21.666461,
-    "centroid_lon": 79.233647,
-    "territory_radius_km": 3.79,
-    "min_village_dist_km": 9.88
-  },
-  "0": {
-    "tiger_id": 0,
-    "sex": "Male",
-    "primary_range": "Devalapar",
-    "centroid_lat": 21.69616,
-    "centroid_lon": 79.247197,
-    "territory_radius_km": 11.48,
-    "min_village_dist_km": 6.34
-  },
-  "211": {
-    "tiger_id": 211,
-    "sex": "Male",
-    "primary_range": "Saleghat",
-    "centroid_lat": 21.587727,
-    "centroid_lon": 79.169796,
-    "territory_radius_km": 9.35,
-    "min_village_dist_km": 3.94
-  },
-  "88": {
-    "tiger_id": 88,
-    "sex": "Female",
-    "primary_range": "Devalapar",
-    "centroid_lat": 21.701354,
-    "centroid_lon": 79.238263,
-    "territory_radius_km": 5.31,
-    "min_village_dist_km": 6.05
-  },
-  "195": {
-    "tiger_id": 195,
-    "sex": "Female",
-    "primary_range": "Saleghat",
-    "centroid_lat": 21.622337,
-    "centroid_lon": 79.185975,
-    "territory_radius_km": 5.31,
-    "min_village_dist_km": 8.13
-  },
-  "202": {
-    "tiger_id": 202,
-    "sex": "Male",
-    "primary_range": "Devalapar",
-    "centroid_lat": 21.722864,
-    "centroid_lon": 79.226664,
-    "territory_radius_km": 8.92,
-    "min_village_dist_km": 4.08
-  },
-  "30": {
-    "tiger_id": 30,
-    "sex": "Female",
-    "primary_range": "Saleghat",
-    "centroid_lat": 21.59626,
-    "centroid_lon": 79.152205,
-    "territory_radius_km": 4.25,
-    "min_village_dist_km": 4.59
-  },
-  "76": {
-    "tiger_id": 76,
-    "sex": "Female",
-    "primary_range": "Devalapar",
-    "centroid_lat": 21.69421,
-    "centroid_lon": 79.235725,
-    "territory_radius_km": 5.01,
-    "min_village_dist_km": 6.88
-  },
-  "1": {
-    "tiger_id": 1,
-    "sex": "Female",
-    "primary_range": "Chorbahuli",
-    "centroid_lat": 21.62081,
-    "centroid_lon": 79.271388,
-    "territory_radius_km": 3.82,
-    "min_village_dist_km": 11.59
-  },
-  "273": {
-    "tiger_id": 273,
-    "sex": "Male",
+    "age_years": 5.0,
+    "life_stage": "adult",
+    "body_condition": "poor",
+    "territorial_status": "resident_territorial",
+    "dispersal_status": "resident",
     "primary_range": "East Pench",
-    "centroid_lat": 21.617906,
-    "centroid_lon": 79.299589,
-    "territory_radius_km": 9.53,
-    "min_village_dist_km": 8.82
+    "centroid_lat": 21.656648,
+    "centroid_lon": 79.305326,
+    "home_range_km2": 15.2,
+    "territory_radius_km": 2.2,
+    "core_area_fraction": 0.47,
+    "core_radius_km": 1.51,
+    "min_village_dist_km": 9.24,
+    "habitat_preference": "mixed_forest",
+    "water_preference": 0.45,
+    "camera_detectability": 0.79,
+    "human_avoidance": 0.7,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.65737,
+        79.30602
+      ],
+      "recent_center": [
+        21.65634,
+        79.30794
+      ],
+      "centroid_shift_km": 0.23,
+      "baseline_radius_km": 1.66,
+      "recent_radius_km": 1.68,
+      "range_change_km2": 0.2,
+      "territory_shift_detected": false,
+      "shift_type": "stable"
+    }
   },
-  "117": {
-    "tiger_id": 117,
+  "22": {
+    "tiger_id": 22,
     "sex": "Female",
-    "primary_range": "Chorbahuli",
-    "centroid_lat": 21.634922,
-    "centroid_lon": 79.268585,
-    "territory_radius_km": 4.04,
-    "min_village_dist_km": 12.26
-  },
-  "129": {
-    "tiger_id": 129,
-    "sex": "Female",
-    "primary_range": "West Pench",
-    "centroid_lat": 21.692953,
-    "centroid_lon": 79.176158,
-    "territory_radius_km": 5.3,
-    "min_village_dist_km": 5.48
-  },
-  "51": {
-    "tiger_id": 51,
-    "sex": "Female",
-    "primary_range": "Devalapar",
-    "centroid_lat": 21.725408,
-    "centroid_lon": 79.244213,
-    "territory_radius_km": 4.74,
-    "min_village_dist_km": 3.37
-  },
-  "94": {
-    "tiger_id": 94,
-    "sex": "Male",
-    "primary_range": "Chorbahuli",
-    "centroid_lat": 21.628685,
-    "centroid_lon": 79.239231,
-    "territory_radius_km": 10.34,
-    "min_village_dist_km": 11.92
-  },
-  "85": {
-    "tiger_id": 85,
-    "sex": "Female",
-    "primary_range": "East Pench",
-    "centroid_lat": 21.654605,
-    "centroid_lon": 79.301432,
-    "territory_radius_km": 5.38,
-    "min_village_dist_km": 9.65
-  },
-  "27": {
-    "tiger_id": 27,
-    "sex": "Female",
-    "primary_range": "Devalapar",
-    "centroid_lat": 21.707154,
-    "centroid_lon": 79.237113,
-    "territory_radius_km": 4.99,
-    "min_village_dist_km": 5.51
-  },
-  "208": {
-    "tiger_id": 208,
-    "sex": "Male",
-    "primary_range": "Saleghat",
-    "centroid_lat": 21.585402,
-    "centroid_lon": 79.151481,
-    "territory_radius_km": 10.08,
-    "min_village_dist_km": 3.39
+    "age_years": 1.5,
+    "life_stage": "subadult",
+    "body_condition": "fair",
+    "territorial_status": "non_territorial",
+    "dispersal_status": "resident",
+    "primary_range": "Paoni Buffer",
+    "centroid_lat": 21.518541,
+    "centroid_lon": 79.247603,
+    "home_range_km2": 15.2,
+    "territory_radius_km": 2.2,
+    "core_area_fraction": 0.39,
+    "core_radius_km": 1.38,
+    "min_village_dist_km": 2.61,
+    "habitat_preference": "teak_forest",
+    "water_preference": 0.34,
+    "camera_detectability": 0.97,
+    "human_avoidance": 0.74,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.51765,
+        79.24751
+      ],
+      "recent_center": [
+        21.51952,
+        79.24755
+      ],
+      "centroid_shift_km": 0.21,
+      "baseline_radius_km": 1.36,
+      "recent_radius_km": 1.47,
+      "range_change_km2": 1.0,
+      "territory_shift_detected": false,
+      "shift_type": "stable"
+    }
   },
   "24": {
     "tiger_id": 24,
     "sex": "Female",
-    "primary_range": "East Pench",
-    "centroid_lat": 21.630016,
-    "centroid_lon": 79.35132,
-    "territory_radius_km": 4.9,
-    "min_village_dist_km": 4.0
-  },
-  "148": {
-    "tiger_id": 148,
-    "sex": "Male",
-    "primary_range": "East Pench",
-    "centroid_lat": 21.684431,
-    "centroid_lon": 79.350566,
-    "territory_radius_km": 11.17,
-    "min_village_dist_km": 3.74
-  },
-  "97": {
-    "tiger_id": 97,
-    "sex": "Female",
-    "primary_range": "West Pench",
-    "centroid_lat": 21.711434,
-    "centroid_lon": 79.18698,
-    "territory_radius_km": 4.43,
-    "min_village_dist_km": 4.22
-  },
-  "142": {
-    "tiger_id": 142,
-    "sex": "Female",
-    "primary_range": "West Pench",
-    "centroid_lat": 21.657904,
-    "centroid_lon": 79.170843,
-    "territory_radius_km": 4.23,
-    "min_village_dist_km": 7.21
-  },
-  "220": {
-    "tiger_id": 220,
-    "sex": "Female",
-    "primary_range": "East Pench",
-    "centroid_lat": 21.665967,
-    "centroid_lon": 79.345273,
-    "territory_radius_km": 3.78,
-    "min_village_dist_km": 5.21
-  },
-  "3": {
-    "tiger_id": 3,
-    "sex": "Female",
+    "age_years": 1.5,
+    "life_stage": "subadult",
+    "body_condition": "excellent",
+    "territorial_status": "non_territorial",
+    "dispersal_status": "resident",
     "primary_range": "Saleghat",
-    "centroid_lat": 21.593161,
-    "centroid_lon": 79.139249,
-    "territory_radius_km": 4.6,
-    "min_village_dist_km": 3.64
+    "centroid_lat": 21.601576,
+    "centroid_lon": 79.165065,
+    "home_range_km2": 15.2,
+    "territory_radius_km": 2.2,
+    "core_area_fraction": 0.48,
+    "core_radius_km": 1.52,
+    "min_village_dist_km": 5.27,
+    "habitat_preference": "mixed_forest",
+    "water_preference": 0.58,
+    "camera_detectability": 0.79,
+    "human_avoidance": 0.97,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.60435,
+        79.16781
+      ],
+      "recent_center": [
+        21.59853,
+        79.16071
+      ],
+      "centroid_shift_km": 0.98,
+      "baseline_radius_km": 1.47,
+      "recent_radius_km": 2.2,
+      "range_change_km2": 8.4,
+      "territory_shift_detected": false,
+      "shift_type": "range_expansion"
+    }
   },
-  "271": {
-    "tiger_id": 271,
-    "sex": "Male",
-    "primary_range": "East Pench",
-    "centroid_lat": 21.673742,
-    "centroid_lon": 79.288008,
-    "territory_radius_km": 10.02,
-    "min_village_dist_km": 8.23
-  },
-  "132": {
-    "tiger_id": 132,
+  "25": {
+    "tiger_id": 25,
     "sex": "Female",
+    "age_years": 9.0,
+    "life_stage": "adult",
+    "body_condition": "good",
+    "territorial_status": "transient",
+    "dispersal_status": "resident",
     "primary_range": "East Pench",
-    "centroid_lat": 21.659205,
-    "centroid_lon": 79.328242,
-    "territory_radius_km": 3.76,
-    "min_village_dist_km": 6.95
+    "centroid_lat": 21.672861,
+    "centroid_lon": 79.32041,
+    "home_range_km2": 15.3,
+    "territory_radius_km": 2.21,
+    "core_area_fraction": 0.4,
+    "core_radius_km": 1.4,
+    "min_village_dist_km": 7.09,
+    "habitat_preference": "mixed_forest",
+    "water_preference": 0.76,
+    "camera_detectability": 0.89,
+    "human_avoidance": 0.72,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.6735,
+        79.3213
+      ],
+      "recent_center": [
+        21.67454,
+        79.31905
+      ],
+      "centroid_shift_km": 0.26,
+      "baseline_radius_km": 1.9,
+      "recent_radius_km": 1.36,
+      "range_change_km2": 5.5,
+      "territory_shift_detected": false,
+      "shift_type": "stable"
+    }
+  },
+  "27": {
+    "tiger_id": 27,
+    "sex": "Female",
+    "age_years": 1.5,
+    "life_stage": "subadult",
+    "body_condition": "excellent",
+    "territorial_status": "non_territorial",
+    "dispersal_status": "resident",
+    "primary_range": "Saleghat",
+    "centroid_lat": 21.568896,
+    "centroid_lon": 79.197912,
+    "home_range_km2": 15.6,
+    "territory_radius_km": 2.23,
+    "core_area_fraction": 0.39,
+    "core_radius_km": 1.4,
+    "min_village_dist_km": 4.68,
+    "habitat_preference": "mixed_forest",
+    "water_preference": 0.76,
+    "camera_detectability": 0.7,
+    "human_avoidance": 0.87,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.56989,
+        79.19569
+      ],
+      "recent_center": [
+        21.56958,
+        79.19802
+      ],
+      "centroid_shift_km": 0.24,
+      "baseline_radius_km": 1.7,
+      "recent_radius_km": 0.97,
+      "range_change_km2": 6.1,
+      "territory_shift_detected": false,
+      "shift_type": "range_contraction"
+    }
+  },
+  "28": {
+    "tiger_id": 28,
+    "sex": "Female",
+    "age_years": 2.5,
+    "life_stage": "subadult",
+    "body_condition": "good",
+    "territorial_status": "non_territorial",
+    "dispersal_status": "resident",
+    "primary_range": "Chorbahuli",
+    "centroid_lat": 21.666869,
+    "centroid_lon": 79.223422,
+    "home_range_km2": 20.0,
+    "territory_radius_km": 2.52,
+    "core_area_fraction": 0.42,
+    "core_radius_km": 1.63,
+    "min_village_dist_km": 10.15,
+    "habitat_preference": "riparian_forest",
+    "water_preference": 0.97,
+    "camera_detectability": 0.87,
+    "human_avoidance": 0.84,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.6652,
+        79.22773
+      ],
+      "recent_center": [
+        21.66784,
+        79.2227
+      ],
+      "centroid_shift_km": 0.6,
+      "baseline_radius_km": 1.72,
+      "recent_radius_km": 1.14,
+      "range_change_km2": 5.1,
+      "territory_shift_detected": false,
+      "shift_type": "range_contraction"
+    }
+  },
+  "30": {
+    "tiger_id": 30,
+    "sex": "Female",
+    "age_years": 3.5,
+    "life_stage": "young_adult",
+    "body_condition": "good",
+    "territorial_status": "resident_territorial",
+    "dispersal_status": "resident",
+    "primary_range": "Nagalwadi Buffer",
+    "centroid_lat": 21.51898,
+    "centroid_lon": 79.273941,
+    "home_range_km2": 15.2,
+    "territory_radius_km": 2.2,
+    "core_area_fraction": 0.45,
+    "core_radius_km": 1.47,
+    "min_village_dist_km": 2.68,
+    "habitat_preference": "mixed_forest",
+    "water_preference": 0.53,
+    "camera_detectability": 0.91,
+    "human_avoidance": 0.7,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.51866,
+        79.27477
+      ],
+      "recent_center": [
+        21.52005,
+        79.27942
+      ],
+      "centroid_shift_km": 0.5,
+      "baseline_radius_km": 1.45,
+      "recent_radius_km": 2.04,
+      "range_change_km2": 6.4,
+      "territory_shift_detected": false,
+      "shift_type": "range_expansion"
+    }
+  },
+  "33": {
+    "tiger_id": 33,
+    "sex": "Male",
+    "age_years": 5.0,
+    "life_stage": "adult",
+    "body_condition": "good",
+    "territorial_status": "resident_territorial",
+    "dispersal_status": "resident",
+    "primary_range": "East Pench",
+    "centroid_lat": 21.621057,
+    "centroid_lon": 79.330912,
+    "home_range_km2": 18.6,
+    "territory_radius_km": 2.43,
+    "core_area_fraction": 0.37,
+    "core_radius_km": 1.48,
+    "min_village_dist_km": 5.66,
+    "habitat_preference": "riparian_forest",
+    "water_preference": 0.9,
+    "camera_detectability": 0.91,
+    "human_avoidance": 0.67,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.62186,
+        79.33101
+      ],
+      "recent_center": [
+        21.61937,
+        79.32944
+      ],
+      "centroid_shift_km": 0.32,
+      "baseline_radius_km": 2.0,
+      "recent_radius_km": 2.16,
+      "range_change_km2": 2.1,
+      "territory_shift_detected": false,
+      "shift_type": "stable"
+    }
+  },
+  "34": {
+    "tiger_id": 34,
+    "sex": "Female",
+    "age_years": 11.0,
+    "life_stage": "older_adult",
+    "body_condition": "poor",
+    "territorial_status": "resident_territorial",
+    "dispersal_status": "resident",
+    "primary_range": "North Buffer",
+    "centroid_lat": 21.753611,
+    "centroid_lon": 79.183502,
+    "home_range_km2": 15.2,
+    "territory_radius_km": 2.2,
+    "core_area_fraction": 0.5,
+    "core_radius_km": 1.55,
+    "min_village_dist_km": 2.49,
+    "habitat_preference": "teak_forest",
+    "water_preference": 0.85,
+    "camera_detectability": 0.77,
+    "human_avoidance": 0.71,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.75372,
+        79.18347
+      ],
+      "recent_center": [
+        21.75346,
+        79.18156
+      ],
+      "centroid_shift_km": 0.2,
+      "baseline_radius_km": 0.13,
+      "recent_radius_km": 1.52,
+      "range_change_km2": 7.2,
+      "territory_shift_detected": false,
+      "shift_type": "range_expansion"
+    }
   },
   "39": {
     "tiger_id": 39,
     "sex": "Female",
+    "age_years": 1.5,
+    "life_stage": "subadult",
+    "body_condition": "good",
+    "territorial_status": "non_territorial",
+    "dispersal_status": "resident",
+    "primary_range": "Unknown Range",
+    "centroid_lat": 21.623487,
+    "centroid_lon": 79.205028,
+    "home_range_km2": 15.6,
+    "territory_radius_km": 2.23,
+    "core_area_fraction": 0.47,
+    "core_radius_km": 1.53,
+    "min_village_dist_km": 9.18,
+    "habitat_preference": "grassland",
+    "water_preference": 0.52,
+    "camera_detectability": 0.93,
+    "human_avoidance": 0.78,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.6241,
+        79.207
+      ],
+      "recent_center": [
+        21.6221,
+        79.20406
+      ],
+      "centroid_shift_km": 0.38,
+      "baseline_radius_km": 1.72,
+      "recent_radius_km": 2.08,
+      "range_change_km2": 4.2,
+      "territory_shift_detected": false,
+      "shift_type": "stable"
+    }
+  },
+  "40": {
+    "tiger_id": 40,
+    "sex": "Female",
+    "age_years": 1.5,
+    "life_stage": "subadult",
+    "body_condition": "fair",
+    "territorial_status": "non_territorial",
+    "dispersal_status": "resident",
+    "primary_range": "Paoni Buffer",
+    "centroid_lat": 21.546426,
+    "centroid_lon": 79.181143,
+    "home_range_km2": 15.2,
+    "territory_radius_km": 2.2,
+    "core_area_fraction": 0.48,
+    "core_radius_km": 1.52,
+    "min_village_dist_km": 2.86,
+    "habitat_preference": "teak_forest",
+    "water_preference": 0.41,
+    "camera_detectability": 0.61,
+    "human_avoidance": 0.81,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.54766,
+        79.18222
+      ],
+      "recent_center": [
+        21.54755,
+        79.1822
+      ],
+      "centroid_shift_km": 0.01,
+      "baseline_radius_km": 1.16,
+      "recent_radius_km": 1.15,
+      "range_change_km2": 0.1,
+      "territory_shift_detected": false,
+      "shift_type": "stable"
+    }
+  },
+  "42": {
+    "tiger_id": 42,
+    "sex": "Female",
+    "age_years": 9.0,
+    "life_stage": "adult",
+    "body_condition": "excellent",
+    "territorial_status": "resident_territorial",
+    "dispersal_status": "resident",
+    "primary_range": "Nagalwadi Buffer",
+    "centroid_lat": 21.547764,
+    "centroid_lon": 79.314652,
+    "home_range_km2": 18.7,
+    "territory_radius_km": 2.44,
+    "core_area_fraction": 0.38,
+    "core_radius_km": 1.5,
+    "min_village_dist_km": 2.53,
+    "habitat_preference": "riparian_forest",
+    "water_preference": 0.48,
+    "camera_detectability": 0.68,
+    "human_avoidance": 0.9,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.54669,
+        79.31583
+      ],
+      "recent_center": [
+        21.5493,
+        79.31448
+      ],
+      "centroid_shift_km": 0.32,
+      "baseline_radius_km": 2.13,
+      "recent_radius_km": 2.24,
+      "range_change_km2": 1.6,
+      "territory_shift_detected": false,
+      "shift_type": "stable"
+    }
+  },
+  "43": {
+    "tiger_id": 43,
+    "sex": "Male",
+    "age_years": 13.0,
+    "life_stage": "older_adult",
+    "body_condition": "excellent",
+    "territorial_status": "resident_territorial",
+    "dispersal_status": "resident",
     "primary_range": "Chorbahuli",
-    "centroid_lat": 21.682471,
-    "centroid_lon": 79.253018,
-    "territory_radius_km": 5.71,
-    "min_village_dist_km": 7.75
+    "centroid_lat": 21.629201,
+    "centroid_lon": 79.228032,
+    "home_range_km2": 15.2,
+    "territory_radius_km": 2.2,
+    "core_area_fraction": 0.46,
+    "core_radius_km": 1.49,
+    "min_village_dist_km": 11.15,
+    "habitat_preference": "mixed_forest",
+    "water_preference": 0.58,
+    "camera_detectability": 0.72,
+    "human_avoidance": 0.95,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.62644,
+        79.22737
+      ],
+      "recent_center": [
+        21.63305,
+        79.22835
+      ],
+      "centroid_shift_km": 0.74,
+      "baseline_radius_km": 1.14,
+      "recent_radius_km": 1.5,
+      "range_change_km2": 2.9,
+      "territory_shift_detected": false,
+      "shift_type": "range_expansion"
+    }
+  },
+  "45": {
+    "tiger_id": 45,
+    "sex": "Male",
+    "age_years": 5.0,
+    "life_stage": "adult",
+    "body_condition": "good",
+    "territorial_status": "resident_territorial",
+    "dispersal_status": "resident",
+    "primary_range": "West Buffer",
+    "centroid_lat": 21.635339,
+    "centroid_lon": 79.126586,
+    "home_range_km2": 17.8,
+    "territory_radius_km": 2.38,
+    "core_area_fraction": 0.48,
+    "core_radius_km": 1.66,
+    "min_village_dist_km": 3.4,
+    "habitat_preference": "mixed_forest",
+    "water_preference": 0.83,
+    "camera_detectability": 0.83,
+    "human_avoidance": 0.93,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.6371,
+        79.1264
+      ],
+      "recent_center": [
+        21.63155,
+        79.12459
+      ],
+      "centroid_shift_km": 0.64,
+      "baseline_radius_km": 1.04,
+      "recent_radius_km": 1.35,
+      "range_change_km2": 2.3,
+      "territory_shift_detected": false,
+      "shift_type": "stable"
+    }
+  },
+  "51": {
+    "tiger_id": 51,
+    "sex": "Male",
+    "age_years": 9.0,
+    "life_stage": "adult",
+    "body_condition": "good",
+    "territorial_status": "resident_territorial",
+    "dispersal_status": "resident",
+    "primary_range": "East Pench",
+    "centroid_lat": 21.639416,
+    "centroid_lon": 79.355563,
+    "home_range_km2": 20.9,
+    "territory_radius_km": 2.58,
+    "core_area_fraction": 0.4,
+    "core_radius_km": 1.63,
+    "min_village_dist_km": 4.06,
+    "habitat_preference": "grassland",
+    "water_preference": 0.34,
+    "camera_detectability": 0.68,
+    "human_avoidance": 0.69,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.6397,
+        79.35592
+      ],
+      "recent_center": [
+        21.63742,
+        79.35313
+      ],
+      "centroid_shift_km": 0.38,
+      "baseline_radius_km": 1.69,
+      "recent_radius_km": 1.91,
+      "range_change_km2": 2.5,
+      "territory_shift_detected": false,
+      "shift_type": "stable"
+    }
+  },
+  "54": {
+    "tiger_id": 54,
+    "sex": "Male",
+    "age_years": 3.5,
+    "life_stage": "young_adult",
+    "body_condition": "excellent",
+    "territorial_status": "resident_territorial",
+    "dispersal_status": "resident",
+    "primary_range": "Saleghat",
+    "centroid_lat": 21.572004,
+    "centroid_lon": 79.190983,
+    "home_range_km2": 25.0,
+    "territory_radius_km": 2.82,
+    "core_area_fraction": 0.36,
+    "core_radius_km": 1.68,
+    "min_village_dist_km": 4.16,
+    "habitat_preference": "teak_forest",
+    "water_preference": 0.92,
+    "camera_detectability": 0.94,
+    "human_avoidance": 0.97,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.57239,
+        79.19113
+      ],
+      "recent_center": [
+        21.56945,
+        79.19047
+      ],
+      "centroid_shift_km": 0.33,
+      "baseline_radius_km": 2.41,
+      "recent_radius_km": 1.18,
+      "range_change_km2": 13.8,
+      "territory_shift_detected": false,
+      "shift_type": "range_contraction"
+    }
+  },
+  "55": {
+    "tiger_id": 55,
+    "sex": "Male",
+    "age_years": 11.0,
+    "life_stage": "older_adult",
+    "body_condition": "good",
+    "territorial_status": "transient",
+    "dispersal_status": "resident",
+    "primary_range": "Unknown Range",
+    "centroid_lat": 21.653806,
+    "centroid_lon": 79.207196,
+    "home_range_km2": 15.2,
+    "territory_radius_km": 2.2,
+    "core_area_fraction": 0.44,
+    "core_radius_km": 1.46,
+    "min_village_dist_km": 10.73,
+    "habitat_preference": "teak_forest",
+    "water_preference": 0.99,
+    "camera_detectability": 0.65,
+    "human_avoidance": 0.8,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.65578,
+        79.21131
+      ],
+      "recent_center": [
+        21.65117,
+        79.20334
+      ],
+      "centroid_shift_km": 0.97,
+      "baseline_radius_km": 2.0,
+      "recent_radius_km": 1.14,
+      "range_change_km2": 8.5,
+      "territory_shift_detected": false,
+      "shift_type": "range_contraction"
+    }
+  },
+  "57": {
+    "tiger_id": 57,
+    "sex": "Male",
+    "age_years": 3.5,
+    "life_stage": "young_adult",
+    "body_condition": "good",
+    "territorial_status": "transient",
+    "dispersal_status": "resident",
+    "primary_range": "Paoni Buffer",
+    "centroid_lat": 21.518085,
+    "centroid_lon": 79.250532,
+    "home_range_km2": 15.2,
+    "territory_radius_km": 2.2,
+    "core_area_fraction": 0.46,
+    "core_radius_km": 1.49,
+    "min_village_dist_km": 2.43,
+    "habitat_preference": "grassland",
+    "water_preference": 0.57,
+    "camera_detectability": 0.73,
+    "human_avoidance": 0.73,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.51769,
+        79.24828
+      ],
+      "recent_center": [
+        21.5178,
+        79.25012
+      ],
+      "centroid_shift_km": 0.19,
+      "baseline_radius_km": 1.28,
+      "recent_radius_km": 1.09,
+      "range_change_km2": 1.4,
+      "territory_shift_detected": false,
+      "shift_type": "stable"
+    }
+  },
+  "60": {
+    "tiger_id": 60,
+    "sex": "Male",
+    "age_years": 5.0,
+    "life_stage": "adult",
+    "body_condition": "fair",
+    "territorial_status": "resident_territorial",
+    "dispersal_status": "resident",
+    "primary_range": "Chorbahuli",
+    "centroid_lat": 21.662261,
+    "centroid_lon": 79.244637,
+    "home_range_km2": 17.9,
+    "territory_radius_km": 2.39,
+    "core_area_fraction": 0.35,
+    "core_radius_km": 1.42,
+    "min_village_dist_km": 10.09,
+    "habitat_preference": "riparian_forest",
+    "water_preference": 0.95,
+    "camera_detectability": 0.83,
+    "human_avoidance": 0.84,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.66454,
+        79.24419
+      ],
+      "recent_center": [
+        21.66327,
+        79.24446
+      ],
+      "centroid_shift_km": 0.14,
+      "baseline_radius_km": 1.83,
+      "recent_radius_km": 2.2,
+      "range_change_km2": 4.7,
+      "territory_shift_detected": false,
+      "shift_type": "stable"
+    }
+  },
+  "64": {
+    "tiger_id": 64,
+    "sex": "Female",
+    "age_years": 5.0,
+    "life_stage": "adult",
+    "body_condition": "good",
+    "territorial_status": "resident_territorial",
+    "dispersal_status": "resident",
+    "primary_range": "Saleghat",
+    "centroid_lat": 21.591337,
+    "centroid_lon": 79.147716,
+    "home_range_km2": 19.5,
+    "territory_radius_km": 2.49,
+    "core_area_fraction": 0.38,
+    "core_radius_km": 1.53,
+    "min_village_dist_km": 4.1,
+    "habitat_preference": "riparian_forest",
+    "water_preference": 0.53,
+    "camera_detectability": 0.8,
+    "human_avoidance": 0.95,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.58785,
+        79.14529
+      ],
+      "recent_center": [
+        21.59234,
+        79.14854
+      ],
+      "centroid_shift_km": 0.6,
+      "baseline_radius_km": 1.55,
+      "recent_radius_km": 2.07,
+      "range_change_km2": 5.9,
+      "territory_shift_detected": false,
+      "shift_type": "range_expansion"
+    }
+  },
+  "66": {
+    "tiger_id": 66,
+    "sex": "Female",
+    "age_years": 3.5,
+    "life_stage": "young_adult",
+    "body_condition": "excellent",
+    "territorial_status": "resident_territorial",
+    "dispersal_status": "resident",
+    "primary_range": "Nagalwadi Buffer",
+    "centroid_lat": 21.519467,
+    "centroid_lon": 79.265449,
+    "home_range_km2": 15.2,
+    "territory_radius_km": 2.2,
+    "core_area_fraction": 0.35,
+    "core_radius_km": 1.31,
+    "min_village_dist_km": 2.45,
+    "habitat_preference": "mixed_forest",
+    "water_preference": 0.7,
+    "camera_detectability": 0.92,
+    "human_avoidance": 0.99,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.52142,
+        79.26295
+      ],
+      "recent_center": [
+        21.51853,
+        79.26744
+      ],
+      "centroid_shift_km": 0.56,
+      "baseline_radius_km": 2.1,
+      "recent_radius_km": 1.19,
+      "range_change_km2": 9.3,
+      "territory_shift_detected": false,
+      "shift_type": "range_contraction"
+    }
+  },
+  "67": {
+    "tiger_id": 67,
+    "sex": "Female",
+    "age_years": 7.0,
+    "life_stage": "adult",
+    "body_condition": "excellent",
+    "territorial_status": "resident_territorial",
+    "dispersal_status": "resident",
+    "primary_range": "West Pench",
+    "centroid_lat": 21.696783,
+    "centroid_lon": 79.148792,
+    "home_range_km2": 18.4,
+    "territory_radius_km": 2.42,
+    "core_area_fraction": 0.5,
+    "core_radius_km": 1.7,
+    "min_village_dist_km": 3.78,
+    "habitat_preference": "teak_forest",
+    "water_preference": 0.73,
+    "camera_detectability": 0.74,
+    "human_avoidance": 0.62,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.69835,
+        79.14842
+      ],
+      "recent_center": [
+        21.69386,
+        79.14832
+      ],
+      "centroid_shift_km": 0.5,
+      "baseline_radius_km": 1.85,
+      "recent_radius_km": 1.71,
+      "range_change_km2": 1.5,
+      "territory_shift_detected": false,
+      "shift_type": "stable"
+    }
+  },
+  "69": {
+    "tiger_id": 69,
+    "sex": "Female",
+    "age_years": 9.0,
+    "life_stage": "adult",
+    "body_condition": "good",
+    "territorial_status": "resident_territorial",
+    "dispersal_status": "resident",
+    "primary_range": "West Pench",
+    "centroid_lat": 21.6855,
+    "centroid_lon": 79.143663,
+    "home_range_km2": 15.2,
+    "territory_radius_km": 2.2,
+    "core_area_fraction": 0.36,
+    "core_radius_km": 1.32,
+    "min_village_dist_km": 4.01,
+    "habitat_preference": "mixed_forest",
+    "water_preference": 0.33,
+    "camera_detectability": 0.96,
+    "human_avoidance": 0.81,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.68644,
+        79.14451
+      ],
+      "recent_center": [
+        21.68251,
+        79.14256
+      ],
+      "centroid_shift_km": 0.48,
+      "baseline_radius_km": 1.33,
+      "recent_radius_km": 1.94,
+      "range_change_km2": 6.2,
+      "territory_shift_detected": false,
+      "shift_type": "range_expansion"
+    }
+  },
+  "72": {
+    "tiger_id": 72,
+    "sex": "Male",
+    "age_years": 5.0,
+    "life_stage": "adult",
+    "body_condition": "fair",
+    "territorial_status": "resident_territorial",
+    "dispersal_status": "resident",
+    "primary_range": "West Pench",
+    "centroid_lat": 21.666466,
+    "centroid_lon": 79.188905,
+    "home_range_km2": 15.2,
+    "territory_radius_km": 2.2,
+    "core_area_fraction": 0.48,
+    "core_radius_km": 1.52,
+    "min_village_dist_km": 8.69,
+    "habitat_preference": "teak_forest",
+    "water_preference": 0.61,
+    "camera_detectability": 0.64,
+    "human_avoidance": 0.63,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.666,
+        79.19354
+      ],
+      "recent_center": [
+        21.66695,
+        79.18928
+      ],
+      "centroid_shift_km": 0.45,
+      "baseline_radius_km": 1.75,
+      "recent_radius_km": 1.54,
+      "range_change_km2": 2.2,
+      "territory_shift_detected": false,
+      "shift_type": "stable"
+    }
+  },
+  "76": {
+    "tiger_id": 76,
+    "sex": "Male",
+    "age_years": 7.0,
+    "life_stage": "adult",
+    "body_condition": "good",
+    "territorial_status": "resident_territorial",
+    "dispersal_status": "resident",
+    "primary_range": "East Pench",
+    "centroid_lat": 21.660514,
+    "centroid_lon": 79.326234,
+    "home_range_km2": 15.2,
+    "territory_radius_km": 2.2,
+    "core_area_fraction": 0.44,
+    "core_radius_km": 1.46,
+    "min_village_dist_km": 7.16,
+    "habitat_preference": "riparian_forest",
+    "water_preference": 0.98,
+    "camera_detectability": 0.64,
+    "human_avoidance": 0.88,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.65975,
+        79.32721
+      ],
+      "recent_center": [
+        21.65796,
+        79.32661
+      ],
+      "centroid_shift_km": 0.21,
+      "baseline_radius_km": 1.73,
+      "recent_radius_km": 1.52,
+      "range_change_km2": 2.1,
+      "territory_shift_detected": false,
+      "shift_type": "stable"
+    }
+  },
+  "78": {
+    "tiger_id": 78,
+    "sex": "Male",
+    "age_years": 2.5,
+    "life_stage": "subadult",
+    "body_condition": "poor",
+    "territorial_status": "non_territorial",
+    "dispersal_status": "dispersing",
+    "primary_range": "Unknown Range",
+    "centroid_lat": 21.646826,
+    "centroid_lon": 79.218187,
+    "home_range_km2": 32.6,
+    "territory_radius_km": 3.22,
+    "core_area_fraction": 0.47,
+    "core_radius_km": 2.21,
+    "min_village_dist_km": 11.95,
+    "habitat_preference": "mixed_forest",
+    "water_preference": 0.96,
+    "camera_detectability": 0.83,
+    "human_avoidance": 0.99,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.64667,
+        79.21814
+      ],
+      "recent_center": [
+        21.64976,
+        79.21677
+      ],
+      "centroid_shift_km": 0.37,
+      "baseline_radius_km": 3.32,
+      "recent_radius_km": 2.42,
+      "range_change_km2": 16.1,
+      "territory_shift_detected": false,
+      "shift_type": "stable"
+    }
+  },
+  "81": {
+    "tiger_id": 81,
+    "sex": "Female",
+    "age_years": 11.0,
+    "life_stage": "older_adult",
+    "body_condition": "good",
+    "territorial_status": "resident_territorial",
+    "dispersal_status": "resident",
+    "primary_range": "East Pench",
+    "centroid_lat": 21.609293,
+    "centroid_lon": 79.358496,
+    "home_range_km2": 15.2,
+    "territory_radius_km": 2.2,
+    "core_area_fraction": 0.38,
+    "core_radius_km": 1.35,
+    "min_village_dist_km": 2.75,
+    "habitat_preference": "teak_forest",
+    "water_preference": 0.61,
+    "camera_detectability": 0.86,
+    "human_avoidance": 0.98,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.60929,
+        79.3585
+      ],
+      "recent_center": [
+        21.6084,
+        79.35871
+      ],
+      "centroid_shift_km": 0.1,
+      "baseline_radius_km": 0.1,
+      "recent_radius_km": 0.0,
+      "range_change_km2": 0.0,
+      "territory_shift_detected": false,
+      "shift_type": "range_contraction"
+    }
+  },
+  "82": {
+    "tiger_id": 82,
+    "sex": "Male",
+    "age_years": 1.5,
+    "life_stage": "subadult",
+    "body_condition": "good",
+    "territorial_status": "non_territorial",
+    "dispersal_status": "resident",
+    "primary_range": "Paoni Buffer",
+    "centroid_lat": 21.544169,
+    "centroid_lon": 79.238626,
+    "home_range_km2": 15.2,
+    "territory_radius_km": 2.2,
+    "core_area_fraction": 0.48,
+    "core_radius_km": 1.53,
+    "min_village_dist_km": 4.25,
+    "habitat_preference": "mixed_forest",
+    "water_preference": 0.61,
+    "camera_detectability": 0.69,
+    "human_avoidance": 1.0,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.54802,
+        79.23521
+      ],
+      "recent_center": [
+        21.54019,
+        79.24204
+      ],
+      "centroid_shift_km": 1.12,
+      "baseline_radius_km": 1.71,
+      "recent_radius_km": 1.16,
+      "range_change_km2": 4.9,
+      "territory_shift_detected": false,
+      "shift_type": "range_contraction"
+    }
+  },
+  "85": {
+    "tiger_id": 85,
+    "sex": "Male",
+    "age_years": 9.0,
+    "life_stage": "adult",
+    "body_condition": "good",
+    "territorial_status": "transient",
+    "dispersal_status": "resident",
+    "primary_range": "Nagalwadi Buffer",
+    "centroid_lat": 21.543365,
+    "centroid_lon": 79.317421,
+    "home_range_km2": 17.2,
+    "territory_radius_km": 2.34,
+    "core_area_fraction": 0.42,
+    "core_radius_km": 1.51,
+    "min_village_dist_km": 1.97,
+    "habitat_preference": "mixed_forest",
+    "water_preference": 0.75,
+    "camera_detectability": 0.75,
+    "human_avoidance": 0.94,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.54497,
+        79.32039
+      ],
+      "recent_center": [
+        21.54369,
+        79.3142
+      ],
+      "centroid_shift_km": 0.65,
+      "baseline_radius_km": 0.91,
+      "recent_radius_km": 1.93,
+      "range_change_km2": 9.1,
+      "territory_shift_detected": false,
+      "shift_type": "range_expansion"
+    }
+  },
+  "88": {
+    "tiger_id": 88,
+    "sex": "Female",
+    "age_years": 1.5,
+    "life_stage": "subadult",
+    "body_condition": "excellent",
+    "territorial_status": "non_territorial",
+    "dispersal_status": "resident",
+    "primary_range": "East Pench",
+    "centroid_lat": 21.625499,
+    "centroid_lon": 79.302563,
+    "home_range_km2": 18.9,
+    "territory_radius_km": 2.45,
+    "core_area_fraction": 0.38,
+    "core_radius_km": 1.5,
+    "min_village_dist_km": 8.62,
+    "habitat_preference": "mixed_forest",
+    "water_preference": 0.82,
+    "camera_detectability": 0.72,
+    "human_avoidance": 0.96,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.62218,
+        79.3009
+      ],
+      "recent_center": [
+        21.62524,
+        79.30091
+      ],
+      "centroid_shift_km": 0.34,
+      "baseline_radius_km": 1.47,
+      "recent_radius_km": 0.86,
+      "range_change_km2": 4.5,
+      "territory_shift_detected": false,
+      "shift_type": "range_contraction"
+    }
+  },
+  "90": {
+    "tiger_id": 90,
+    "sex": "Female",
+    "age_years": 1.5,
+    "life_stage": "subadult",
+    "body_condition": "excellent",
+    "territorial_status": "non_territorial",
+    "dispersal_status": "resident",
+    "primary_range": "East Pench",
+    "centroid_lat": 21.639391,
+    "centroid_lon": 79.338096,
+    "home_range_km2": 17.1,
+    "territory_radius_km": 2.33,
+    "core_area_fraction": 0.38,
+    "core_radius_km": 1.43,
+    "min_village_dist_km": 5.71,
+    "habitat_preference": "teak_forest",
+    "water_preference": 0.39,
+    "camera_detectability": 0.93,
+    "human_avoidance": 0.82,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.63868,
+        79.33872
+      ],
+      "recent_center": [
+        21.6401,
+        79.33623
+      ],
+      "centroid_shift_km": 0.3,
+      "baseline_radius_km": 1.37,
+      "recent_radius_km": 1.82,
+      "range_change_km2": 4.5,
+      "territory_shift_detected": false,
+      "shift_type": "range_expansion"
+    }
+  },
+  "91": {
+    "tiger_id": 91,
+    "sex": "Male",
+    "age_years": 2.5,
+    "life_stage": "subadult",
+    "body_condition": "fair",
+    "territorial_status": "non_territorial",
+    "dispersal_status": "dispersing",
+    "primary_range": "Paoni Buffer",
+    "centroid_lat": 21.53332,
+    "centroid_lon": 79.189725,
+    "home_range_km2": 34.8,
+    "territory_radius_km": 3.33,
+    "core_area_fraction": 0.48,
+    "core_radius_km": 2.32,
+    "min_village_dist_km": 2.29,
+    "habitat_preference": "teak_forest",
+    "water_preference": 0.39,
+    "camera_detectability": 0.8,
+    "human_avoidance": 0.78,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.53462,
+        79.19052
+      ],
+      "recent_center": [
+        21.53036,
+        79.19482
+      ],
+      "centroid_shift_km": 0.65,
+      "baseline_radius_km": 2.31,
+      "recent_radius_km": 2.2,
+      "range_change_km2": 1.5,
+      "territory_shift_detected": false,
+      "shift_type": "stable"
+    }
+  },
+  "94": {
+    "tiger_id": 94,
+    "sex": "Female",
+    "age_years": 5.0,
+    "life_stage": "adult",
+    "body_condition": "excellent",
+    "territorial_status": "resident_territorial",
+    "dispersal_status": "resident",
+    "primary_range": "Devalapar",
+    "centroid_lat": 21.734926,
+    "centroid_lon": 79.226867,
+    "home_range_km2": 19.5,
+    "territory_radius_km": 2.49,
+    "core_area_fraction": 0.4,
+    "core_radius_km": 1.57,
+    "min_village_dist_km": 2.84,
+    "habitat_preference": "mixed_forest",
+    "water_preference": 0.65,
+    "camera_detectability": 0.92,
+    "human_avoidance": 0.76,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.73693,
+        79.22991
+      ],
+      "recent_center": [
+        21.73514,
+        79.22556
+      ],
+      "centroid_shift_km": 0.49,
+      "baseline_radius_km": 1.77,
+      "recent_radius_km": 2.2,
+      "range_change_km2": 5.4,
+      "territory_shift_detected": false,
+      "shift_type": "stable"
+    }
+  },
+  "96": {
+    "tiger_id": 96,
+    "sex": "Male",
+    "age_years": 5.0,
+    "life_stage": "adult",
+    "body_condition": "poor",
+    "territorial_status": "resident_territorial",
+    "dispersal_status": "resident",
+    "primary_range": "Saleghat",
+    "centroid_lat": 21.560212,
+    "centroid_lon": 79.180943,
+    "home_range_km2": 17.1,
+    "territory_radius_km": 2.33,
+    "core_area_fraction": 0.49,
+    "core_radius_km": 1.63,
+    "min_village_dist_km": 2.73,
+    "habitat_preference": "mixed_forest",
+    "water_preference": 0.51,
+    "camera_detectability": 0.87,
+    "human_avoidance": 0.67,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.55673,
+        79.1817
+      ],
+      "recent_center": [
+        21.56106,
+        79.18182
+      ],
+      "centroid_shift_km": 0.48,
+      "baseline_radius_km": 1.72,
+      "recent_radius_km": 1.25,
+      "range_change_km2": 4.4,
+      "territory_shift_detected": false,
+      "shift_type": "stable"
+    }
+  },
+  "97": {
+    "tiger_id": 97,
+    "sex": "Female",
+    "age_years": 9.0,
+    "life_stage": "adult",
+    "body_condition": "excellent",
+    "territorial_status": "resident_territorial",
+    "dispersal_status": "resident",
+    "primary_range": "North Buffer",
+    "centroid_lat": 21.747423,
+    "centroid_lon": 79.24788,
+    "home_range_km2": 19.2,
+    "territory_radius_km": 2.47,
+    "core_area_fraction": 0.36,
+    "core_radius_km": 1.47,
+    "min_village_dist_km": 1.35,
+    "habitat_preference": "grassland",
+    "water_preference": 0.49,
+    "camera_detectability": 0.93,
+    "human_avoidance": 0.77,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.74618,
+        79.24545
+      ],
+      "recent_center": [
+        21.74801,
+        79.24672
+      ],
+      "centroid_shift_km": 0.24,
+      "baseline_radius_km": 2.07,
+      "recent_radius_km": 2.16,
+      "range_change_km2": 1.2,
+      "territory_shift_detected": false,
+      "shift_type": "stable"
+    }
+  },
+  "100": {
+    "tiger_id": 100,
+    "sex": "Female",
+    "age_years": 9.0,
+    "life_stage": "adult",
+    "body_condition": "excellent",
+    "territorial_status": "resident_territorial",
+    "dispersal_status": "resident",
+    "primary_range": "North Buffer",
+    "centroid_lat": 21.753101,
+    "centroid_lon": 79.189819,
+    "home_range_km2": 15.2,
+    "territory_radius_km": 2.2,
+    "core_area_fraction": 0.39,
+    "core_radius_km": 1.37,
+    "min_village_dist_km": 2.15,
+    "habitat_preference": "riparian_forest",
+    "water_preference": 0.56,
+    "camera_detectability": 0.88,
+    "human_avoidance": 0.68,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.75324,
+        79.1889
+      ],
+      "recent_center": [
+        21.75305,
+        79.19014
+      ],
+      "centroid_shift_km": 0.13,
+      "baseline_radius_km": 1.45,
+      "recent_radius_km": 1.32,
+      "range_change_km2": 1.1,
+      "territory_shift_detected": false,
+      "shift_type": "stable"
+    }
+  },
+  "106": {
+    "tiger_id": 106,
+    "sex": "Female",
+    "age_years": 1.5,
+    "life_stage": "subadult",
+    "body_condition": "good",
+    "territorial_status": "non_territorial",
+    "dispersal_status": "resident",
+    "primary_range": "NH-44 Corridor",
+    "centroid_lat": 21.596951,
+    "centroid_lon": 79.262392,
+    "home_range_km2": 18.2,
+    "territory_radius_km": 2.41,
+    "core_area_fraction": 0.38,
+    "core_radius_km": 1.49,
+    "min_village_dist_km": 10.18,
+    "habitat_preference": "teak_forest",
+    "water_preference": 0.43,
+    "camera_detectability": 0.71,
+    "human_avoidance": 0.79,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.59909,
+        79.26422
+      ],
+      "recent_center": [
+        21.59522,
+        79.26078
+      ],
+      "centroid_shift_km": 0.56,
+      "baseline_radius_km": 2.73,
+      "recent_radius_km": 1.64,
+      "range_change_km2": 14.9,
+      "territory_shift_detected": false,
+      "shift_type": "range_contraction"
+    }
+  },
+  "108": {
+    "tiger_id": 108,
+    "sex": "Male",
+    "age_years": 0.5,
+    "life_stage": "cub",
+    "body_condition": "excellent",
+    "territorial_status": "non_territorial",
+    "dispersal_status": "resident",
+    "primary_range": "West Pench",
+    "centroid_lat": 21.68743,
+    "centroid_lon": 79.144719,
+    "home_range_km2": 15.2,
+    "territory_radius_km": 2.2,
+    "core_area_fraction": 0.47,
+    "core_radius_km": 1.5,
+    "min_village_dist_km": 3.96,
+    "habitat_preference": "mixed_forest",
+    "water_preference": 0.85,
+    "camera_detectability": 0.95,
+    "human_avoidance": 0.68,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.68904,
+        79.1441
+      ],
+      "recent_center": [
+        21.68475,
+        79.14336
+      ],
+      "centroid_shift_km": 0.48,
+      "baseline_radius_km": 1.05,
+      "recent_radius_km": 0.92,
+      "range_change_km2": 0.8,
+      "territory_shift_detected": false,
+      "shift_type": "stable"
+    }
+  },
+  "109": {
+    "tiger_id": 109,
+    "sex": "Female",
+    "age_years": 3.5,
+    "life_stage": "young_adult",
+    "body_condition": "fair",
+    "territorial_status": "resident_territorial",
+    "dispersal_status": "resident",
+    "primary_range": "Saleghat",
+    "centroid_lat": 21.561158,
+    "centroid_lon": 79.200465,
+    "home_range_km2": 15.8,
+    "territory_radius_km": 2.24,
+    "core_area_fraction": 0.46,
+    "core_radius_km": 1.52,
+    "min_village_dist_km": 4.73,
+    "habitat_preference": "riparian_forest",
+    "water_preference": 0.87,
+    "camera_detectability": 0.83,
+    "human_avoidance": 0.9,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.56121,
+        79.20254
+      ],
+      "recent_center": [
+        21.56344,
+        79.20217
+      ],
+      "centroid_shift_km": 0.25,
+      "baseline_radius_km": 1.65,
+      "recent_radius_km": 1.45,
+      "range_change_km2": 2.0,
+      "territory_shift_detected": false,
+      "shift_type": "stable"
+    }
+  },
+  "114": {
+    "tiger_id": 114,
+    "sex": "Female",
+    "age_years": 2.5,
+    "life_stage": "subadult",
+    "body_condition": "fair",
+    "territorial_status": "non_territorial",
+    "dispersal_status": "resident",
+    "primary_range": "Chorbahuli",
+    "centroid_lat": 21.657937,
+    "centroid_lon": 79.245031,
+    "home_range_km2": 15.2,
+    "territory_radius_km": 2.2,
+    "core_area_fraction": 0.41,
+    "core_radius_km": 1.4,
+    "min_village_dist_km": 10.55,
+    "habitat_preference": "grassland",
+    "water_preference": 0.81,
+    "camera_detectability": 0.64,
+    "human_avoidance": 0.97,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.65838,
+        79.24421
+      ],
+      "recent_center": [
+        21.65798,
+        79.24444
+      ],
+      "centroid_shift_km": 0.05,
+      "baseline_radius_km": 1.23,
+      "recent_radius_km": 1.65,
+      "range_change_km2": 3.8,
+      "territory_shift_detected": false,
+      "shift_type": "range_expansion"
+    }
+  },
+  "115": {
+    "tiger_id": 115,
+    "sex": "Female",
+    "age_years": 3.5,
+    "life_stage": "young_adult",
+    "body_condition": "fair",
+    "territorial_status": "resident_territorial",
+    "dispersal_status": "resident",
+    "primary_range": "East Pench",
+    "centroid_lat": 21.651727,
+    "centroid_lon": 79.345176,
+    "home_range_km2": 95.0,
+    "territory_radius_km": 5.5,
+    "core_area_fraction": 0.49,
+    "core_radius_km": 3.86,
+    "min_village_dist_km": 5.13,
+    "habitat_preference": "mixed_forest",
+    "water_preference": 0.76,
+    "camera_detectability": 0.62,
+    "human_avoidance": 0.93,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.7035,
+        79.32229
+      ],
+      "recent_center": [
+        21.57343,
+        79.33517
+      ],
+      "centroid_shift_km": 14.5,
+      "baseline_radius_km": 6.49,
+      "recent_radius_km": 5.89,
+      "range_change_km2": 23.1,
+      "territory_shift_detected": true,
+      "shift_type": "territory_shift"
+    }
+  },
+  "117": {
+    "tiger_id": 117,
+    "sex": "Female",
+    "age_years": 2.5,
+    "life_stage": "subadult",
+    "body_condition": "fair",
+    "territorial_status": "non_territorial",
+    "dispersal_status": "resident",
+    "primary_range": "East Pench",
+    "centroid_lat": 21.621622,
+    "centroid_lon": 79.343491,
+    "home_range_km2": 27.3,
+    "territory_radius_km": 2.95,
+    "core_area_fraction": 0.42,
+    "core_radius_km": 1.92,
+    "min_village_dist_km": 4.41,
+    "habitat_preference": "riparian_forest",
+    "water_preference": 0.92,
+    "camera_detectability": 0.98,
+    "human_avoidance": 0.69,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.62136,
+        79.34342
+      ],
+      "recent_center": [
+        21.62298,
+        79.34643
+      ],
+      "centroid_shift_km": 0.36,
+      "baseline_radius_km": 2.26,
+      "recent_radius_km": 1.36,
+      "range_change_km2": 10.3,
+      "territory_shift_detected": false,
+      "shift_type": "range_contraction"
+    }
+  },
+  "124": {
+    "tiger_id": 124,
+    "sex": "Female",
+    "age_years": 2.5,
+    "life_stage": "subadult",
+    "body_condition": "fair",
+    "territorial_status": "non_territorial",
+    "dispersal_status": "resident",
+    "primary_range": "Paoni Buffer",
+    "centroid_lat": 21.551184,
+    "centroid_lon": 79.232401,
+    "home_range_km2": 15.2,
+    "territory_radius_km": 2.2,
+    "core_area_fraction": 0.5,
+    "core_radius_km": 1.55,
+    "min_village_dist_km": 4.75,
+    "habitat_preference": "riparian_forest",
+    "water_preference": 0.54,
+    "camera_detectability": 0.67,
+    "human_avoidance": 0.83,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.549,
+        79.2334
+      ],
+      "recent_center": [
+        21.55513,
+        79.22672
+      ],
+      "centroid_shift_km": 0.97,
+      "baseline_radius_km": 1.1,
+      "recent_radius_km": 2.1,
+      "range_change_km2": 10.1,
+      "territory_shift_detected": false,
+      "shift_type": "range_expansion"
+    }
   },
   "126": {
     "tiger_id": 126,
     "sex": "Male",
+    "age_years": 9.0,
+    "life_stage": "adult",
+    "body_condition": "good",
+    "territorial_status": "transient",
+    "dispersal_status": "resident",
     "primary_range": "Devalapar",
-    "centroid_lat": 21.681277,
-    "centroid_lon": 79.247442,
-    "territory_radius_km": 8.66,
-    "min_village_dist_km": 7.96
+    "centroid_lat": 21.725243,
+    "centroid_lon": 79.236934,
+    "home_range_km2": 20.9,
+    "territory_radius_km": 2.58,
+    "core_area_fraction": 0.48,
+    "core_radius_km": 1.78,
+    "min_village_dist_km": 3.8,
+    "habitat_preference": "mixed_forest",
+    "water_preference": 0.92,
+    "camera_detectability": 0.67,
+    "human_avoidance": 0.86,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.72658,
+        79.23834
+      ],
+      "recent_center": [
+        21.72623,
+        79.23914
+      ],
+      "centroid_shift_km": 0.09,
+      "baseline_radius_km": 1.8,
+      "recent_radius_km": 1.89,
+      "range_change_km2": 1.1,
+      "territory_shift_detected": false,
+      "shift_type": "stable"
+    }
+  },
+  "129": {
+    "tiger_id": 129,
+    "sex": "Female",
+    "age_years": 9.0,
+    "life_stage": "adult",
+    "body_condition": "excellent",
+    "territorial_status": "resident_territorial",
+    "dispersal_status": "resident",
+    "primary_range": "Chorbahuli",
+    "centroid_lat": 21.617849,
+    "centroid_lon": 79.263935,
+    "home_range_km2": 15.2,
+    "territory_radius_km": 2.2,
+    "core_area_fraction": 0.45,
+    "core_radius_km": 1.48,
+    "min_village_dist_km": 11.89,
+    "habitat_preference": "teak_forest",
+    "water_preference": 0.45,
+    "camera_detectability": 0.85,
+    "human_avoidance": 0.88,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.61699,
+        79.26288
+      ],
+      "recent_center": [
+        21.61719,
+        79.26313
+      ],
+      "centroid_shift_km": 0.03,
+      "baseline_radius_km": 1.54,
+      "recent_radius_km": 1.59,
+      "range_change_km2": 0.5,
+      "territory_shift_detected": false,
+      "shift_type": "stable"
+    }
+  },
+  "130": {
+    "tiger_id": 130,
+    "sex": "Male",
+    "age_years": 3.5,
+    "life_stage": "young_adult",
+    "body_condition": "good",
+    "territorial_status": "resident_territorial",
+    "dispersal_status": "resident",
+    "primary_range": "West Pench",
+    "centroid_lat": 21.699933,
+    "centroid_lon": 79.203996,
+    "home_range_km2": 20.0,
+    "territory_radius_km": 2.52,
+    "core_area_fraction": 0.44,
+    "core_radius_km": 1.67,
+    "min_village_dist_km": 6.35,
+    "habitat_preference": "teak_forest",
+    "water_preference": 0.61,
+    "camera_detectability": 0.8,
+    "human_avoidance": 0.9,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.70245,
+        79.20679
+      ],
+      "recent_center": [
+        21.70206,
+        79.20469
+      ],
+      "centroid_shift_km": 0.22,
+      "baseline_radius_km": 1.39,
+      "recent_radius_km": 1.47,
+      "range_change_km2": 0.8,
+      "territory_shift_detected": false,
+      "shift_type": "stable"
+    }
+  },
+  "132": {
+    "tiger_id": 132,
+    "sex": "Male",
+    "age_years": 5.0,
+    "life_stage": "adult",
+    "body_condition": "good",
+    "territorial_status": "transient",
+    "dispersal_status": "resident",
+    "primary_range": "Paoni Buffer",
+    "centroid_lat": 21.530976,
+    "centroid_lon": 79.222966,
+    "home_range_km2": 25.0,
+    "territory_radius_km": 2.82,
+    "core_area_fraction": 0.37,
+    "core_radius_km": 1.72,
+    "min_village_dist_km": 2.35,
+    "habitat_preference": "mixed_forest",
+    "water_preference": 0.63,
+    "camera_detectability": 0.77,
+    "human_avoidance": 0.98,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.53316,
+        79.22166
+      ],
+      "recent_center": [
+        21.5287,
+        79.22447
+      ],
+      "centroid_shift_km": 0.57,
+      "baseline_radius_km": 2.05,
+      "recent_radius_km": 2.26,
+      "range_change_km2": 2.9,
+      "territory_shift_detected": false,
+      "shift_type": "stable"
+    }
+  },
+  "136": {
+    "tiger_id": 136,
+    "sex": "Male",
+    "age_years": 5.0,
+    "life_stage": "adult",
+    "body_condition": "good",
+    "territorial_status": "resident_territorial",
+    "dispersal_status": "resident",
+    "primary_range": "Nagalwadi Buffer",
+    "centroid_lat": 21.534348,
+    "centroid_lon": 79.26099,
+    "home_range_km2": 19.3,
+    "territory_radius_km": 2.48,
+    "core_area_fraction": 0.5,
+    "core_radius_km": 1.75,
+    "min_village_dist_km": 4.04,
+    "habitat_preference": "mixed_forest",
+    "water_preference": 0.83,
+    "camera_detectability": 0.69,
+    "human_avoidance": 0.69,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.53286,
+        79.26361
+      ],
+      "recent_center": [
+        21.5358,
+        79.26144
+      ],
+      "centroid_shift_km": 0.4,
+      "baseline_radius_km": 2.29,
+      "recent_radius_km": 2.01,
+      "range_change_km2": 3.8,
+      "territory_shift_detected": false,
+      "shift_type": "stable"
+    }
+  },
+  "139": {
+    "tiger_id": 139,
+    "sex": "Female",
+    "age_years": 5.0,
+    "life_stage": "adult",
+    "body_condition": "fair",
+    "territorial_status": "transient",
+    "dispersal_status": "resident",
+    "primary_range": "Devalapar",
+    "centroid_lat": 21.700116,
+    "centroid_lon": 79.219784,
+    "home_range_km2": 23.2,
+    "territory_radius_km": 2.72,
+    "core_area_fraction": 0.43,
+    "core_radius_km": 1.77,
+    "min_village_dist_km": 6.44,
+    "habitat_preference": "teak_forest",
+    "water_preference": 0.67,
+    "camera_detectability": 0.92,
+    "human_avoidance": 0.93,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.70097,
+        79.21872
+      ],
+      "recent_center": [
+        21.70096,
+        79.22205
+      ],
+      "centroid_shift_km": 0.34,
+      "baseline_radius_km": 0.43,
+      "recent_radius_km": 2.32,
+      "range_change_km2": 16.3,
+      "territory_shift_detected": false,
+      "shift_type": "range_expansion"
+    }
+  },
+  "142": {
+    "tiger_id": 142,
+    "sex": "Male",
+    "age_years": 7.0,
+    "life_stage": "adult",
+    "body_condition": "good",
+    "territorial_status": "resident_territorial",
+    "dispersal_status": "resident",
+    "primary_range": "West Pench",
+    "centroid_lat": 21.676907,
+    "centroid_lon": 79.143165,
+    "home_range_km2": 15.2,
+    "territory_radius_km": 2.2,
+    "core_area_fraction": 0.36,
+    "core_radius_km": 1.32,
+    "min_village_dist_km": 3.95,
+    "habitat_preference": "teak_forest",
+    "water_preference": 0.43,
+    "camera_detectability": 0.73,
+    "human_avoidance": 0.94,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.67773,
+        79.14295
+      ],
+      "recent_center": [
+        21.6756,
+        79.14296
+      ],
+      "centroid_shift_km": 0.24,
+      "baseline_radius_km": 1.62,
+      "recent_radius_km": 1.39,
+      "range_change_km2": 2.2,
+      "territory_shift_detected": false,
+      "shift_type": "stable"
+    }
+  },
+  "145": {
+    "tiger_id": 145,
+    "sex": "Male",
+    "age_years": 9.0,
+    "life_stage": "adult",
+    "body_condition": "excellent",
+    "territorial_status": "resident_territorial",
+    "dispersal_status": "resident",
+    "primary_range": "NH-44 Corridor",
+    "centroid_lat": 21.680182,
+    "centroid_lon": 79.264223,
+    "home_range_km2": 16.9,
+    "territory_radius_km": 2.32,
+    "core_area_fraction": 0.44,
+    "core_radius_km": 1.54,
+    "min_village_dist_km": 7.98,
+    "habitat_preference": "mixed_forest",
+    "water_preference": 0.61,
+    "camera_detectability": 0.82,
+    "human_avoidance": 0.63,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.68055,
+        79.26432
+      ],
+      "recent_center": [
+        21.67973,
+        79.26018
+      ],
+      "centroid_shift_km": 0.44,
+      "baseline_radius_km": 1.93,
+      "recent_radius_km": 2.08,
+      "range_change_km2": 1.9,
+      "territory_shift_detected": false,
+      "shift_type": "stable"
+    }
+  },
+  "148": {
+    "tiger_id": 148,
+    "sex": "Female",
+    "age_years": 3.5,
+    "life_stage": "young_adult",
+    "body_condition": "good",
+    "territorial_status": "resident_territorial",
+    "dispersal_status": "resident",
+    "primary_range": "Chorbahuli",
+    "centroid_lat": 21.620807,
+    "centroid_lon": 79.279512,
+    "home_range_km2": 20.6,
+    "territory_radius_km": 2.56,
+    "core_area_fraction": 0.44,
+    "core_radius_km": 1.7,
+    "min_village_dist_km": 10.83,
+    "habitat_preference": "teak_forest",
+    "water_preference": 0.33,
+    "camera_detectability": 0.91,
+    "human_avoidance": 0.74,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.61977,
+        79.28008
+      ],
+      "recent_center": [
+        21.62127,
+        79.2839
+      ],
+      "centroid_shift_km": 0.43,
+      "baseline_radius_km": 2.36,
+      "recent_radius_km": 1.77,
+      "range_change_km2": 7.6,
+      "territory_shift_detected": false,
+      "shift_type": "stable"
+    }
+  },
+  "151": {
+    "tiger_id": 151,
+    "sex": "Male",
+    "age_years": 2.5,
+    "life_stage": "subadult",
+    "body_condition": "good",
+    "territorial_status": "non_territorial",
+    "dispersal_status": "resident",
+    "primary_range": "Devalapar",
+    "centroid_lat": 21.734769,
+    "centroid_lon": 79.226934,
+    "home_range_km2": 15.2,
+    "territory_radius_km": 2.2,
+    "core_area_fraction": 0.43,
+    "core_radius_km": 1.45,
+    "min_village_dist_km": 2.86,
+    "habitat_preference": "teak_forest",
+    "water_preference": 0.88,
+    "camera_detectability": 0.6,
+    "human_avoidance": 0.97,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.73521,
+        79.23183
+      ],
+      "recent_center": [
+        21.73325,
+        79.22545
+      ],
+      "centroid_shift_km": 0.69,
+      "baseline_radius_km": 1.49,
+      "recent_radius_km": 1.38,
+      "range_change_km2": 1.0,
+      "territory_shift_detected": false,
+      "shift_type": "stable"
+    }
+  },
+  "153": {
+    "tiger_id": 153,
+    "sex": "Female",
+    "age_years": 5.0,
+    "life_stage": "adult",
+    "body_condition": "good",
+    "territorial_status": "resident_territorial",
+    "dispersal_status": "resident",
+    "primary_range": "Paoni Buffer",
+    "centroid_lat": 21.551699,
+    "centroid_lon": 79.215045,
+    "home_range_km2": 17.5,
+    "territory_radius_km": 2.36,
+    "core_area_fraction": 0.38,
+    "core_radius_km": 1.46,
+    "min_village_dist_km": 4.36,
+    "habitat_preference": "mixed_forest",
+    "water_preference": 0.41,
+    "camera_detectability": 0.72,
+    "human_avoidance": 0.9,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.55385,
+        79.21441
+      ],
+      "recent_center": [
+        21.55044,
+        79.21546
+      ],
+      "centroid_shift_km": 0.39,
+      "baseline_radius_km": 1.93,
+      "recent_radius_km": 1.13,
+      "range_change_km2": 7.7,
+      "territory_shift_detected": false,
+      "shift_type": "range_contraction"
+    }
+  },
+  "154": {
+    "tiger_id": 154,
+    "sex": "Female",
+    "age_years": 7.0,
+    "life_stage": "adult",
+    "body_condition": "excellent",
+    "territorial_status": "transient",
+    "dispersal_status": "resident",
+    "primary_range": "Chorbahuli",
+    "centroid_lat": 21.658888,
+    "centroid_lon": 79.253364,
+    "home_range_km2": 15.2,
+    "territory_radius_km": 2.2,
+    "core_area_fraction": 0.42,
+    "core_radius_km": 1.43,
+    "min_village_dist_km": 10.36,
+    "habitat_preference": "teak_forest",
+    "water_preference": 0.9,
+    "camera_detectability": 0.66,
+    "human_avoidance": 0.7,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.65903,
+        79.25346
+      ],
+      "recent_center": [
+        21.65827,
+        79.25565
+      ],
+      "centroid_shift_km": 0.24,
+      "baseline_radius_km": 1.04,
+      "recent_radius_km": 1.5,
+      "range_change_km2": 3.6,
+      "territory_shift_detected": false,
+      "shift_type": "range_expansion"
+    }
+  },
+  "160": {
+    "tiger_id": 160,
+    "sex": "Male",
+    "age_years": 3.5,
+    "life_stage": "young_adult",
+    "body_condition": "fair",
+    "territorial_status": "resident_territorial",
+    "dispersal_status": "resident",
+    "primary_range": "Unknown Range",
+    "centroid_lat": 21.657891,
+    "centroid_lon": 79.177664,
+    "home_range_km2": 15.2,
+    "territory_radius_km": 2.2,
+    "core_area_fraction": 0.42,
+    "core_radius_km": 1.42,
+    "min_village_dist_km": 7.88,
+    "habitat_preference": "riparian_forest",
+    "water_preference": 0.61,
+    "camera_detectability": 0.66,
+    "human_avoidance": 0.98,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.65725,
+        79.1742
+      ],
+      "recent_center": [
+        21.66006,
+        79.18089
+      ],
+      "centroid_shift_km": 0.76,
+      "baseline_radius_km": 1.5,
+      "recent_radius_km": 1.65,
+      "range_change_km2": 1.6,
+      "territory_shift_detected": false,
+      "shift_type": "stable"
+    }
+  },
+  "168": {
+    "tiger_id": 168,
+    "sex": "Female",
+    "age_years": 2.5,
+    "life_stage": "subadult",
+    "body_condition": "excellent",
+    "territorial_status": "non_territorial",
+    "dispersal_status": "resident",
+    "primary_range": "North Buffer",
+    "centroid_lat": 21.748188,
+    "centroid_lon": 79.250972,
+    "home_range_km2": 16.6,
+    "territory_radius_km": 2.3,
+    "core_area_fraction": 0.43,
+    "core_radius_km": 1.5,
+    "min_village_dist_km": 1.02,
+    "habitat_preference": "mixed_forest",
+    "water_preference": 0.56,
+    "camera_detectability": 0.92,
+    "human_avoidance": 0.86,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.75015,
+        79.25316
+      ],
+      "recent_center": [
+        21.74709,
+        79.25098
+      ],
+      "centroid_shift_km": 0.41,
+      "baseline_radius_km": 1.44,
+      "recent_radius_km": 1.93,
+      "range_change_km2": 5.1,
+      "territory_shift_detected": false,
+      "shift_type": "range_expansion"
+    }
+  },
+  "171": {
+    "tiger_id": 171,
+    "sex": "Female",
+    "age_years": 1.5,
+    "life_stage": "subadult",
+    "body_condition": "fair",
+    "territorial_status": "non_territorial",
+    "dispersal_status": "resident",
+    "primary_range": "Unknown Range",
+    "centroid_lat": 21.714594,
+    "centroid_lon": 79.213894,
+    "home_range_km2": 20.9,
+    "territory_radius_km": 2.58,
+    "core_area_fraction": 0.4,
+    "core_radius_km": 1.63,
+    "min_village_dist_km": 4.82,
+    "habitat_preference": "grassland",
+    "water_preference": 0.32,
+    "camera_detectability": 0.99,
+    "human_avoidance": 0.84,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.71442,
+        79.21488
+      ],
+      "recent_center": [
+        21.71441,
+        79.21055
+      ],
+      "centroid_shift_km": 0.45,
+      "baseline_radius_km": 1.15,
+      "recent_radius_km": 0.85,
+      "range_change_km2": 1.9,
+      "territory_shift_detected": false,
+      "shift_type": "stable"
+    }
+  },
+  "172": {
+    "tiger_id": 172,
+    "sex": "Male",
+    "age_years": 5.0,
+    "life_stage": "adult",
+    "body_condition": "fair",
+    "territorial_status": "resident_territorial",
+    "dispersal_status": "resident",
+    "primary_range": "Devalapar",
+    "centroid_lat": 21.698829,
+    "centroid_lon": 79.227705,
+    "home_range_km2": 20.6,
+    "territory_radius_km": 2.56,
+    "core_area_fraction": 0.39,
+    "core_radius_km": 1.6,
+    "min_village_dist_km": 6.7,
+    "habitat_preference": "mixed_forest",
+    "water_preference": 0.98,
+    "camera_detectability": 0.64,
+    "human_avoidance": 0.79,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.69889,
+        79.22719
+      ],
+      "recent_center": [
+        21.69985,
+        79.22629
+      ],
+      "centroid_shift_km": 0.14,
+      "baseline_radius_km": 1.6,
+      "recent_radius_km": 1.7,
+      "range_change_km2": 1.0,
+      "territory_shift_detected": false,
+      "shift_type": "stable"
+    }
+  },
+  "175": {
+    "tiger_id": 175,
+    "sex": "Female",
+    "age_years": 3.5,
+    "life_stage": "young_adult",
+    "body_condition": "excellent",
+    "territorial_status": "transient",
+    "dispersal_status": "resident",
+    "primary_range": "West Pench",
+    "centroid_lat": 21.692286,
+    "centroid_lon": 79.146045,
+    "home_range_km2": 15.2,
+    "territory_radius_km": 2.2,
+    "core_area_fraction": 0.4,
+    "core_radius_km": 1.4,
+    "min_village_dist_km": 3.75,
+    "habitat_preference": "teak_forest",
+    "water_preference": 0.67,
+    "camera_detectability": 0.87,
+    "human_avoidance": 0.99,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.69044,
+        79.14754
+      ],
+      "recent_center": [
+        21.69293,
+        79.14476
+      ],
+      "centroid_shift_km": 0.4,
+      "baseline_radius_km": 1.2,
+      "recent_radius_km": 1.23,
+      "range_change_km2": 0.2,
+      "territory_shift_detected": false,
+      "shift_type": "stable"
+    }
+  },
+  "177": {
+    "tiger_id": 177,
+    "sex": "Female",
+    "age_years": 3.5,
+    "life_stage": "young_adult",
+    "body_condition": "fair",
+    "territorial_status": "resident_territorial",
+    "dispersal_status": "resident",
+    "primary_range": "Chorbahuli",
+    "centroid_lat": 21.679961,
+    "centroid_lon": 79.264094,
+    "home_range_km2": 16.3,
+    "territory_radius_km": 2.28,
+    "core_area_fraction": 0.46,
+    "core_radius_km": 1.54,
+    "min_village_dist_km": 8.01,
+    "habitat_preference": "teak_forest",
+    "water_preference": 0.93,
+    "camera_detectability": 0.65,
+    "human_avoidance": 0.74,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.68061,
+        79.26408
+      ],
+      "recent_center": [
+        21.67717,
+        79.26228
+      ],
+      "centroid_shift_km": 0.42,
+      "baseline_radius_km": 1.64,
+      "recent_radius_km": 2.09,
+      "range_change_km2": 5.3,
+      "territory_shift_detected": false,
+      "shift_type": "stable"
+    }
+  },
+  "178": {
+    "tiger_id": 178,
+    "sex": "Male",
+    "age_years": 1.5,
+    "life_stage": "subadult",
+    "body_condition": "good",
+    "territorial_status": "non_territorial",
+    "dispersal_status": "resident",
+    "primary_range": "East Pench",
+    "centroid_lat": 21.639514,
+    "centroid_lon": 79.296734,
+    "home_range_km2": 15.6,
+    "territory_radius_km": 2.23,
+    "core_area_fraction": 0.41,
+    "core_radius_km": 1.42,
+    "min_village_dist_km": 9.59,
+    "habitat_preference": "teak_forest",
+    "water_preference": 0.73,
+    "camera_detectability": 0.71,
+    "human_avoidance": 0.61,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.63626,
+        79.30022
+      ],
+      "recent_center": [
+        21.63975,
+        79.29121
+      ],
+      "centroid_shift_km": 1.01,
+      "baseline_radius_km": 1.53,
+      "recent_radius_km": 1.6,
+      "range_change_km2": 0.7,
+      "territory_shift_detected": false,
+      "shift_type": "stable"
+    }
+  },
+  "181": {
+    "tiger_id": 181,
+    "sex": "Male",
+    "age_years": 1.5,
+    "life_stage": "subadult",
+    "body_condition": "excellent",
+    "territorial_status": "non_territorial",
+    "dispersal_status": "dispersing",
+    "primary_range": "Chorbahuli",
+    "centroid_lat": 21.633489,
+    "centroid_lon": 79.264285,
+    "home_range_km2": 32.6,
+    "territory_radius_km": 3.22,
+    "core_area_fraction": 0.4,
+    "core_radius_km": 2.03,
+    "min_village_dist_km": 12.66,
+    "habitat_preference": "riparian_forest",
+    "water_preference": 0.99,
+    "camera_detectability": 0.94,
+    "human_avoidance": 0.97,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.63632,
+        79.26229
+      ],
+      "recent_center": [
+        21.63726,
+        79.26376
+      ],
+      "centroid_shift_km": 0.18,
+      "baseline_radius_km": 2.93,
+      "recent_radius_km": 2.43,
+      "range_change_km2": 8.4,
+      "territory_shift_detected": false,
+      "shift_type": "stable"
+    }
+  },
+  "187": {
+    "tiger_id": 187,
+    "sex": "Male",
+    "age_years": 13.0,
+    "life_stage": "older_adult",
+    "body_condition": "fair",
+    "territorial_status": "resident_territorial",
+    "dispersal_status": "resident",
+    "primary_range": "Devalapar",
+    "centroid_lat": 21.7089,
+    "centroid_lon": 79.256398,
+    "home_range_km2": 15.2,
+    "territory_radius_km": 2.2,
+    "core_area_fraction": 0.41,
+    "core_radius_km": 1.42,
+    "min_village_dist_km": 4.8,
+    "habitat_preference": "mixed_forest",
+    "water_preference": 0.32,
+    "camera_detectability": 0.77,
+    "human_avoidance": 0.91,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.71079,
+        79.2577
+      ],
+      "recent_center": [
+        21.70919,
+        79.25927
+      ],
+      "centroid_shift_km": 0.24,
+      "baseline_radius_km": 2.07,
+      "recent_radius_km": 1.33,
+      "range_change_km2": 7.9,
+      "territory_shift_detected": false,
+      "shift_type": "range_contraction"
+    }
+  },
+  "195": {
+    "tiger_id": 195,
+    "sex": "Male",
+    "age_years": 9.0,
+    "life_stage": "adult",
+    "body_condition": "good",
+    "territorial_status": "resident_territorial",
+    "dispersal_status": "resident",
+    "primary_range": "Saleghat",
+    "centroid_lat": 21.61241,
+    "centroid_lon": 79.201096,
+    "home_range_km2": 22.2,
+    "territory_radius_km": 2.66,
+    "core_area_fraction": 0.48,
+    "core_radius_km": 1.83,
+    "min_village_dist_km": 7.95,
+    "habitat_preference": "mixed_forest",
+    "water_preference": 0.59,
+    "camera_detectability": 0.93,
+    "human_avoidance": 0.7,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.61368,
+        79.20105
+      ],
+      "recent_center": [
+        21.61399,
+        79.20289
+      ],
+      "centroid_shift_km": 0.19,
+      "baseline_radius_km": 0.98,
+      "recent_radius_km": 2.54,
+      "range_change_km2": 17.3,
+      "territory_shift_detected": false,
+      "shift_type": "range_expansion"
+    }
+  },
+  "196": {
+    "tiger_id": 196,
+    "sex": "Female",
+    "age_years": 1.5,
+    "life_stage": "subadult",
+    "body_condition": "fair",
+    "territorial_status": "non_territorial",
+    "dispersal_status": "resident",
+    "primary_range": "Chorbahuli",
+    "centroid_lat": 21.659489,
+    "centroid_lon": 79.225931,
+    "home_range_km2": 15.3,
+    "territory_radius_km": 2.21,
+    "core_area_fraction": 0.37,
+    "core_radius_km": 1.34,
+    "min_village_dist_km": 10.85,
+    "habitat_preference": "mixed_forest",
+    "water_preference": 0.48,
+    "camera_detectability": 0.93,
+    "human_avoidance": 0.97,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.6603,
+        79.22505
+      ],
+      "recent_center": [
+        21.65868,
+        79.22922
+      ],
+      "centroid_shift_km": 0.47,
+      "baseline_radius_km": 1.94,
+      "recent_radius_km": 1.46,
+      "range_change_km2": 5.2,
+      "territory_shift_detected": false,
+      "shift_type": "stable"
+    }
+  },
+  "198": {
+    "tiger_id": 198,
+    "sex": "Female",
+    "age_years": 2.5,
+    "life_stage": "subadult",
+    "body_condition": "good",
+    "territorial_status": "non_territorial",
+    "dispersal_status": "resident",
+    "primary_range": "West Pench",
+    "centroid_lat": 21.708933,
+    "centroid_lon": 79.189032,
+    "home_range_km2": 15.2,
+    "territory_radius_km": 2.2,
+    "core_area_fraction": 0.49,
+    "core_radius_km": 1.54,
+    "min_village_dist_km": 4.56,
+    "habitat_preference": "mixed_forest",
+    "water_preference": 0.8,
+    "camera_detectability": 0.79,
+    "human_avoidance": 0.78,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.70873,
+        79.18964
+      ],
+      "recent_center": [
+        21.70727,
+        79.18649
+      ],
+      "centroid_shift_km": 0.36,
+      "baseline_radius_km": 1.59,
+      "recent_radius_km": 1.74,
+      "range_change_km2": 1.6,
+      "territory_shift_detected": false,
+      "shift_type": "stable"
+    }
+  },
+  "201": {
+    "tiger_id": 201,
+    "sex": "Male",
+    "age_years": 5.0,
+    "life_stage": "adult",
+    "body_condition": "good",
+    "territorial_status": "resident_territorial",
+    "dispersal_status": "resident",
+    "primary_range": "Devalapar",
+    "centroid_lat": 21.733187,
+    "centroid_lon": 79.23183,
+    "home_range_km2": 17.2,
+    "territory_radius_km": 2.34,
+    "core_area_fraction": 0.4,
+    "core_radius_km": 1.48,
+    "min_village_dist_km": 2.99,
+    "habitat_preference": "riparian_forest",
+    "water_preference": 0.48,
+    "camera_detectability": 0.64,
+    "human_avoidance": 0.88,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.73198,
+        79.23299
+      ],
+      "recent_center": [
+        21.73159,
+        79.23417
+      ],
+      "centroid_shift_km": 0.13,
+      "baseline_radius_km": 1.96,
+      "recent_radius_km": 1.22,
+      "range_change_km2": 7.5,
+      "territory_shift_detected": false,
+      "shift_type": "range_contraction"
+    }
+  },
+  "202": {
+    "tiger_id": 202,
+    "sex": "Female",
+    "age_years": 2.5,
+    "life_stage": "subadult",
+    "body_condition": "excellent",
+    "territorial_status": "non_territorial",
+    "dispersal_status": "resident",
+    "primary_range": "West Pench",
+    "centroid_lat": 21.662013,
+    "centroid_lon": 79.151768,
+    "home_range_km2": 18.9,
+    "territory_radius_km": 2.45,
+    "core_area_fraction": 0.43,
+    "core_radius_km": 1.6,
+    "min_village_dist_km": 5.21,
+    "habitat_preference": "teak_forest",
+    "water_preference": 0.48,
+    "camera_detectability": 0.81,
+    "human_avoidance": 0.75,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.66289,
+        79.15523
+      ],
+      "recent_center": [
+        21.6604,
+        79.15239
+      ],
+      "centroid_shift_km": 0.4,
+      "baseline_radius_km": 2.11,
+      "recent_radius_km": 1.04,
+      "range_change_km2": 10.6,
+      "territory_shift_detected": false,
+      "shift_type": "range_contraction"
+    }
+  },
+  "208": {
+    "tiger_id": 208,
+    "sex": "Female",
+    "age_years": 0.5,
+    "life_stage": "cub",
+    "body_condition": "good",
+    "territorial_status": "non_territorial",
+    "dispersal_status": "resident",
+    "primary_range": "West Buffer",
+    "centroid_lat": 21.590019,
+    "centroid_lon": 79.144887,
+    "home_range_km2": 25.2,
+    "territory_radius_km": 2.83,
+    "core_area_fraction": 0.48,
+    "core_radius_km": 1.95,
+    "min_village_dist_km": 4.02,
+    "habitat_preference": "mixed_forest",
+    "water_preference": 0.99,
+    "camera_detectability": 0.89,
+    "human_avoidance": 0.78,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.58784,
+        79.14655
+      ],
+      "recent_center": [
+        21.59024,
+        79.14178
+      ],
+      "centroid_shift_km": 0.56,
+      "baseline_radius_km": 1.42,
+      "recent_radius_km": 2.18,
+      "range_change_km2": 8.6,
+      "territory_shift_detected": false,
+      "shift_type": "range_expansion"
+    }
+  },
+  "211": {
+    "tiger_id": 211,
+    "sex": "Male",
+    "age_years": 5.0,
+    "life_stage": "adult",
+    "body_condition": "excellent",
+    "territorial_status": "transient",
+    "dispersal_status": "resident",
+    "primary_range": "East Pench",
+    "centroid_lat": 21.632731,
+    "centroid_lon": 79.340451,
+    "home_range_km2": 20.3,
+    "territory_radius_km": 2.54,
+    "core_area_fraction": 0.44,
+    "core_radius_km": 1.69,
+    "min_village_dist_km": 5.13,
+    "habitat_preference": "mixed_forest",
+    "water_preference": 0.59,
+    "camera_detectability": 0.91,
+    "human_avoidance": 0.68,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.635,
+        79.3391
+      ],
+      "recent_center": [
+        21.63463,
+        79.34003
+      ],
+      "centroid_shift_km": 0.1,
+      "baseline_radius_km": 0.96,
+      "recent_radius_km": 2.42,
+      "range_change_km2": 15.5,
+      "territory_shift_detected": false,
+      "shift_type": "range_expansion"
+    }
+  },
+  "213": {
+    "tiger_id": 213,
+    "sex": "Male",
+    "age_years": 0.5,
+    "life_stage": "cub",
+    "body_condition": "good",
+    "territorial_status": "non_territorial",
+    "dispersal_status": "resident",
+    "primary_range": "Paoni Buffer",
+    "centroid_lat": 21.556798,
+    "centroid_lon": 79.1974,
+    "home_range_km2": 15.2,
+    "territory_radius_km": 2.2,
+    "core_area_fraction": 0.5,
+    "core_radius_km": 1.55,
+    "min_village_dist_km": 4.37,
+    "habitat_preference": "teak_forest",
+    "water_preference": 0.3,
+    "camera_detectability": 0.73,
+    "human_avoidance": 0.89,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.5559,
+        79.19842
+      ],
+      "recent_center": [
+        21.56033,
+        79.19932
+      ],
+      "centroid_shift_km": 0.5,
+      "baseline_radius_km": 1.56,
+      "recent_radius_km": 1.51,
+      "range_change_km2": 0.5,
+      "territory_shift_detected": false,
+      "shift_type": "stable"
+    }
+  },
+  "216": {
+    "tiger_id": 216,
+    "sex": "Male",
+    "age_years": 2.5,
+    "life_stage": "subadult",
+    "body_condition": "good",
+    "territorial_status": "non_territorial",
+    "dispersal_status": "dispersing",
+    "primary_range": "Saleghat",
+    "centroid_lat": 21.584935,
+    "centroid_lon": 79.150492,
+    "home_range_km2": 45.1,
+    "territory_radius_km": 3.79,
+    "core_area_fraction": 0.42,
+    "core_radius_km": 2.47,
+    "min_village_dist_km": 3.35,
+    "habitat_preference": "teak_forest",
+    "water_preference": 0.83,
+    "camera_detectability": 0.71,
+    "human_avoidance": 0.8,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.58275,
+        79.15296
+      ],
+      "recent_center": [
+        21.58996,
+        79.14841
+      ],
+      "centroid_shift_km": 0.93,
+      "baseline_radius_km": 3.13,
+      "recent_radius_km": 2.86,
+      "range_change_km2": 5.1,
+      "territory_shift_detected": false,
+      "shift_type": "stable"
+    }
+  },
+  "217": {
+    "tiger_id": 217,
+    "sex": "Male",
+    "age_years": 9.0,
+    "life_stage": "adult",
+    "body_condition": "excellent",
+    "territorial_status": "resident_territorial",
+    "dispersal_status": "resident",
+    "primary_range": "East Pench",
+    "centroid_lat": 21.616022,
+    "centroid_lon": 79.303708,
+    "home_range_km2": 15.2,
+    "territory_radius_km": 2.2,
+    "core_area_fraction": 0.36,
+    "core_radius_km": 1.33,
+    "min_village_dist_km": 8.36,
+    "habitat_preference": "mixed_forest",
+    "water_preference": 0.91,
+    "camera_detectability": 0.72,
+    "human_avoidance": 0.75,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.6158,
+        79.30266
+      ],
+      "recent_center": [
+        21.61629,
+        79.30427
+      ],
+      "centroid_shift_km": 0.17,
+      "baseline_radius_km": 1.97,
+      "recent_radius_km": 1.8,
+      "range_change_km2": 2.0,
+      "territory_shift_detected": false,
+      "shift_type": "stable"
+    }
+  },
+  "220": {
+    "tiger_id": 220,
+    "sex": "Male",
+    "age_years": 9.0,
+    "life_stage": "adult",
+    "body_condition": "excellent",
+    "territorial_status": "resident_territorial",
+    "dispersal_status": "resident",
+    "primary_range": "NH-44 Corridor",
+    "centroid_lat": 21.575515,
+    "centroid_lon": 79.258316,
+    "home_range_km2": 15.2,
+    "territory_radius_km": 2.2,
+    "core_area_fraction": 0.41,
+    "core_radius_km": 1.41,
+    "min_village_dist_km": 8.27,
+    "habitat_preference": "mixed_forest",
+    "water_preference": 0.86,
+    "camera_detectability": 0.79,
+    "human_avoidance": 0.8,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.57752,
+        79.25854
+      ],
+      "recent_center": [
+        21.57462,
+        79.25815
+      ],
+      "centroid_shift_km": 0.32,
+      "baseline_radius_km": 1.51,
+      "recent_radius_km": 1.38,
+      "range_change_km2": 1.2,
+      "territory_shift_detected": false,
+      "shift_type": "stable"
+    }
+  },
+  "222": {
+    "tiger_id": 222,
+    "sex": "Female",
+    "age_years": 5.0,
+    "life_stage": "adult",
+    "body_condition": "good",
+    "territorial_status": "resident_territorial",
+    "dispersal_status": "resident",
+    "primary_range": "Saleghat",
+    "centroid_lat": 21.597101,
+    "centroid_lon": 79.14977,
+    "home_range_km2": 17.9,
+    "territory_radius_km": 2.39,
+    "core_area_fraction": 0.5,
+    "core_radius_km": 1.69,
+    "min_village_dist_km": 4.7,
+    "habitat_preference": "teak_forest",
+    "water_preference": 0.56,
+    "camera_detectability": 0.7,
+    "human_avoidance": 0.66,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.59726,
+        79.14898
+      ],
+      "recent_center": [
+        21.59633,
+        79.15057
+      ],
+      "centroid_shift_km": 0.19,
+      "baseline_radius_km": 2.17,
+      "recent_radius_km": 1.55,
+      "range_change_km2": 7.2,
+      "territory_shift_detected": false,
+      "shift_type": "stable"
+    }
+  },
+  "223": {
+    "tiger_id": 223,
+    "sex": "Female",
+    "age_years": 0.5,
+    "life_stage": "cub",
+    "body_condition": "good",
+    "territorial_status": "non_territorial",
+    "dispersal_status": "resident",
+    "primary_range": "North Buffer",
+    "centroid_lat": 21.746302,
+    "centroid_lon": 79.24447,
+    "home_range_km2": 16.2,
+    "territory_radius_km": 2.27,
+    "core_area_fraction": 0.47,
+    "core_radius_km": 1.56,
+    "min_village_dist_km": 1.62,
+    "habitat_preference": "riparian_forest",
+    "water_preference": 0.55,
+    "camera_detectability": 0.82,
+    "human_avoidance": 0.6,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.74449,
+        79.24234
+      ],
+      "recent_center": [
+        21.75086,
+        79.24535
+      ],
+      "centroid_shift_km": 0.77,
+      "baseline_radius_km": 1.55,
+      "recent_radius_km": 1.74,
+      "range_change_km2": 2.0,
+      "territory_shift_detected": false,
+      "shift_type": "stable"
+    }
+  },
+  "226": {
+    "tiger_id": 226,
+    "sex": "Female",
+    "age_years": 2.5,
+    "life_stage": "subadult",
+    "body_condition": "good",
+    "territorial_status": "non_territorial",
+    "dispersal_status": "resident",
+    "primary_range": "Nagalwadi Buffer",
+    "centroid_lat": 21.549373,
+    "centroid_lon": 79.288447,
+    "home_range_km2": 19.0,
+    "territory_radius_km": 2.46,
+    "core_area_fraction": 0.46,
+    "core_radius_km": 1.68,
+    "min_village_dist_km": 4.53,
+    "habitat_preference": "grassland",
+    "water_preference": 0.78,
+    "camera_detectability": 0.81,
+    "human_avoidance": 0.99,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.5507,
+        79.28803
+      ],
+      "recent_center": [
+        21.54998,
+        79.2888
+      ],
+      "centroid_shift_km": 0.11,
+      "baseline_radius_km": 1.56,
+      "recent_radius_km": 1.71,
+      "range_change_km2": 1.5,
+      "territory_shift_detected": false,
+      "shift_type": "stable"
+    }
+  },
+  "228": {
+    "tiger_id": 228,
+    "sex": "Female",
+    "age_years": 7.0,
+    "life_stage": "adult",
+    "body_condition": "excellent",
+    "territorial_status": "resident_territorial",
+    "dispersal_status": "resident",
+    "primary_range": "Paoni Buffer",
+    "centroid_lat": 21.53915,
+    "centroid_lon": 79.1922,
+    "home_range_km2": 15.2,
+    "territory_radius_km": 2.2,
+    "core_area_fraction": 0.37,
+    "core_radius_km": 1.35,
+    "min_village_dist_km": 2.8,
+    "habitat_preference": "mixed_forest",
+    "water_preference": 0.83,
+    "camera_detectability": 0.84,
+    "human_avoidance": 0.93,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.54191,
+        79.19308
+      ],
+      "recent_center": [
+        21.53575,
+        79.193
+      ],
+      "centroid_shift_km": 0.68,
+      "baseline_radius_km": 1.61,
+      "recent_radius_km": 2.1,
+      "range_change_km2": 5.8,
+      "territory_shift_detected": false,
+      "shift_type": "range_expansion"
+    }
+  },
+  "229": {
+    "tiger_id": 229,
+    "sex": "Female",
+    "age_years": 5.0,
+    "life_stage": "adult",
+    "body_condition": "good",
+    "territorial_status": "resident_territorial",
+    "dispersal_status": "resident",
+    "primary_range": "Saleghat",
+    "centroid_lat": 21.621085,
+    "centroid_lon": 79.165845,
+    "home_range_km2": 15.2,
+    "territory_radius_km": 2.2,
+    "core_area_fraction": 0.48,
+    "core_radius_km": 1.53,
+    "min_village_dist_km": 6.99,
+    "habitat_preference": "mixed_forest",
+    "water_preference": 0.71,
+    "camera_detectability": 0.82,
+    "human_avoidance": 0.83,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.62354,
+        79.16703
+      ],
+      "recent_center": [
+        21.6207,
+        79.16824
+      ],
+      "centroid_shift_km": 0.34,
+      "baseline_radius_km": 1.87,
+      "recent_radius_km": 1.75,
+      "range_change_km2": 1.3,
+      "territory_shift_detected": false,
+      "shift_type": "stable"
+    }
+  },
+  "237": {
+    "tiger_id": 237,
+    "sex": "Male",
+    "age_years": 5.0,
+    "life_stage": "adult",
+    "body_condition": "excellent",
+    "territorial_status": "resident_territorial",
+    "dispersal_status": "resident",
+    "primary_range": "Devalapar",
+    "centroid_lat": 21.725562,
+    "centroid_lon": 79.235703,
+    "home_range_km2": 19.3,
+    "territory_radius_km": 2.48,
+    "core_area_fraction": 0.49,
+    "core_radius_km": 1.74,
+    "min_village_dist_km": 3.82,
+    "habitat_preference": "riparian_forest",
+    "water_preference": 0.72,
+    "camera_detectability": 0.75,
+    "human_avoidance": 0.84,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.7286,
+        79.23458
+      ],
+      "recent_center": [
+        21.71937,
+        79.23416
+      ],
+      "centroid_shift_km": 1.03,
+      "baseline_radius_km": 1.85,
+      "recent_radius_km": 1.97,
+      "range_change_km2": 1.4,
+      "territory_shift_detected": false,
+      "shift_type": "stable"
+    }
+  },
+  "238": {
+    "tiger_id": 238,
+    "sex": "Male",
+    "age_years": 1.5,
+    "life_stage": "subadult",
+    "body_condition": "good",
+    "territorial_status": "non_territorial",
+    "dispersal_status": "resident",
+    "primary_range": "Saleghat",
+    "centroid_lat": 21.610017,
+    "centroid_lon": 79.177732,
+    "home_range_km2": 20.3,
+    "territory_radius_km": 2.54,
+    "core_area_fraction": 0.47,
+    "core_radius_km": 1.75,
+    "min_village_dist_km": 6.54,
+    "habitat_preference": "teak_forest",
+    "water_preference": 0.84,
+    "camera_detectability": 0.97,
+    "human_avoidance": 0.92,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.61279,
+        79.17989
+      ],
+      "recent_center": [
+        21.60934,
+        79.17426
+      ],
+      "centroid_shift_km": 0.7,
+      "baseline_radius_km": 2.08,
+      "recent_radius_km": 1.54,
+      "range_change_km2": 6.2,
+      "territory_shift_detected": false,
+      "shift_type": "stable"
+    }
+  },
+  "240": {
+    "tiger_id": 240,
+    "sex": "Male",
+    "age_years": 7.0,
+    "life_stage": "adult",
+    "body_condition": "poor",
+    "territorial_status": "transient",
+    "dispersal_status": "resident",
+    "primary_range": "East Pench",
+    "centroid_lat": 21.681727,
+    "centroid_lon": 79.292699,
+    "home_range_km2": 15.2,
+    "territory_radius_km": 2.2,
+    "core_area_fraction": 0.38,
+    "core_radius_km": 1.36,
+    "min_village_dist_km": 7.25,
+    "habitat_preference": "teak_forest",
+    "water_preference": 0.34,
+    "camera_detectability": 0.65,
+    "human_avoidance": 0.98,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.6817,
+        79.29425
+      ],
+      "recent_center": [
+        21.67899,
+        79.29187
+      ],
+      "centroid_shift_km": 0.39,
+      "baseline_radius_km": 1.48,
+      "recent_radius_km": 1.5,
+      "range_change_km2": 0.2,
+      "territory_shift_detected": false,
+      "shift_type": "stable"
+    }
+  },
+  "243": {
+    "tiger_id": 243,
+    "sex": "Male",
+    "age_years": 1.5,
+    "life_stage": "subadult",
+    "body_condition": "good",
+    "territorial_status": "non_territorial",
+    "dispersal_status": "resident",
+    "primary_range": "Chorbahuli",
+    "centroid_lat": 21.666153,
+    "centroid_lon": 79.221724,
+    "home_range_km2": 16.6,
+    "territory_radius_km": 2.3,
+    "core_area_fraction": 0.47,
+    "core_radius_km": 1.57,
+    "min_village_dist_km": 10.22,
+    "habitat_preference": "mixed_forest",
+    "water_preference": 0.94,
+    "camera_detectability": 0.86,
+    "human_avoidance": 0.66,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.6649,
+        79.22245
+      ],
+      "recent_center": [
+        21.6636,
+        79.21712
+      ],
+      "centroid_shift_km": 0.57,
+      "baseline_radius_km": 1.47,
+      "recent_radius_km": 2.01,
+      "range_change_km2": 5.8,
+      "territory_shift_detected": false,
+      "shift_type": "range_expansion"
+    }
+  },
+  "244": {
+    "tiger_id": 244,
+    "sex": "Male",
+    "age_years": 5.0,
+    "life_stage": "adult",
+    "body_condition": "good",
+    "territorial_status": "resident_territorial",
+    "dispersal_status": "resident",
+    "primary_range": "Chorbahuli",
+    "centroid_lat": 21.632852,
+    "centroid_lon": 79.235134,
+    "home_range_km2": 15.2,
+    "territory_radius_km": 2.2,
+    "core_area_fraction": 0.45,
+    "core_radius_km": 1.48,
+    "min_village_dist_km": 11.95,
+    "habitat_preference": "teak_forest",
+    "water_preference": 0.47,
+    "camera_detectability": 0.82,
+    "human_avoidance": 0.81,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.63215,
+        79.23522
+      ],
+      "recent_center": [
+        21.63408,
+        79.23665
+      ],
+      "centroid_shift_km": 0.26,
+      "baseline_radius_km": 1.32,
+      "recent_radius_km": 1.64,
+      "range_change_km2": 3.0,
+      "territory_shift_detected": false,
+      "shift_type": "stable"
+    }
+  },
+  "246": {
+    "tiger_id": 246,
+    "sex": "Male",
+    "age_years": 5.0,
+    "life_stage": "adult",
+    "body_condition": "excellent",
+    "territorial_status": "resident_territorial",
+    "dispersal_status": "resident",
+    "primary_range": "West Buffer",
+    "centroid_lat": 21.630742,
+    "centroid_lon": 79.130923,
+    "home_range_km2": 18.4,
+    "territory_radius_km": 2.42,
+    "core_area_fraction": 0.43,
+    "core_radius_km": 1.59,
+    "min_village_dist_km": 3.6,
+    "habitat_preference": "mixed_forest",
+    "water_preference": 0.82,
+    "camera_detectability": 1.0,
+    "human_avoidance": 0.81,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.63279,
+        79.13303
+      ],
+      "recent_center": [
+        21.62683,
+        79.12997
+      ],
+      "centroid_shift_km": 0.73,
+      "baseline_radius_km": 1.79,
+      "recent_radius_km": 1.91,
+      "range_change_km2": 1.4,
+      "territory_shift_detected": false,
+      "shift_type": "stable"
+    }
+  },
+  "247": {
+    "tiger_id": 247,
+    "sex": "Female",
+    "age_years": 9.0,
+    "life_stage": "adult",
+    "body_condition": "excellent",
+    "territorial_status": "transient",
+    "dispersal_status": "resident",
+    "primary_range": "Paoni Buffer",
+    "centroid_lat": 21.559043,
+    "centroid_lon": 79.222815,
+    "home_range_km2": 17.1,
+    "territory_radius_km": 2.33,
+    "core_area_fraction": 0.37,
+    "core_radius_km": 1.41,
+    "min_village_dist_km": 5.42,
+    "habitat_preference": "teak_forest",
+    "water_preference": 0.89,
+    "camera_detectability": 0.78,
+    "human_avoidance": 0.63,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.55901,
+        79.22381
+      ],
+      "recent_center": [
+        21.55821,
+        79.22242
+      ],
+      "centroid_shift_km": 0.17,
+      "baseline_radius_km": 1.94,
+      "recent_radius_km": 1.56,
+      "range_change_km2": 4.2,
+      "territory_shift_detected": false,
+      "shift_type": "stable"
+    }
+  },
+  "249": {
+    "tiger_id": 249,
+    "sex": "Female",
+    "age_years": 1.5,
+    "life_stage": "subadult",
+    "body_condition": "good",
+    "territorial_status": "non_territorial",
+    "dispersal_status": "resident",
+    "primary_range": "Saleghat",
+    "centroid_lat": 21.623775,
+    "centroid_lon": 79.169454,
+    "home_range_km2": 18.6,
+    "territory_radius_km": 2.43,
+    "core_area_fraction": 0.47,
+    "core_radius_km": 1.67,
+    "min_village_dist_km": 7.37,
+    "habitat_preference": "grassland",
+    "water_preference": 0.97,
+    "camera_detectability": 0.85,
+    "human_avoidance": 0.76,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.62317,
+        79.17138
+      ],
+      "recent_center": [
+        21.6223,
+        79.16998
+      ],
+      "centroid_shift_km": 0.17,
+      "baseline_radius_km": 1.65,
+      "recent_radius_km": 1.99,
+      "range_change_km2": 3.9,
+      "territory_shift_detected": false,
+      "shift_type": "stable"
+    }
+  },
+  "250": {
+    "tiger_id": 250,
+    "sex": "Female",
+    "age_years": 2.5,
+    "life_stage": "subadult",
+    "body_condition": "good",
+    "territorial_status": "non_territorial",
+    "dispersal_status": "resident",
+    "primary_range": "Devalapar",
+    "centroid_lat": 21.730428,
+    "centroid_lon": 79.221666,
+    "home_range_km2": 15.2,
+    "territory_radius_km": 2.2,
+    "core_area_fraction": 0.39,
+    "core_radius_km": 1.37,
+    "min_village_dist_km": 3.14,
+    "habitat_preference": "teak_forest",
+    "water_preference": 0.9,
+    "camera_detectability": 0.83,
+    "human_avoidance": 0.93,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.72953,
+        79.22194
+      ],
+      "recent_center": [
+        21.73182,
+        79.22222
+      ],
+      "centroid_shift_km": 0.26,
+      "baseline_radius_km": 1.83,
+      "recent_radius_km": 0.18,
+      "range_change_km2": 10.4,
+      "territory_shift_detected": false,
+      "shift_type": "range_contraction"
+    }
+  },
+  "252": {
+    "tiger_id": 252,
+    "sex": "Female",
+    "age_years": 9.0,
+    "life_stage": "adult",
+    "body_condition": "good",
+    "territorial_status": "resident_territorial",
+    "dispersal_status": "resident",
+    "primary_range": "Devalapar",
+    "centroid_lat": 21.735627,
+    "centroid_lon": 79.243611,
+    "home_range_km2": 16.0,
+    "territory_radius_km": 2.26,
+    "core_area_fraction": 0.45,
+    "core_radius_km": 1.52,
+    "min_village_dist_km": 2.48,
+    "habitat_preference": "mixed_forest",
+    "water_preference": 0.63,
+    "camera_detectability": 0.95,
+    "human_avoidance": 0.68,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.73505,
+        79.24329
+      ],
+      "recent_center": [
+        21.73168,
+        79.2453
+      ],
+      "centroid_shift_km": 0.43,
+      "baseline_radius_km": 1.99,
+      "recent_radius_km": 1.79,
+      "range_change_km2": 2.4,
+      "territory_shift_detected": false,
+      "shift_type": "stable"
+    }
+  },
+  "253": {
+    "tiger_id": 253,
+    "sex": "Female",
+    "age_years": 3.5,
+    "life_stage": "young_adult",
+    "body_condition": "fair",
+    "territorial_status": "resident_territorial",
+    "dispersal_status": "resident",
+    "primary_range": "West Pench",
+    "centroid_lat": 21.664089,
+    "centroid_lon": 79.187492,
+    "home_range_km2": 15.2,
+    "territory_radius_km": 2.2,
+    "core_area_fraction": 0.36,
+    "core_radius_km": 1.32,
+    "min_village_dist_km": 8.68,
+    "habitat_preference": "mixed_forest",
+    "water_preference": 0.95,
+    "camera_detectability": 0.76,
+    "human_avoidance": 0.76,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.66425,
+        79.18542
+      ],
+      "recent_center": [
+        21.66257,
+        79.18784
+      ],
+      "centroid_shift_km": 0.31,
+      "baseline_radius_km": 1.84,
+      "recent_radius_km": 1.86,
+      "range_change_km2": 0.3,
+      "territory_shift_detected": false,
+      "shift_type": "stable"
+    }
+  },
+  "255": {
+    "tiger_id": 255,
+    "sex": "Female",
+    "age_years": 5.0,
+    "life_stage": "adult",
+    "body_condition": "good",
+    "territorial_status": "resident_territorial",
+    "dispersal_status": "resident",
+    "primary_range": "Nagalwadi Buffer",
+    "centroid_lat": 21.550125,
+    "centroid_lon": 79.264984,
+    "home_range_km2": 15.2,
+    "territory_radius_km": 2.2,
+    "core_area_fraction": 0.39,
+    "core_radius_km": 1.37,
+    "min_village_dist_km": 5.73,
+    "habitat_preference": "mixed_forest",
+    "water_preference": 0.71,
+    "camera_detectability": 0.94,
+    "human_avoidance": 0.8,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.55327,
+        79.26677
+      ],
+      "recent_center": [
+        21.54624,
+        79.26369
+      ],
+      "centroid_shift_km": 0.84,
+      "baseline_radius_km": 2.26,
+      "recent_radius_km": 1.76,
+      "range_change_km2": 6.2,
+      "territory_shift_detected": false,
+      "shift_type": "stable"
+    }
+  },
+  "256": {
+    "tiger_id": 256,
+    "sex": "Male",
+    "age_years": 5.0,
+    "life_stage": "adult",
+    "body_condition": "poor",
+    "territorial_status": "resident_territorial",
+    "dispersal_status": "resident",
+    "primary_range": "East Pench",
+    "centroid_lat": 21.61553,
+    "centroid_lon": 79.303905,
+    "home_range_km2": 15.2,
+    "territory_radius_km": 2.2,
+    "core_area_fraction": 0.42,
+    "core_radius_km": 1.43,
+    "min_village_dist_km": 8.32,
+    "habitat_preference": "riparian_forest",
+    "water_preference": 0.99,
+    "camera_detectability": 0.88,
+    "human_avoidance": 0.95,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.61631,
+        79.30346
+      ],
+      "recent_center": [
+        21.61379,
+        79.30393
+      ],
+      "centroid_shift_km": 0.28,
+      "baseline_radius_km": 1.57,
+      "recent_radius_km": 1.41,
+      "range_change_km2": 1.5,
+      "territory_shift_detected": false,
+      "shift_type": "stable"
+    }
+  },
+  "259": {
+    "tiger_id": 259,
+    "sex": "Male",
+    "age_years": 1.5,
+    "life_stage": "subadult",
+    "body_condition": "good",
+    "territorial_status": "non_territorial",
+    "dispersal_status": "resident",
+    "primary_range": "Devalapar",
+    "centroid_lat": 21.713146,
+    "centroid_lon": 79.258234,
+    "home_range_km2": 22.1,
+    "territory_radius_km": 2.65,
+    "core_area_fraction": 0.38,
+    "core_radius_km": 1.62,
+    "min_village_dist_km": 4.32,
+    "habitat_preference": "teak_forest",
+    "water_preference": 0.47,
+    "camera_detectability": 0.82,
+    "human_avoidance": 0.66,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.71351,
+        79.25853
+      ],
+      "recent_center": [
+        21.71352,
+        79.25686
+      ],
+      "centroid_shift_km": 0.17,
+      "baseline_radius_km": 1.81,
+      "recent_radius_km": 2.31,
+      "range_change_km2": 6.5,
+      "territory_shift_detected": false,
+      "shift_type": "stable"
+    }
+  },
+  "261": {
+    "tiger_id": 261,
+    "sex": "Female",
+    "age_years": 1.5,
+    "life_stage": "subadult",
+    "body_condition": "good",
+    "territorial_status": "non_territorial",
+    "dispersal_status": "resident",
+    "primary_range": "Unknown Range",
+    "centroid_lat": 21.655029,
+    "centroid_lon": 79.168999,
+    "home_range_km2": 15.2,
+    "territory_radius_km": 2.2,
+    "core_area_fraction": 0.38,
+    "core_radius_km": 1.35,
+    "min_village_dist_km": 7.15,
+    "habitat_preference": "riparian_forest",
+    "water_preference": 0.3,
+    "camera_detectability": 0.81,
+    "human_avoidance": 0.72,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.6576,
+        79.16879
+      ],
+      "recent_center": [
+        21.65331,
+        79.1693
+      ],
+      "centroid_shift_km": 0.48,
+      "baseline_radius_km": 1.52,
+      "recent_radius_km": 1.45,
+      "range_change_km2": 0.6,
+      "territory_shift_detected": false,
+      "shift_type": "stable"
+    }
+  },
+  "264": {
+    "tiger_id": 264,
+    "sex": "Male",
+    "age_years": 7.0,
+    "life_stage": "adult",
+    "body_condition": "excellent",
+    "territorial_status": "resident_territorial",
+    "dispersal_status": "resident",
+    "primary_range": "East Pench",
+    "centroid_lat": 21.658638,
+    "centroid_lon": 79.298683,
+    "home_range_km2": 27.9,
+    "territory_radius_km": 2.98,
+    "core_area_fraction": 0.49,
+    "core_radius_km": 2.08,
+    "min_village_dist_km": 9.66,
+    "habitat_preference": "mixed_forest",
+    "water_preference": 0.32,
+    "camera_detectability": 0.95,
+    "human_avoidance": 0.69,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.65742,
+        79.30429
+      ],
+      "recent_center": [
+        21.66064,
+        79.29676
+      ],
+      "centroid_shift_km": 0.85,
+      "baseline_radius_km": 1.96,
+      "recent_radius_km": 1.81,
+      "range_change_km2": 1.7,
+      "territory_shift_detected": false,
+      "shift_type": "stable"
+    }
+  },
+  "265": {
+    "tiger_id": 265,
+    "sex": "Male",
+    "age_years": 0.5,
+    "life_stage": "cub",
+    "body_condition": "poor",
+    "territorial_status": "non_territorial",
+    "dispersal_status": "resident",
+    "primary_range": "Chorbahuli",
+    "centroid_lat": 21.618285,
+    "centroid_lon": 79.270653,
+    "home_range_km2": 15.2,
+    "territory_radius_km": 2.2,
+    "core_area_fraction": 0.37,
+    "core_radius_km": 1.34,
+    "min_village_dist_km": 11.53,
+    "habitat_preference": "mixed_forest",
+    "water_preference": 0.77,
+    "camera_detectability": 0.9,
+    "human_avoidance": 0.94,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.61524,
+        79.26886
+      ],
+      "recent_center": [
+        21.62042,
+        79.27181
+      ],
+      "centroid_shift_km": 0.65,
+      "baseline_radius_km": 1.19,
+      "recent_radius_km": 1.46,
+      "range_change_km2": 2.2,
+      "territory_shift_detected": false,
+      "shift_type": "stable"
+    }
+  },
+  "267": {
+    "tiger_id": 267,
+    "sex": "Male",
+    "age_years": 5.0,
+    "life_stage": "adult",
+    "body_condition": "good",
+    "territorial_status": "resident_territorial",
+    "dispersal_status": "resident",
+    "primary_range": "Saleghat",
+    "centroid_lat": 21.572962,
+    "centroid_lon": 79.159823,
+    "home_range_km2": 15.2,
+    "territory_radius_km": 2.2,
+    "core_area_fraction": 0.45,
+    "core_radius_km": 1.48,
+    "min_village_dist_km": 2.06,
+    "habitat_preference": "mixed_forest",
+    "water_preference": 0.78,
+    "camera_detectability": 1.0,
+    "human_avoidance": 0.82,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.5725,
+        79.15911
+      ],
+      "recent_center": [
+        21.57221,
+        79.1619
+      ],
+      "centroid_shift_km": 0.29,
+      "baseline_radius_km": 1.69,
+      "recent_radius_km": 1.77,
+      "range_change_km2": 0.9,
+      "territory_shift_detected": false,
+      "shift_type": "stable"
+    }
+  },
+  "268": {
+    "tiger_id": 268,
+    "sex": "Female",
+    "age_years": 5.0,
+    "life_stage": "adult",
+    "body_condition": "excellent",
+    "territorial_status": "resident_territorial",
+    "dispersal_status": "resident",
+    "primary_range": "East Pench",
+    "centroid_lat": 21.626914,
+    "centroid_lon": 79.350543,
+    "home_range_km2": 16.8,
+    "territory_radius_km": 2.31,
+    "core_area_fraction": 0.44,
+    "core_radius_km": 1.53,
+    "min_village_dist_km": 3.92,
+    "habitat_preference": "teak_forest",
+    "water_preference": 0.47,
+    "camera_detectability": 0.88,
+    "human_avoidance": 0.73,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.62622,
+        79.3503
+      ],
+      "recent_center": [
+        21.62298,
+        79.35209
+      ],
+      "centroid_shift_km": 0.4,
+      "baseline_radius_km": 1.52,
+      "recent_radius_km": 1.76,
+      "range_change_km2": 2.5,
+      "territory_shift_detected": false,
+      "shift_type": "stable"
+    }
+  },
+  "271": {
+    "tiger_id": 271,
+    "sex": "Female",
+    "age_years": 2.5,
+    "life_stage": "subadult",
+    "body_condition": "good",
+    "territorial_status": "non_territorial",
+    "dispersal_status": "resident",
+    "primary_range": "Chorbahuli",
+    "centroid_lat": 21.649377,
+    "centroid_lon": 79.261238,
+    "home_range_km2": 15.2,
+    "territory_radius_km": 2.2,
+    "core_area_fraction": 0.45,
+    "core_radius_km": 1.47,
+    "min_village_dist_km": 11.39,
+    "habitat_preference": "teak_forest",
+    "water_preference": 0.97,
+    "camera_detectability": 0.69,
+    "human_avoidance": 0.99,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.64572,
+        79.26069
+      ],
+      "recent_center": [
+        21.65027,
+        79.26293
+      ],
+      "centroid_shift_km": 0.56,
+      "baseline_radius_km": 1.41,
+      "recent_radius_km": 1.26,
+      "range_change_km2": 1.3,
+      "territory_shift_detected": false,
+      "shift_type": "stable"
+    }
+  },
+  "273": {
+    "tiger_id": 273,
+    "sex": "Male",
+    "age_years": 3.5,
+    "life_stage": "young_adult",
+    "body_condition": "excellent",
+    "territorial_status": "transient",
+    "dispersal_status": "resident",
+    "primary_range": "West Buffer",
+    "centroid_lat": 21.595616,
+    "centroid_lon": 79.126547,
+    "home_range_km2": 15.2,
+    "territory_radius_km": 2.2,
+    "core_area_fraction": 0.46,
+    "core_radius_km": 1.5,
+    "min_village_dist_km": 2.51,
+    "habitat_preference": "mixed_forest",
+    "water_preference": 0.61,
+    "camera_detectability": 0.75,
+    "human_avoidance": 0.7,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.59532,
+        79.12521
+      ],
+      "recent_center": [
+        21.5968,
+        79.12637
+      ],
+      "centroid_shift_km": 0.2,
+      "baseline_radius_km": 1.06,
+      "recent_radius_km": 1.23,
+      "range_change_km2": 1.2,
+      "territory_shift_detected": false,
+      "shift_type": "stable"
+    }
+  },
+  "274": {
+    "tiger_id": 274,
+    "sex": "Female",
+    "age_years": 3.5,
+    "life_stage": "young_adult",
+    "body_condition": "good",
+    "territorial_status": "resident_territorial",
+    "dispersal_status": "resident",
+    "primary_range": "Devalapar",
+    "centroid_lat": 21.730017,
+    "centroid_lon": 79.220311,
+    "home_range_km2": 23.8,
+    "territory_radius_km": 2.75,
+    "core_area_fraction": 0.39,
+    "core_radius_km": 1.71,
+    "min_village_dist_km": 3.15,
+    "habitat_preference": "mixed_forest",
+    "water_preference": 0.67,
+    "camera_detectability": 0.97,
+    "human_avoidance": 0.73,
+    "territory_shift_info": {
+      "baseline_center": [
+        21.72902,
+        79.2205
+      ],
+      "recent_center": [
+        21.72962,
+        79.22027
+      ],
+      "centroid_shift_km": 0.07,
+      "baseline_radius_km": 1.66,
+      "recent_radius_km": 1.79,
+      "range_change_km2": 1.4,
+      "territory_shift_detected": false,
+      "shift_type": "stable"
+    }
   }
 }

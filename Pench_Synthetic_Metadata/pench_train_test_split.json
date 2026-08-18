@@ -1,0 +1,14 @@
+{
+  "description": "Simulation seeds split for ML training. Never split individual sightings.",
+  "train_seeds": [
+    0,
+    1,
+    2
+  ],
+  "val_seeds": [],
+  "test_seeds": [
+    3,
+    4
+  ],
+  "note": "This run uses seed 0. Run with different RANDOM_SEED values for additional worlds."
+}

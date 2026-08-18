@@ -1,6 +1,6 @@
 /**
  * Pench Tiger Reserve - Zone Alert Monitoring Dashboard
- * app.js v2 — Zone boundaries, alert-level pins, village markers
+ * app.js v3 — Zone boundaries, alert-level pins, village markers, and Camera Network View
  */
 
 // Global State
@@ -21,15 +21,28 @@ let state = {
   },
   tigersLastSeenMap: {},
   tigerSightingsMap: {},
+  cameraStationsMap: {},
+  stationSightingsMap: {},
+  stationMarkersMap: {},
   selectedTigerId: null,
+  selectedStationId: null,
   selectedSightingIndex: 0,
   activeSightingsList: [],
   selectedAreaRange: "NONE",
   filterSex: "all",
+  activeTab: "tigers",
+  filterCamType: "all",
+  filterCamRange: "ALL",
   showKeypoints: true,
   showZones: true,
   showSubRegions: true,
-  showVillages: false
+  showVillages: false,
+  // Timeline state
+  timeline: {
+    startIdx: 0,   // sighting index (inclusive)
+    endIdx: 14,    // sighting index (inclusive)
+    showTerritory: true
+  }
 };
 
 const ALERT_COLORS = {
@@ -54,19 +67,28 @@ async function loadData() {
     state.data = await response.json();
     
     processTigerSightings();
+    processCameraStations();
     populateAreaCamDropdown();
     renderTigerDirectory();
+    renderCameraDirectory();
     renderTigersLastSeenOnMap();
     renderZoneBoundaries();
     renderSubRegions();
     updateAlertPanel();
 
     const totalTigers = Object.keys(state.tigersLastSeenMap).length;
-    document.getElementById("total-tiger-count").textContent = totalTigers;
+    const totalCams = state.data.stations ? state.data.stations.length : 0;
+    
+    const countTigerEl = document.getElementById("total-tiger-count");
+    if (countTigerEl) countTigerEl.textContent = totalTigers;
+    const countCamEl = document.getElementById("total-cam-count");
+    if (countCamEl) countCamEl.textContent = totalCams;
+
     document.getElementById("view-mode-text").innerHTML = `MAP MODE: <strong>TIGERS LAST SEEN (${totalTigers})</strong>`;
 
     console.log("Pench Tiger Zone Alert Dashboard ready!", {
       totalTigers,
+      totalCams,
       totalSightings: state.data.sightings.length,
       alertSummary: state.data.alert_summary
     });
@@ -104,19 +126,85 @@ function processTigerSightings() {
   }
 }
 
-function populateAreaCamDropdown() {
-  const select = document.getElementById("select-area-cams");
-  const ranges = {};
-  state.data.stations.forEach(st => {
-    if (!ranges[st.range]) ranges[st.range] = 0;
-    ranges[st.range]++;
+function processCameraStations() {
+  state.cameraStationsMap = {};
+  state.stationSightingsMap = {};
+
+  // Group sightings by station_id
+  state.data.sightings.forEach(s => {
+    const stId = s.station_id || s.camera_id;
+    if (!stId) return;
+    if (!state.stationSightingsMap[stId]) {
+      state.stationSightingsMap[stId] = [];
+    }
+    state.stationSightingsMap[stId].push(s);
   });
 
-  Object.entries(ranges).forEach(([name, count]) => {
+  // Sort sightings chronologically for each station (newest first for recent photos)
+  for (const list of Object.values(state.stationSightingsMap)) {
+    list.sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
+  }
+
+  // Index stations and calculate aggregated stats
+  state.data.stations.forEach(st => {
+    const stId = st.station_id || st.camera_id;
+    const sightings = state.stationSightingsMap[stId] || [];
+    const uniqueTigers = Array.from(new Set(sightings.map(s => s.tiger_id)));
+
+    state.cameraStationsMap[stId] = {
+      ...st,
+      station_id: stId,
+      sightings,
+      sighting_count: sightings.length,
+      unique_tigers: uniqueTigers,
+      recent_sightings: sightings.slice(0, 8)
+    };
+  });
+}
+
+function populateAreaCamDropdown() {
+  const select = document.getElementById("select-area-cams");
+  const sidebarSelect = document.getElementById("cam-sidebar-range-select");
+  
+  if (!select) return;
+
+  const totalCams = state.data.stations ? state.data.stations.length : 0;
+  const allOpt = select.querySelector('option[value="ALL"]');
+  if (allOpt) allOpt.textContent = `All Stations (${totalCams})`;
+  const chipAll = document.querySelector('[data-cam-filter="all"]');
+  if (chipAll) chipAll.textContent = `All (${totalCams})`;
+
+  // Preserve the first two options: NONE (Hidden) and ALL (All Stations)
+  while (select.children.length > 2) {
+    select.removeChild(select.lastChild);
+  }
+  if (sidebarSelect) {
+    while (sidebarSelect.children.length > 1) {
+      sidebarSelect.removeChild(sidebarSelect.lastChild);
+    }
+  }
+
+  const ranges = {};
+  state.data.stations.forEach(st => {
+    const r = st.range || "Unknown";
+    if (!ranges[r]) ranges[r] = 0;
+    ranges[r]++;
+  });
+
+  const sortedRanges = Object.keys(ranges).sort();
+
+  sortedRanges.forEach(name => {
     const opt = document.createElement("option");
     opt.value = name;
-    opt.textContent = `${name} (${count} cams)`;
+    opt.textContent = `${name} (${ranges[name]} cams)`;
     select.appendChild(opt);
+
+    if (sidebarSelect) {
+      const sideOpt = document.createElement("option");
+      sideOpt.value = name;
+      sideOpt.textContent = `${name} (${ranges[name]})`;
+      sidebarSelect.appendChild(sideOpt);
+    }
   });
 }
 
@@ -329,6 +417,237 @@ function renderTigersLastSeenOnMap() {
 }
 
 // ---------------------------------------------------------------------------
+// TIMELINE HELPERS
+// ---------------------------------------------------------------------------
+
+/**
+ * Re-renders the sighting trail and territory based on the current
+ * state.timeline.startIdx / endIdx window.
+ */
+function renderFilteredTrail() {
+  const tigerId = state.selectedTigerId;
+  if (!tigerId) return;
+
+  const allSightings = state.tigerSightingsMap[tigerId] || [];
+  const total = allSightings.length;
+  if (total === 0) return;
+
+  const tInfo = state.data.territories[tigerId];
+
+  // Clamp indices to valid range
+  const startIdx = Math.max(0, Math.min(state.timeline.startIdx, total - 1));
+  const endIdx   = Math.max(startIdx, Math.min(state.timeline.endIdx, total - 1));
+
+  const slice = allSightings.slice(startIdx, endIdx + 1);
+
+  state.layers.singleTigerTrail.clearLayers();
+  state.layers.singleTigerTerritory.clearLayers();
+
+  // Territory circle (controlled by checkbox)
+  if (state.timeline.showTerritory) {
+    let centerLat = tInfo?.centroid_lat;
+    let centerLon = tInfo?.centroid_lon;
+    let radiusKm = tInfo?.territory_radius_km || 2.4;
+
+    // Center directly on the visible sightings cluster to ensure perfect spatial coverage
+    if (slice.length > 0) {
+      const avgLat = slice.reduce((sum, s) => sum + s.latitude, 0) / slice.length;
+      const avgLon = slice.reduce((sum, s) => sum + s.longitude, 0) / slice.length;
+      centerLat = avgLat;
+      centerLon = avgLon;
+
+      const maxDistKm = Math.max(...slice.map(s => {
+        const dlat = (s.latitude - avgLat) * 111.0;
+        const dlon = (s.longitude - avgLon) * 103.0;
+        return Math.sqrt(dlat * dlat + dlon * dlon);
+      }));
+      // Standard territory area 15-20 sq km (radius ~2.2 - 2.6 km)
+      radiusKm = Math.max(2.2, Math.max(radiusKm, maxDistKm * 1.15));
+    }
+
+    if (centerLat && centerLon) {
+      const areaKm2 = (Math.PI * radiusKm * radiusKm).toFixed(1);
+      const circle = L.circle([centerLat, centerLon], {
+        radius: radiusKm * 1000,
+        color: "#f59e0b",
+        weight: 1.8,
+        dashArray: "6, 8",
+        fillColor: "#f59e0b",
+        fillOpacity: 0.05
+      });
+      circle.bindTooltip(`<strong>Tiger #${tigerId} Territory</strong><br>Area: ~${areaKm2} km² (Radius: ${radiusKm.toFixed(2)} km)`, { sticky: true });
+      state.layers.singleTigerTerritory.addLayer(circle);
+    }
+  }
+
+  // Group sightings in slice by station location to disperse multi-sightings at the same station
+  const stationMap = new Map();
+  slice.forEach((s, idx) => {
+    const key = `${s.latitude.toFixed(6)},${s.longitude.toFixed(6)}`;
+    if (!stationMap.has(key)) {
+      stationMap.set(key, []);
+    }
+    stationMap.get(key).push({ sighting: s, sliceIdx: idx, globalIdx: startIdx + idx });
+  });
+
+  // Calculate distinct display coordinates for each sighting so NO TWO PINS OVERLAP
+  const displayCoords = new Array(slice.length);
+
+  stationMap.forEach((items, key) => {
+    const [baseLatStr, baseLonStr] = key.split(",");
+    const baseLat = parseFloat(baseLatStr);
+    const baseLon = parseFloat(baseLonStr);
+    const stationId = items[0].sighting.station_id || items[0].sighting.camera_id;
+
+    if (items.length === 1) {
+      displayCoords[items[0].sliceIdx] = [baseLat, baseLon];
+    } else {
+      // Multiple sightings at this station: render central station hub & orbital pins
+      const hubIcon = L.divIcon({
+        className: "station-hub-icon",
+        html: `<div class="station-hub-node" title="Station ${stationId} (${items.length} Captures)"><i class="fa-solid fa-video"></i> <span>${items.length}</span></div>`,
+        iconSize: [34, 18],
+        iconAnchor: [17, 9]
+      });
+      const hubMarker = L.marker([baseLat, baseLon], { icon: hubIcon, zIndexOffset: 50 });
+      hubMarker.bindTooltip(`<strong>Station: ${stationId}</strong><br>${items.length} captures of Tiger #${tigerId} in this time window`, { sticky: true });
+      state.layers.singleTigerTrail.addLayer(hubMarker);
+
+      // Distribute sighting pins in a circular orbit around the camera station
+      const count = items.length;
+      const radiusKm = 0.045 + Math.min(0.040, count * 0.0035); // 45m to 80m radius
+
+      items.forEach((item, k) => {
+        const angle = (2 * Math.PI * k) / count - Math.PI / 2;
+        const dLat = (radiusKm * Math.cos(angle)) / 111.0;
+        const dLon = (radiusKm * Math.sin(angle)) / (103.0 * Math.cos((baseLat * Math.PI) / 180));
+        const dispLat = baseLat + dLat;
+        const dispLon = baseLon + dLon;
+
+        displayCoords[item.sliceIdx] = [dispLat, dispLon];
+
+        // Draw spoke filament line connecting central station to individual sighting pin
+        const spoke = L.polyline([[baseLat, baseLon], [dispLat, dispLon]], {
+          color: "rgba(245, 158, 11, 0.45)",
+          weight: 1,
+          dashArray: "2, 3"
+        });
+        state.layers.singleTigerTrail.addLayer(spoke);
+      });
+    }
+  });
+
+  // Trail polyline connecting chronological display coordinates
+  if (displayCoords.length > 1) {
+    const polyline = L.polyline(displayCoords, {
+      color: "#ffffff",
+      weight: 1.8,
+      dashArray: "5, 7",
+      opacity: 0.85
+    });
+    state.layers.singleTigerTrail.addLayer(polyline);
+  }
+
+  // Numbered step markers for EVERY SINGLE SIGHTING
+  slice.forEach((s, i) => {
+    const globalIdx = startIdx + i;           // sighting number in full set (e.g. 1 to 30)
+    const isLatest  = globalIdx === endIdx;
+    const isFirst   = globalIdx === startIdx;
+    const alertLevel = s.alert_level || "SAFE";
+    const alertColor = ALERT_COLORS[alertLevel];
+    const coords = displayCoords[i];
+
+    const pinStyle = isLatest
+      ? `background:${alertColor};color:#fff;border-color:#fff;box-shadow:0 0 10px ${alertColor};transform:scale(1.25);z-index:900;`
+      : isFirst
+      ? `background:#10b981;color:#fff;border-color:#fff;`
+      : '';
+
+    const customIcon = L.divIcon({
+      className: "custom-trail-icon",
+      html: `<div class="trail-step-pin" style="${pinStyle}">${globalIdx + 1}</div>`,
+      iconSize: [22, 22],
+      iconAnchor: [11, 11]
+    });
+
+    const marker = L.marker(coords, { icon: customIcon, zIndexOffset: isLatest ? 800 : globalIdx + 10 });
+    marker.bindTooltip(
+      `<strong>Sighting #${globalIdx + 1} of ${total}</strong><br>` +
+      `<span style="color:#f59e0b">Station: ${s.station_id || s.camera_id}</span><br>` +
+      `<span style="color:#94a3b8;font-size:10px">${s.timestamp} (${s.zone_type})</span>`,
+      { sticky: true }
+    );
+    marker.bindPopup(createSightingPopupHTML(s, globalIdx + 1, total));
+    state.layers.singleTigerTrail.addLayer(marker);
+  });
+
+  // Update timeline UI labels
+  updateTimelineUI(slice, startIdx, endIdx, total);
+
+  // Fit map to visible slice
+  if (displayCoords.length > 0) {
+    const bounds = L.latLngBounds(displayCoords);
+    state.map.flyToBounds(bounds.pad(0.25), { duration: 0.6 });
+  }
+}
+
+/** Updates the text labels and fill bar of the timeline widget */
+function updateTimelineUI(slice, startIdx, endIdx, total) {
+  const fmt = ts => ts ? ts.split(' ')[0] : '—';
+
+  const fromTs = slice.length > 0 ? slice[0].timestamp : '—';
+  const toTs   = slice.length > 0 ? slice[slice.length - 1].timestamp : '—';
+
+  document.getElementById('timeline-date-from').textContent = fmt(fromTs);
+  document.getElementById('timeline-date-to').textContent   = fmt(toTs);
+  document.getElementById('timeline-count-badge').textContent = `${slice.length} / ${total}`;
+
+  const n = slice.length;
+  const label = n === total ? 'All sightings' : `Sightings ${startIdx + 1} – ${endIdx + 1}`;
+  document.getElementById('timeline-window-label').textContent = label;
+
+  // Update the amber fill bar between the two thumb handles
+  const sliderStart = document.getElementById('timeline-start');
+  const sliderEnd   = document.getElementById('timeline-end');
+  const fill        = document.getElementById('timeline-fill');
+  const max = parseInt(sliderEnd.max, 10) || 1;
+  const leftPct  = (parseInt(sliderStart.value, 10) / max) * 100;
+  const rightPct = (parseInt(sliderEnd.value,   10) / max) * 100;
+  fill.style.left  = `${leftPct}%`;
+  fill.style.width = `${rightPct - leftPct}%`;
+}
+
+/** Initialises the timeline widget for a newly selected tiger */
+function initTimeline(tigerId) {
+  const sightings = state.tigerSightingsMap[tigerId] || [];
+  const total = sightings.length;
+  const maxIdx = Math.max(0, total - 1);
+
+  // Default: show ALL sightings by default
+  const startIdx = 0;
+  state.timeline.startIdx = startIdx;
+  state.timeline.endIdx   = maxIdx;
+
+  const sliderStart = document.getElementById('timeline-start');
+  const sliderEnd   = document.getElementById('timeline-end');
+  sliderStart.max = maxIdx;
+  sliderEnd.max   = maxIdx;
+  sliderStart.value = startIdx;
+  sliderEnd.value   = maxIdx;
+
+  // Set preset active state to "all"
+  document.querySelectorAll('.btn-tl-preset').forEach(b => {
+    b.classList.toggle('active', b.dataset.n === 'all');
+  });
+
+  // Position the widget: above dock when dock is visible
+  const widget = document.getElementById('timeline-widget');
+  const dock   = document.getElementById('gallery-dock');
+  widget.classList.remove('hidden');
+  widget.classList.toggle('above-dock', !dock.classList.contains('hidden'));
+}
+
+// ---------------------------------------------------------------------------
 // 6. INDIVIDUAL TIGER FOCUS VIEW
 // ---------------------------------------------------------------------------
 window.selectTiger = function(tigerId) {
@@ -357,57 +676,16 @@ window.selectTiger = function(tigerId) {
 
   // Clear map layers
   state.layers.tigersLastSeen.clearLayers();
-  state.layers.singleTigerTrail.clearLayers();
-  state.layers.singleTigerTerritory.clearLayers();
 
-  // Territory circle — subtle dashed outline only
-  if (tInfo) {
-    const circle = L.circle([tInfo.centroid_lat, tInfo.centroid_lon], {
-      radius: tInfo.territory_radius_km * 1000,
-      color: "#f59e0b",
-      weight: 1.5,
-      dashArray: "6, 8",
-      fillColor: "#f59e0b",
-      fillOpacity: 0.04
-    });
-    circle.bindTooltip(`Home Range: Tiger #${tigerId} (${tInfo.territory_radius_km} km radius)`, { sticky: true });
-    state.layers.singleTigerTerritory.addLayer(circle);
-  }
+  // Init timeline slider then render filtered trail
+  initTimeline(tigerId);
+  renderFilteredTrail();
 
-  // Trajectory polyline
-  if (sightings.length > 1) {
-    const latlngs = sightings.map(s => [s.latitude, s.longitude]);
-    const polyline = L.polyline(latlngs, {
-      color: "#ffffff",
-      weight: 1.5,
-      dashArray: "4, 8",
-      opacity: 0.7
-    });
-    state.layers.singleTigerTrail.addLayer(polyline);
-  }
-
-  // Numbered trail markers
-  sightings.forEach((s, idx) => {
-    const isLatest = idx === sightings.length - 1;
-    const alertColor = ALERT_COLORS[s.alert_level || "SAFE"];
-    const customIcon = L.divIcon({
-      className: "custom-trail-icon",
-      html: `<div class="trail-step-pin" style="${isLatest ? `background:${alertColor};color:#fff;border-color:#fff;transform:scale(1.2)` : ''}">${idx + 1}</div>`,
-      iconSize: [20, 20],
-      iconAnchor: [10, 10]
-    });
-
-    const marker = L.marker([s.latitude, s.longitude], { icon: customIcon });
-    marker.bindPopup(createSightingPopupHTML(s, idx + 1, sightings.length));
-    state.layers.singleTigerTrail.addLayer(marker);
-  });
-
+  // Gallery dock
   renderGalleryDock(sightings, tigerId);
 
-  if (sightings.length > 0) {
-    const bounds = L.latLngBounds(sightings.map(s => [s.latitude, s.longitude]));
-    state.map.flyToBounds(bounds.pad(0.3), { duration: 1.0 });
-  }
+  // Push timeline widget above dock now that dock is shown
+  document.getElementById('timeline-widget').classList.add('above-dock');
 };
 
 function clearTigerSelection() {
@@ -420,6 +698,7 @@ function clearTigerSelection() {
 
   document.getElementById("active-tiger-banner").classList.add("hidden");
   document.getElementById("gallery-dock").classList.add("hidden");
+  document.getElementById("timeline-widget").classList.add("hidden");
   document.querySelectorAll(".tiger-card").forEach(c => c.classList.remove("selected"));
 
   renderTigersLastSeenOnMap();
@@ -454,50 +733,373 @@ function createSightingPopupHTML(s, stepNum, totalSteps) {
 }
 
 // ---------------------------------------------------------------------------
-// 7. AREA CAMERA NETWORK TOGGLE
+// 7. CAMERA NETWORK LAYER & CONTROLS (Togglable for All or by Range)
 // ---------------------------------------------------------------------------
-function handleAreaCameraChange(rangeName) {
-  state.selectedAreaRange = rangeName;
+
+/**
+ * Sets visibility and filter of camera network on map
+ * @param {boolean} visible Whether cameras should be shown
+ * @param {string} range 'ALL', 'NONE', or specific range name
+ * @param {boolean} fitBounds Whether to pan/zoom map to fit camera pins
+ */
+function setCameraVisibility(visible, range = "ALL", fitBounds = false) {
+  const checkbox = document.getElementById("toggle-all-cameras");
+  const select = document.getElementById("select-area-cams");
+
+  if (!visible || range === "NONE") {
+    state.selectedAreaRange = "NONE";
+    if (checkbox) checkbox.checked = false;
+    if (select) select.value = "NONE";
+    renderCameraStationsOnMap("NONE");
+    clearCameraFocus();
+  } else {
+    state.selectedAreaRange = range;
+    if (checkbox) checkbox.checked = true;
+    if (select) select.value = range;
+    const stations = renderCameraStationsOnMap(range);
+    if (fitBounds && stations && stations.length > 0) {
+      const bounds = L.latLngBounds(stations.map(st => [st.latitude, st.longitude]));
+      state.map.flyToBounds(bounds.pad(0.15), { duration: 0.8 });
+    }
+  }
+}
+
+/**
+ * Renders camera markers onto map layer
+ */
+function renderCameraStationsOnMap(range = "ALL") {
   state.layers.areaCameras.clearLayers();
+  state.stationMarkersMap = {};
 
   const legendCamItem = document.getElementById("legend-cam-item");
+  const legendCamCount = document.getElementById("legend-cam-count");
 
-  if (rangeName === "NONE") {
-    legendCamItem.style.display = "none";
-    return;
+  if (range === "NONE") {
+    if (legendCamItem) legendCamItem.style.display = "none";
+    return [];
   }
 
-  legendCamItem.style.display = "flex";
+  let stations = state.data.stations || [];
+  if (range !== "ALL") {
+    stations = stations.filter(st => st.range === range);
+  }
 
-  const areaStations = state.data.stations.filter(st => st.range === rangeName);
+  if (legendCamItem) {
+    legendCamItem.style.display = "flex";
+    if (legendCamCount) legendCamCount.textContent = stations.length;
+  }
 
-  areaStations.forEach(st => {
-    const customIcon = L.divIcon({
-      className: "custom-cam-icon",
-      html: `<div class="area-camera-pin"><i class="fa-solid fa-video"></i></div>`,
-      iconSize: [16, 16],
-      iconAnchor: [8, 8]
-    });
+  stations.forEach(st => {
+    const marker = createStationMarker(st);
+    state.layers.areaCameras.addLayer(marker);
+    state.stationMarkersMap[st.station_id] = marker;
+  });
 
-    const marker = L.marker([st.latitude, st.longitude], { icon: customIcon });
-    marker.bindPopup(`
-      <div class="popup-card" style="width:200px">
-        <div class="popup-body">
-          <div class="popup-title">${st.station_id}</div>
-          <div class="popup-sub">${st.range} (${st.zone_type})</div>
-          <div class="popup-meta">
-            <span><strong>Type:</strong> ${st.camera_type}</span>
-            <span><strong>Zone:</strong> ${st.zone_type}</span>
+  return stations;
+}
+
+/**
+ * Creates an interactive Leaflet marker for a camera station
+ */
+function createStationMarker(st) {
+  const fullSt = state.cameraStationsMap[st.station_id] || st;
+  const isCore = (fullSt.zone_type || "").toLowerCase().includes("core");
+  const isBuffer = (fullSt.zone_type || "").toLowerCase().includes("buffer");
+  const isCorridor = (fullSt.zone_type || "").toLowerCase().includes("corridor");
+  const isVillage = (fullSt.zone_type || "").toLowerCase().includes("village");
+
+  const pinClass = isVillage ? "pin-village" : isCorridor ? "pin-corridor" : isBuffer ? "pin-buffer" : "pin-core";
+  const detCount = Math.max(fullSt.sighting_count || 0, fullSt.total_detections || 0);
+  const hasDetections = detCount > 0 ? "has-detections" : "";
+  const isSelected = state.selectedStationId === fullSt.station_id ? "selected-station" : "";
+
+  const customIcon = L.divIcon({
+    className: "custom-station-icon",
+    html: `<div class="station-map-pin ${pinClass} ${hasDetections} ${isSelected}" id="pin-${fullSt.station_id}" title="${fullSt.station_id}"><i class="fa-solid fa-video"></i></div>`,
+    iconSize: [18, 18],
+    iconAnchor: [9, 9]
+  });
+
+  const marker = L.marker([fullSt.latitude, fullSt.longitude], { icon: customIcon });
+
+  // Tooltip
+  marker.bindTooltip(
+    `<strong><i class="fa-solid fa-video"></i> ${fullSt.station_id}</strong><br>` +
+    `${fullSt.range} (${fullSt.zone_type})<br>` +
+    `<span style="color:#f59e0b;font-size:10px">${detCount} Captures • ${fullSt.unique_tigers ? fullSt.unique_tigers.length : 0} Tigers</span>`,
+    { sticky: true }
+  );
+
+  // Bind Popup function (dynamically created on click)
+  marker.bindPopup(() => createStationPopupHTML(fullSt), { maxWidth: 280 });
+
+  marker.on("click", () => {
+    focusCameraStation(fullSt.station_id, false);
+  });
+
+  return marker;
+}
+
+/**
+ * Generates popup HTML for camera station inspection
+ */
+function createStationPopupHTML(st) {
+  const fullSt = state.cameraStationsMap[st.station_id] || st;
+  const isCore = (fullSt.zone_type || "").toLowerCase().includes("core");
+  const isBuffer = (fullSt.zone_type || "").toLowerCase().includes("buffer");
+  const isCorridor = (fullSt.zone_type || "").toLowerCase().includes("corridor");
+  const tagClass = isCore ? "tag-core" : isBuffer ? "tag-buffer" : "tag-corridor";
+  const zoneLabel = isCore ? "Core Forest" : isBuffer ? "Buffer Zone" : isCorridor ? "Corridor" : fullSt.zone_type;
+
+  const detCount = Math.max(fullSt.sighting_count || 0, fullSt.total_detections || 0);
+  const tigers = fullSt.unique_tigers || [];
+  const recentPhotos = fullSt.recent_sightings || [];
+
+  let tigersHTML = '<span style="color:#94a3b8;font-size:10px">No tiger captures recorded yet</span>';
+  if (tigers.length > 0) {
+    tigersHTML = tigers.map(tid => `
+      <span class="station-tiger-tag" onclick="selectTiger('${tid}')" title="View Tiger #${tid} Sighting Trail">
+        <i class="fa-solid fa-paw"></i> #${tid}
+      </span>
+    `).join("");
+  }
+
+  let photosHTML = "";
+  if (recentPhotos.length > 0) {
+    photosHTML = `
+      <div class="popup-section-title">
+        <span><i class="fa-solid fa-images"></i> RECENT CAPTURES</span>
+        <span>${recentPhotos.length} photos</span>
+      </div>
+      <div class="station-recent-photos">
+        ${recentPhotos.map((s) => `
+          <div class="station-thumb-wrap" onclick="openPhotoModal('${s.filename}')" title="Tiger #${s.tiger_id} @ ${s.timestamp}">
+            <img src="Amur Tigers/train/${s.filename}" alt="Tiger ${s.tiger_id}" loading="lazy" />
+            <span class="station-thumb-badge">#${s.tiger_id}</span>
+          </div>
+        `).join("")}
+      </div>
+    `;
+  }
+
+  return `
+    <div class="popup-station-card">
+      <div class="popup-station-header">
+        <div>
+          <h3><i class="fa-solid fa-video" style="color:var(--accent-emerald)"></i> ${fullSt.station_id}</h3>
+          <div style="font-size:11px;color:var(--accent-emerald)">${fullSt.range || 'Pench'} Range</div>
+        </div>
+        <span class="popup-station-tag ${tagClass}">${zoneLabel}</span>
+      </div>
+
+      <div class="station-meta-grid">
+        <div class="station-meta-cell">
+          <span class="meta-lbl">Total Detections</span>
+          <span class="meta-val" style="color:var(--accent-amber)">${detCount} captures</span>
+        </div>
+        <div class="station-meta-cell">
+          <span class="meta-lbl">Unique Tigers</span>
+          <span class="meta-val" style="color:var(--accent-emerald)">${tigers.length} identified</span>
+        </div>
+        <div class="station-meta-cell">
+          <span class="meta-lbl">Habitat & Trail</span>
+          <span class="meta-val" title="${fullSt.habitat} / ${fullSt.trail_type}">${(fullSt.habitat || 'forest').replace('_', ' ')}</span>
+        </div>
+        <div class="station-meta-cell">
+          <span class="meta-lbl">Trap Effort</span>
+          <span class="meta-val">${fullSt.trap_nights ? `${fullSt.trap_nights}d effort` : 'Active'}</span>
+        </div>
+        <div class="station-meta-cell">
+          <span class="meta-lbl">Nearest Village</span>
+          <span class="meta-val" title="${fullSt.nearest_village}">${fullSt.nearest_village ? `${fullSt.nearest_village} (${fullSt.nearest_village_km}km)` : 'None'}</span>
+        </div>
+        <div class="station-meta-cell">
+          <span class="meta-lbl">Camera Hardware</span>
+          <span class="meta-val" title="${fullSt.camera_type}">${(fullSt.camera_type || 'Camera Trap').split(' ')[0]}</span>
+        </div>
+      </div>
+
+      <div class="popup-section-title">
+        <span><i class="fa-solid fa-paw"></i> TIGERS RECORDED HERE</span>
+        <span>${tigers.length}</span>
+      </div>
+      <div class="station-tigers-tagwrap">
+        ${tigersHTML}
+      </div>
+
+      ${photosHTML}
+    </div>
+  `;
+}
+
+/**
+ * Focuses on a specific camera station from map or sidebar
+ */
+function focusCameraStation(stationId, shouldFly = true) {
+  state.selectedStationId = stationId;
+  const st = state.cameraStationsMap[stationId];
+  if (!st) return;
+
+  // Ensure camera layer is active
+  if (state.selectedAreaRange === "NONE") {
+    setCameraVisibility(true, "ALL", false);
+  }
+
+  // Update header pill
+  const detCount = Math.max(st.sighting_count, st.total_detections || 0);
+  document.getElementById("view-mode-pill").style.borderColor = "rgba(16, 185, 129, 0.6)";
+  document.getElementById("view-mode-text").innerHTML = `CAMERA: <strong>${st.station_id} (${st.range}) — ${detCount} Detections</strong>`;
+
+  // Update sidebar active banner
+  const banner = document.getElementById("active-camera-banner");
+  if (banner) {
+    banner.classList.remove("hidden");
+    document.getElementById("active-cam-name").textContent = `${st.station_id}`;
+    document.getElementById("active-cam-info").textContent = `${st.range} | ${st.zone_type} | ${detCount} Detections`;
+  }
+
+  // Update card selection in sidebar
+  document.querySelectorAll(".camera-card").forEach(c => {
+    c.classList.toggle("selected", c.dataset.stationId === stationId);
+  });
+
+  // Highlight marker pin on map
+  document.querySelectorAll(".station-map-pin").forEach(p => p.classList.remove("selected-station"));
+  const pinEl = document.getElementById(`pin-${stationId}`);
+  if (pinEl) pinEl.classList.add("selected-station");
+
+  // Fly to camera station and open popup
+  if (shouldFly) {
+    state.map.flyTo([st.latitude, st.longitude], 15, { duration: 0.8 });
+  }
+
+  const marker = state.stationMarkersMap[stationId];
+  if (marker) {
+    setTimeout(() => {
+      marker.openPopup();
+    }, shouldFly ? 500 : 50);
+  }
+}
+
+/**
+ * Clears focused camera station
+ */
+function clearCameraFocus() {
+  state.selectedStationId = null;
+  const banner = document.getElementById("active-camera-banner");
+  if (banner) banner.classList.add("hidden");
+  document.querySelectorAll(".camera-card").forEach(c => c.classList.remove("selected"));
+  document.querySelectorAll(".station-map-pin").forEach(p => p.classList.remove("selected-station"));
+  
+  if (state.selectedTigerId) {
+    const lastSeen = state.tigersLastSeenMap[state.selectedTigerId];
+    const alertLevel = lastSeen?.alert_level || "SAFE";
+    document.getElementById("view-mode-pill").style.borderColor = ALERT_COLORS[alertLevel];
+    document.getElementById("view-mode-text").innerHTML = `FOCUS: <strong>TIGER #${state.selectedTigerId} — ${alertLevel}</strong>`;
+  } else {
+    const totalTigers = Object.keys(state.tigersLastSeenMap).length;
+    document.getElementById("view-mode-pill").style.borderColor = "rgba(245, 158, 11, 0.35)";
+    document.getElementById("view-mode-text").innerHTML = `MAP MODE: <strong>TIGERS LAST SEEN (${totalTigers})</strong>`;
+  }
+}
+
+/**
+ * Renders the camera station cards in the sidebar directory
+ */
+function renderCameraDirectory() {
+  const container = document.getElementById("camera-list");
+  if (!container) return;
+  container.innerHTML = "";
+
+  const query = (document.getElementById("camera-search")?.value || "").trim().toLowerCase();
+  const rangeFilter = document.getElementById("cam-sidebar-range-select")?.value || "ALL";
+
+  let stations = Object.values(state.cameraStationsMap);
+
+  stations = stations.filter(st => {
+    const stId = (st.station_id || "").toLowerCase();
+    const range = (st.range || "").toLowerCase();
+    const habitat = (st.habitat || "").toLowerCase();
+    const village = (st.nearest_village || "").toLowerCase();
+    const zone = (st.zone_type || "").toLowerCase();
+    const camType = (st.camera_type || "").toLowerCase();
+
+    // Query search
+    if (query && !stId.includes(query) && !range.includes(query) && !habitat.includes(query) && !village.includes(query)) {
+      return false;
+    }
+
+    // Range dropdown filter
+    if (rangeFilter !== "ALL" && st.range !== rangeFilter) {
+      return false;
+    }
+
+    // Chip filter
+    if (state.filterCamType === "core" && !zone.includes("core")) return false;
+    if (state.filterCamType === "buffer" && !zone.includes("buffer")) return false;
+    if (state.filterCamType === "active" && (st.sighting_count === 0 && (st.total_detections || 0) === 0)) return false;
+    if (state.filterCamType === "cctv" && !camType.includes("cctv") && !camType.includes("solar")) return false;
+
+    return true;
+  });
+
+  // Sort: highest detections first, then station ID
+  stations.sort((a, b) => {
+    const detA = Math.max(a.sighting_count, a.total_detections || 0);
+    const detB = Math.max(b.sighting_count, b.total_detections || 0);
+    if (detB !== detA) return detB - detA;
+    return (a.station_id || "").localeCompare(b.station_id || "");
+  });
+
+  const visibleCountEl = document.getElementById("visible-cam-count");
+  if (visibleCountEl) visibleCountEl.textContent = `${stations.length} Cameras`;
+
+  stations.forEach(st => {
+    const isCore = (st.zone_type || "").toLowerCase().includes("core");
+    const isBuffer = (st.zone_type || "").toLowerCase().includes("buffer");
+    const isCorridor = (st.zone_type || "").toLowerCase().includes("corridor");
+    const zoneClass = isCore ? "zone-core" : isBuffer ? "zone-buffer" : isCorridor ? "zone-corridor" : "zone-core";
+    const zoneName = isCore ? "Core Forest" : isBuffer ? "Buffer Zone" : isCorridor ? "Corridor" : "Reserve";
+
+    const detCount = Math.max(st.sighting_count, st.total_detections || 0);
+    const tigerCount = st.unique_tigers ? st.unique_tigers.length : 0;
+
+    const card = document.createElement("div");
+    card.className = `camera-card ${state.selectedStationId === st.station_id ? "selected" : ""}`;
+    card.dataset.stationId = st.station_id;
+
+    card.innerHTML = `
+      <div class="cam-card-left">
+        <div class="cam-icon-avatar ${zoneClass}">
+          <i class="fa-solid fa-video"></i>
+        </div>
+        <div class="cam-card-info">
+          <div class="cam-card-title">
+            <span>${st.station_id}</span>
+            <span class="cam-card-badge">${zoneName}</span>
+          </div>
+          <div class="cam-card-sub">
+            <span>${st.range || 'Pench'}</span> • <span>${(st.habitat || '').replace('_', ' ')}</span>
           </div>
         </div>
       </div>
-    `);
-    state.layers.areaCameras.addLayer(marker);
-  });
+      <div class="cam-card-right">
+        <span class="cam-badge-detections">${detCount} Detections</span>
+        <span class="cam-badge-tigers"><i class="fa-solid fa-paw"></i> ${tigerCount} Tigers</span>
+        <span class="cam-badge-nights">${st.trap_nights ? `${st.trap_nights}d effort` : ''}</span>
+      </div>
+    `;
 
-  if (areaStations.length > 0) {
-    const bounds = L.latLngBounds(areaStations.map(st => [st.latitude, st.longitude]));
-    state.map.flyToBounds(bounds.pad(0.2), { duration: 1.0 });
+    card.addEventListener("click", () => focusCameraStation(st.station_id));
+    container.appendChild(card);
+  });
+}
+
+function handleAreaCameraChange(rangeName) {
+  if (rangeName === "NONE") {
+    setCameraVisibility(false, "NONE");
+  } else {
+    setCameraVisibility(true, rangeName, true);
   }
 }
 
@@ -717,10 +1319,65 @@ function setupEventListeners() {
     document.getElementById("sidebar").classList.toggle("collapsed");
   });
 
+  // Sidebar Tab Switcher (Tigers vs Camera Network)
+  document.querySelectorAll(".sidebar-tab").forEach(tabBtn => {
+    tabBtn.addEventListener("click", () => {
+      document.querySelectorAll(".sidebar-tab").forEach(b => b.classList.remove("active"));
+      tabBtn.classList.add("active");
+
+      const targetTab = tabBtn.dataset.tab;
+      state.activeTab = targetTab;
+
+      document.querySelectorAll(".tab-pane").forEach(p => p.classList.remove("active"));
+      if (targetTab === "tigers") {
+        document.getElementById("pane-tigers")?.classList.add("active");
+        document.getElementById("active-camera-banner")?.classList.add("hidden");
+      } else if (targetTab === "cameras") {
+        document.getElementById("pane-cameras")?.classList.add("active");
+        // Automatically make camera network visible when entering camera tab if hidden
+        if (state.selectedAreaRange === "NONE") {
+          setCameraVisibility(true, "ALL", true);
+        }
+      }
+    });
+  });
+
+  // All Cameras Header Toggle Checkbox
+  const toggleAllCams = document.getElementById("toggle-all-cameras");
+  if (toggleAllCams) {
+    toggleAllCams.addEventListener("change", (e) => {
+      setCameraVisibility(e.target.checked, "ALL", true);
+    });
+  }
+
   // Area Camera Dropdown
   document.getElementById("select-area-cams").addEventListener("change", (e) => {
     handleAreaCameraChange(e.target.value);
   });
+
+  // Camera Directory Search & Filters
+  document.getElementById("camera-search")?.addEventListener("input", renderCameraDirectory);
+
+  document.querySelectorAll("#camera-filter-chips .chip").forEach(chip => {
+    chip.addEventListener("click", () => {
+      document.querySelectorAll("#camera-filter-chips .chip").forEach(c => c.classList.remove("active"));
+      chip.classList.add("active");
+      state.filterCamType = chip.dataset.camFilter;
+      renderCameraDirectory();
+    });
+  });
+
+  document.getElementById("cam-sidebar-range-select")?.addEventListener("change", (e) => {
+    state.filterCamRange = e.target.value;
+    renderCameraDirectory();
+    if (e.target.value !== "ALL") {
+      setCameraVisibility(true, e.target.value, true);
+    } else {
+      setCameraVisibility(true, "ALL", false);
+    }
+  });
+
+  document.getElementById("btn-clear-cam-focus")?.addEventListener("click", clearCameraFocus);
 
   // Zone Boundaries Toggle
   document.getElementById("toggle-zones").addEventListener("change", (e) => {
@@ -781,15 +1438,18 @@ function setupEventListeners() {
   });
 
   // Reset View
-  document.getElementById("btn-reset-view").addEventListener("click", clearTigerSelection);
+  document.getElementById("btn-reset-view").addEventListener("click", () => {
+    clearTigerSelection();
+    clearCameraFocus();
+  });
   document.getElementById("btn-clear-tiger").addEventListener("click", clearTigerSelection);
 
-  // Search & Filters
+  // Tiger Search & Filters
   document.getElementById("tiger-search").addEventListener("input", renderTigerDirectory);
 
-  document.querySelectorAll(".chip").forEach(chip => {
+  document.querySelectorAll(".quick-filter-chips .chip[data-filter]").forEach(chip => {
     chip.addEventListener("click", () => {
-      document.querySelectorAll(".chip").forEach(c => c.classList.remove("active"));
+      document.querySelectorAll(".quick-filter-chips .chip[data-filter]").forEach(c => c.classList.remove("active"));
       chip.classList.add("active");
       state.filterSex = chip.dataset.filter;
       renderTigerDirectory();
@@ -824,6 +1484,70 @@ function setupEventListeners() {
 
   // Gallery Dock Toggle
   document.getElementById("btn-dock-toggle").addEventListener("click", () => {
-    document.getElementById("gallery-dock").classList.toggle("collapsed");
+    const dock = document.getElementById("gallery-dock");
+    dock.classList.toggle("collapsed");
+    // Adjust timeline position based on dock expanded/collapsed state
+    const widget = document.getElementById('timeline-widget');
+    if (!widget.classList.contains('hidden')) {
+      widget.classList.toggle('above-dock', !dock.classList.contains('collapsed'));
+    }
+  });
+
+  // ---- TIMELINE SLIDER EVENTS ----
+  const sliderStart = document.getElementById('timeline-start');
+  const sliderEnd   = document.getElementById('timeline-end');
+
+  function onSliderChange() {
+    let s = parseInt(sliderStart.value, 10);
+    let e = parseInt(sliderEnd.value,   10);
+    // Prevent handles from crossing
+    if (s > e) {
+      if (this === sliderStart) { sliderStart.value = e; s = e; }
+      else                      { sliderEnd.value   = s; e = s; }
+    }
+    state.timeline.startIdx = s;
+    state.timeline.endIdx   = e;
+    // Clear active preset when user drags manually
+    document.querySelectorAll('.btn-tl-preset').forEach(b => b.classList.remove('active'));
+    renderFilteredTrail();
+  }
+
+  sliderStart.addEventListener('input', onSliderChange);
+  sliderEnd.addEventListener('input',   onSliderChange);
+
+  // Preset quick-select buttons
+  document.querySelectorAll('.btn-tl-preset').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const tid = state.selectedTigerId;
+      if (!tid) return;
+      const total = (state.tigerSightingsMap[tid] || []).length;
+      const maxIdx = Math.max(0, total - 1);
+      const n = btn.dataset.n;
+
+      document.querySelectorAll('.btn-tl-preset').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      let startIdx, endIdx;
+      if (n === 'all') {
+        startIdx = 0;
+        endIdx   = maxIdx;
+      } else {
+        const count = parseInt(n, 10);
+        startIdx = Math.max(0, total - count);
+        endIdx   = maxIdx;
+      }
+
+      state.timeline.startIdx = startIdx;
+      state.timeline.endIdx   = endIdx;
+      sliderStart.value = startIdx;
+      sliderEnd.value   = endIdx;
+      renderFilteredTrail();
+    });
+  });
+
+  // Territory visibility toggle
+  document.getElementById('tl-show-territory').addEventListener('change', (e) => {
+    state.timeline.showTerritory = e.target.checked;
+    renderFilteredTrail();
   });
 }
