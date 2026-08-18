@@ -30,6 +30,71 @@ TYGRIS integrates deep learning computer vision (tiger Re-ID and 15-point anatom
 
 ---
 
+## 🗺️ Interactive GIS Map & Interface Features
+
+```
+┌────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│  🐾 PENCH TIGER RESERVE  [🟢 FOCUS: TIGER #24 (Female) - SAFE]  [📷 Cameras: All (123) ▾]  [Satellite ▾] │
+├──────────────────────────┬─────────────────────────────────────────────────────────────────────────────┤
+│ ┌──────────────────────┐ │                                                                             │
+│ │ Tigers | Camera Net  │ │    🟡 Buffer Zone (301 km²)                                                 │
+│ ├──────────────────────┤ │     ┌──────────────────────────────────────────────────────────────┐        │
+│ │ 🔍 Search ID / Range │ │     │                                                              │        │
+│ │ [All] [♂] [♀] [Alert]│ │     │   🟢 Core Forest (439 km²)                                   │        │
+│ ├──────────────────────┤ │     │    ┌──────────────────────────────────────────────┐          │        │
+│ │ #24 Tiger #24        │ │     │    │   [Station: CAM-0024]                        │          │        │
+│ │  30 Sightings • SAFE │ │     │    │      (1)----(5)                              │          │        │
+│ │                      │ │     │    │       \  📷  /                               │          │        │
+│ │ #139 Tiger #139      │ │     │    │      (29)---(17)--- - - > [CAM-0038]         │          │        │
+│ │  57 Sightings • SAFE │ │     │    │                           (2)--(6)--(30)     │          │        │
+│ │                      │ │     │    └──────────────────────────────────────────────┘          │        │
+│ │ #250 Tiger #250      │ │     │                                                              │        │
+│ │  42 Sightings • CAUT │ │     └──────────────────────────────────────────────────────────────┘        │
+│ └──────────────────────┘ │                                    ┌──────────────────────────────────────┐ │
+│                          │                                    │ ⏱️ SIGHTING WINDOW (All 30 / 30)      │ │
+│                          │                                    │ [●=================================●]│ │
+│                          │                                    │ [5] [10] [15] [25] [All] [✔ Terr.]   │ │
+│                          │                                    └──────────────────────────────────────┘ │
+├──────────────────────────┴─────────────────────────────────────────────────────────────────────────────┤
+│ 🐯 SIGHTING CHRONOLOGY FOR TIGER #24: [📷 #1] [📷 #2] [📷 #3] [📷 #4] [📷 #5] [📷 #6] ... [📷 #30]     │
+└────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+```
+
+### 1. Dual-Tab Explorer Sidebar
+- **Tigers Tab (107 Individuals)**:
+  - Search by Tiger ID or Range name.
+  - Quick filter chips: `All`, `Male`, `Female`, `Alerts`.
+  - Individual cards showing sex, primary range, total sighting counts, and latest alert level.
+- **Camera Network Tab (123 Stations)**:
+  - Real-time station search (e.g. `CAM-0024`, `Saleghat`, `Wadamba`).
+  - Filter chips: `All (123)`, `Core`, `Buffer`, `Active Detections`, `CCTV / Solar`.
+  - Forest Range dropdown selector.
+  - Camera cards displaying zone badges, detection totals, unique tigers identified, and trap-night effort.
+
+### 2. Camera Network Layer & Telemetry Popups
+- **1-Click Map Layer Toggle**: Turn on/off all 123 camera stations across Pench via the header checkbox or range dropdown.
+- **Color-Coded Station Markers**:
+  - 🟢 **Emerald**: Core Forest Wildlife Camera Trap
+  - 🟡 **Amber**: Buffer Zone Camera Trap
+  - 🟣 **Purple**: NH-44 Wildlife Corridor Camera
+- **Rich Telemetry Popups**: Click any camera station to view trap effort, trail type, nearest water/village distances, list of identified tigers, and a scrollable recent capture photo strip.
+
+### 3. 100% Sighting Visibility & Orbital Dispersal
+- When a tiger is captured multiple times at the same camera station, sightings are arranged in a clean micro-orbital ring ($R \approx 45\text{m}-80\text{m}$) around the station hub with connecting spoke lines.
+- **Zero Hidden Pins**: For a tiger with 30 sightings, **all 30 numbered markers (`#1` to `#30`)** remain distinctly visible, clickable, and hoverable simultaneously.
+- **Chronological Trail Polyline**: Dashed trajectory vector connects each sighting sequentially ($1 \rightarrow 2 \rightarrow 3 \rightarrow \dots \rightarrow N$).
+
+### 4. Interactive Sighting Window Timeline Slider
+- Dual draggable range thumbs to inspect any chronological window of sightings.
+- Preset window buttons: `5`, `10`, `15`, `25`, `All`.
+- Toggleable territory home range polygon overlay (~15–50 km² area circle).
+
+### 5. 15-Point AI Skeleton Pose Viewer
+- Click **"Inspect Photo & Keypoints"** from any sighting popup or gallery thumbnail.
+- Renders anatomical keypoints (nose, eyes, shoulders, elbows, paws, hips, knees, tail root) with toggleable joint lines and coordinates.
+
+---
+
 ## 📷 Dataset & Photos Setup
 
 Due to file size considerations, image binaries (`.jpg`) inside the dataset folders are excluded via `.gitignore`. **All annotations, Re-ID mappings, and pose keypoint coordinates are included in this repository**.
@@ -73,43 +138,6 @@ Start the local HTTP server:
 python server.py
 ```
 Open **[http://localhost:8000](http://localhost:8000)** in your web browser.
-
----
-
-## 🗺️ Key Features & Architecture
-
-### 1. Dual-Tab Explorer Sidebar
-- **Tigers Tab (107 Individuals)**:
-  - Search by Tiger ID or Range name.
-  - Quick filter chips: `All`, `Male`, `Female`, `Alerts`.
-  - Individual cards showing sex, primary range, total sighting counts, and latest alert level.
-- **Camera Network Tab (123 Stations)**:
-  - Real-time station search (e.g. `CAM-0024`, `Saleghat`, `Wadamba`).
-  - Filter chips: `All (123)`, `Core`, `Buffer`, `Active Detections`, `CCTV / Solar`.
-  - Forest Range dropdown selector.
-  - Camera cards displaying zone badges, detection totals, unique tigers identified, and trap-night effort.
-
-### 2. Camera Network Layer & Telemetry Popups
-- **1-Click Map Layer Toggle**: Turn on/off all 123 camera stations across Pench via the header checkbox or range dropdown.
-- **Color-Coded Station Markers**:
-  - 🟢 **Emerald**: Core Forest Wildlife Camera Trap
-  - 🟡 **Amber**: Buffer Zone Camera Trap
-  - 🟣 **Purple**: NH-44 Wildlife Corridor Camera
-- **Rich Telemetry Popups**: Click any camera station to view trap effort, trail type, nearest water/village distances, list of identified tigers, and a scrollable recent capture photo strip.
-
-### 3. 100% Sighting Visibility & Orbital Dispersal
-- When a tiger is captured multiple times at the same camera station, sightings are arranged in a clean micro-orbital ring ($R \approx 45\text{m}-80\text{m}$) around the station hub with connecting spoke lines.
-- **Zero Hidden Pins**: For a tiger with 30 sightings, **all 30 numbered markers (`#1` to `#30`)** remain distinctly visible, clickable, and hoverable simultaneously.
-- **Chronological Trail Polyline**: Dashed trajectory vector connects each sighting sequentially ($1 \rightarrow 2 \rightarrow 3 \rightarrow \dots \rightarrow N$).
-
-### 4. Interactive Sighting Window Timeline Slider
-- Dual draggable range thumbs to inspect any chronological window of sightings.
-- Preset window buttons: `5`, `10`, `15`, `25`, `All`.
-- Toggleable territory home range polygon overlay (~15–50 km² area circle).
-
-### 5. 15-Point AI Skeleton Pose Viewer
-- Click **"Inspect Photo & Keypoints"** from any sighting popup or gallery thumbnail.
-- Renders anatomical keypoints (nose, eyes, shoulders, elbows, paws, hips, knees, tail root) with toggleable joint lines and coordinates.
 
 ---
 
